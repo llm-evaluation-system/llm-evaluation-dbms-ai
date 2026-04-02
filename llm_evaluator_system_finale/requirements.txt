@@ -1,0 +1,36 @@
+# Core web framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# Database
+sqlalchemy==2.0.36
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+alembic==1.13.3
+
+# HTTP client (for LLM provider calls)
+httpx==0.27.2
+
+# Data parsing / validation
+pydantic==2.9.2
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# Excel / CSV parsing (question bank)
+pandas==2.2.3
+openpyxl==3.1.5
+xlrd==2.0.1
+
+# Background tasks
+celery==5.4.0
+redis==5.2.0
+
+# Utilities
+python-slugify==8.0.4
+tenacity==9.0.0
+
+# Testing
+pytest==8.3.3
+pytest-asyncio==0.24.0
+httpx==0.27.2

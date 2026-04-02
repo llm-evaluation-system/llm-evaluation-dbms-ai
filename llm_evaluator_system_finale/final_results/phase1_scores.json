@@ -1,0 +1,4266 @@
+[
+  {
+    "run_id": "4c7332a5-9801-49f3-8921-184713aa8193",
+    "model_id": "llama-3.1-70b",
+    "question_id": "c62a41f9-4461-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8d4f4717-fdc1-4116-87ca-0a534874942b",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 67.59702081235991,
+    "db_correctness_score": 73.5,
+    "llm_quality_score": 61.52361111111111,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.79874958053165,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: validate_manager_age(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "PostgreSQL Limitation",
+        "text": "PostgreSQL does not support assertions in the same way that some other database systems do.",
+        "severity": "medium"
+      },
+      {
+        "type": "Trigger Advantages",
+        "text": "The trigger function is more readable and maintainable, as it clearly states its purpose and the logic behind it.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Explanation of why assertions are better than table constraints for cross-table conditions."
+    ],
+    "justification_preview": "The model answer correctly defines the table constraint for the Emp table but fails to provide a valid assertion for the Dept table. It suggests using a trigger, which is not part of the expected answ",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "Syntax check error: DDL statement, not a query"
+    }
+  },
+  {
+    "run_id": "b1d701b3-6fca-465c-acb4-3a3a8ce74728",
+    "model_id": "llama-3.1-70b",
+    "question_id": "6bd4ccd2-5d85-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "4ac40e2e-008b-42f8-a8b3-d987b703fd8d",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 85.25823416051983,
+    "db_correctness_score": 92.5,
+    "llm_quality_score": 88.775,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.51468321039675,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Triggers can execute before or after a change is made to the database.",
+      "Difficulty for a database to perform automatic optimization with triggers."
+    ],
+    "justification_preview": "The model answer effectively covers the strengths and weaknesses of triggers and compares them with integrity constraints. It includes key points such as the flexibility and complexity of triggers, an",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "3ac9f5c9-0592-4a8a-bc55-f4364b7d8b1a",
+    "model_id": "llama-3.1-70b",
+    "question_id": "6c3f53eb-80bb-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "4de3810c-4908-4a0b-b672-75b89618d309",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 63.986220602568025,
+    "db_correctness_score": 66.425,
+    "llm_quality_score": 61.279166666666676,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.79941205136046,
+    "hallucinations_detected": [
+      {
+        "type": "irrelevant_query",
+        "text": "For example, the following query uses a `JOIN` to find the names of sailors with a higher rating than all sailors with age < 21",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Explanation of how NULL values affect AVG, SUM, and COUNT results",
+      "Comparison of two SQL queries for finding sailors with higher ratings",
+      "Conditions under which two queries would compute the same result"
+    ],
+    "justification_preview": "The model answer correctly provides SQL queries for computing average, sum, and count of ratings, but it lacks the explanation of the difference in results due to NULL values. It also fails to address",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 1, Expected rows: 1"
+    }
+  },
+  {
+    "run_id": "fc6e4ea4-1816-49d1-b0ae-44e5780852e6",
+    "model_id": "gpt-4o",
+    "question_id": "6bd4ccd2-5d85-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0547f98c-794d-4d28-94b5-6c8d1a4951d5",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 83.23342808254388,
+    "db_correctness_score": 92.5,
+    "llm_quality_score": 90.47500000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 46.818561650877676,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Triggers can be executed before or after a change is made to the database.",
+      "Difficulty for a database to perform automatic optimization with triggers."
+    ],
+    "justification_preview": "The model answer provides a comprehensive discussion of the strengths and weaknesses of triggers, aligning well with the expected answer. It covers automation, complex integrity constraints, auditing,",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "1a47eaef-7a26-4189-9583-f0f1ee2d771f",
+    "model_id": "gpt-4o",
+    "question_id": "6c3f53eb-80bb-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "cf56ecc3-11d9-4c1b-bd5f-a02cdf0bba27",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 75.00483326456558,
+    "db_correctness_score": 76.47500000000001,
+    "llm_quality_score": 88.375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.09666529131145,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed conditions under which both queries yield the same result, such as the Sailors relation being empty or specific rating comparisons.",
+      "Explanation of how NULL values affect the results of SUM and COUNT compared to AVG."
+    ],
+    "justification_preview": "The model answer correctly addresses the SQL queries for average, sum, and count of ratings, and provides a valid analysis of the two queries for finding sailors with higher ratings. However, it lacks",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 1, Expected rows: 1"
+    }
+  },
+  {
+    "run_id": "41d98c01-44fb-43f5-9220-12f264143155",
+    "model_id": "gpt-4o",
+    "question_id": "c62a41f9-4461-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "72b3d2f5-1998-4cf3-82f7-0746f6e9af30",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 72.84546432908998,
+    "db_correctness_score": 81.5,
+    "llm_quality_score": 72.72916666666667,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.534286581799705,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_information",
+        "text": "PostgreSQL does not support assertions directly.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Define a table constraint on Dept ensuring managers have age > 30",
+      "DELETE employees making more than their manager"
+    ],
+    "justification_preview": "The model answer correctly defines the table constraint for the Emp table and provides a theoretical assertion for the Dept table, acknowledging PostgreSQL's lack of support for assertions. However, i",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "Syntax check error: DDL statement, not a query"
+    }
+  },
+  {
+    "run_id": "82f7cd77-5143-4e7f-9c72-1b547da16127",
+    "model_id": "llama-3.1-70b",
+    "question_id": "c36cf025-1982-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "252f4d5b-bce8-427c-bcb9-b7f16a74b640",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 78.56010362406109,
+    "db_correctness_score": 79.82499999999999,
+    "llm_quality_score": 87.47083333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.12707248122196,
+    "hallucinations_detected": [
+      {
+        "type": "typo",
+        "text": "SELECT DISTICT S.sname FROM Student S WHERE S.snum NOT IN (SELECT E.snum FROM Enrolled E)",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is syntactically valid and semantically correct for all queries. It uses appropriate SQL clauses and handles constraints correctly. The use of CTEs and other idiomatic PostgreSQL feat",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 4, Expected rows: 4"
+    }
+  },
+  {
+    "run_id": "473e7d32-16dd-459e-b7f1-216037a24e71",
+    "model_id": "llama-3.1-70b",
+    "question_id": "0def7bdc-534e-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "fdd76073-3079-492f-8897-1d9997d8b288",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 64.3597867361111,
+    "db_correctness_score": 72.77499999999999,
+    "llm_quality_score": 52.112500000000004,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.77073472222222,
+    "hallucinations_detected": [
+      {
+        "type": "logical_error",
+        "text": "JOIN certified c ON f.flno = c.eid",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Correct handling of joins in query 7",
+      "Use of appropriate SQL clauses and idiomatic PostgreSQL features"
+    ],
+    "justification_preview": "The model answer provides SQL queries for the given problems, but there are significant issues with query 7. The join conditions are incorrect, leading to logical errors. The other queries are mostly ",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 3, Expected rows: 3"
+    }
+  },
+  {
+    "run_id": "92ba1b7c-2449-4542-b2c3-d306b201bbab",
+    "model_id": "llama-3.1-70b",
+    "question_id": "09f1cb01-bac5-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "6e510ca8-f073-42f7-94c3-05b0353bd5eb",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 51.564843016076466,
+    "db_correctness_score": 48.5,
+    "llm_quality_score": 49.695833333333326,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.12186032152937,
+    "hallucinations_detected": [
+      {
+        "type": "definition",
+        "text": "An unsafe query is defined as 'a query that may not be computable, or may run forever, or may produce an infinite result'",
+        "severity": "high"
+      },
+      {
+        "type": "example",
+        "text": "The SQL query provided as an example of an unsafe query",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Example of {S | \u00ac(S \u2208 Sailors)}",
+      "Explanation of infinite result set in relational calculus"
+    ],
+    "justification_preview": "The model answer incorrectly defines an unsafe query in the context of SQL rather than relational calculus, which is the focus of the question. It also provides an SQL example that does not illustrate",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "db95f7bf-37cc-45ab-a58b-9d527cece865",
+    "model_id": "gpt-4o",
+    "question_id": "c36cf025-1982-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "ca2906f2-af34-4272-9023-ab5a8f49f68d",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 79.23377519745947,
+    "db_correctness_score": 86.82499999999999,
+    "llm_quality_score": 84.20416666666665,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 61.200503949189574,
+    "hallucinations_detected": [
+      {
+        "type": "syntax",
+        "text": "HAVING EVERY(c.room = 'R128')",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is syntactically valid and semantically correct for all queries. It uses appropriate SQL clauses and handles constraints correctly. The use of idiomatic PostgreSQL is adequate, though",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.5,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 4, Expected rows: 4"
+    }
+  },
+  {
+    "run_id": "013bc5d2-b6d6-4788-8532-22eef940235d",
+    "model_id": "gpt-4o",
+    "question_id": "0def7bdc-534e-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "1415dd96-3e99-4bcd-a003-a18a318a3f48",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 76.65263944679997,
+    "db_correctness_score": 79.47500000000001,
+    "llm_quality_score": 88.68750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 56.17778893599924,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is mostly correct, with accurate SQL syntax and appropriate use of clauses. It correctly addresses the queries, matching the expected results. However, there are minor deviations in q",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 3, Expected rows: 3"
+    }
+  },
+  {
+    "run_id": "308a52db-3e8c-4400-ad91-6f2e428bbb3e",
+    "model_id": "llama-3.1-70b",
+    "question_id": "91d0bd09-fe08-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0c95604c-1d9d-4d68-b8ff-896db6813ca6",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 72.16806111111111,
+    "db_correctness_score": 77.5,
+    "llm_quality_score": 70.2625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.78622222222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "SQL queries for all 12 questions",
+      "Relational algebra, TRC, and DRC for queries 5 to 12"
+    ],
+    "justification_preview": "The model answer provides correct relational algebra, tuple relational calculus, and domain relational calculus for the first four queries. However, it lacks SQL queries and does not cover all 12 quer",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.0,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.0,
+      "db_execution_context": "Syntax check error: No SQL found in answer"
+    }
+  },
+  {
+    "run_id": "1c32e289-543d-4bbe-a4cb-282b63683e16",
+    "model_id": "llama-3.1-70b",
+    "question_id": "8c61735b-507d-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "743f04e2-84b8-4f38-8ebb-f94a83c339be",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 66.43682923611112,
+    "db_correctness_score": 73.5,
+    "llm_quality_score": 57.84583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.66158472222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_expression",
+        "text": "\u03c0 aid (\u03c3 from = 'Bonn' \u2227 to = 'Madras' (Flights \u22c8 Certified \u22c8 Aircraft))",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_expression",
+        "text": "\u03c3 cruisingrange > 3000 \u2227 aname \u2260 'Boeing' (Aircraft \u22c8 Certified \u22c8 Employees)",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Explanation for inexpressibility of queries 8, 10, and 11",
+      "Correct relational algebra for query 3",
+      "Correct handling of query 5's negation logic"
+    ],
+    "justification_preview": "The model answer provides correct relational algebra, tuple relational calculus, and domain relational calculus expressions for some queries, but it contains errors and omissions. The relational algeb",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "Syntax check error: DDL statement, not a query"
+    }
+  },
+  {
+    "run_id": "8a02d5dc-f24f-4023-96cf-e444397c7551",
+    "model_id": "gpt-4o",
+    "question_id": "09f1cb01-bac5-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "7cced91b-7816-4b77-a6a2-aaee6f0dfbc6",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 54.114374686659495,
+    "db_correctness_score": 53.0,
+    "llm_quality_score": 57.40416666666667,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.86249373319,
+    "hallucinations_detected": [
+      {
+        "type": "contextual",
+        "text": "In the context of Datalog, a query is considered unsafe if it can potentially generate an infinite number of results.",
+        "severity": "medium"
+      },
+      {
+        "type": "contextual",
+        "text": "In SQL, particularly in PostgreSQL, recursive queries are written using Common Table Expressions (CTEs) with the `WITH RECURSIVE` clause.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "An unsafe query is a query in relational calculus that has an infinite number of results.",
+      "Example: {S | \u00ac(S \u2208 Sailors)}",
+      "Explanation of infinite result set in relational calculus context"
+    ],
+    "justification_preview": "The model answer discusses unsafe queries in the context of recursion and Datalog, which is not the focus of the expected answer. It fails to address the concept of unsafe queries in relational calcul",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "e736c82d-9c3a-4be1-8212-99f3c583865a",
+    "model_id": "gpt-4o",
+    "question_id": "78ebf72b-7b30-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a3534e66-2b73-47f2-8a8f-6aff3c821251",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 88.70899854051905,
+    "db_correctness_score": 100.0,
+    "llm_quality_score": 94.2375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 58.75497081038097,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is factually correct and covers all key points from the expected answer, including the closure property and the importance of operator composition. It expands on the expected answer b",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "89352a45-3184-4359-8374-bb0db89d9e54",
+    "model_id": "llama-3.1-70b",
+    "question_id": "78ebf72b-7b30-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "9e926a50-9efc-449c-b6ef-7c5d021d2141",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 88.83704458909433,
+    "db_correctness_score": 98.00000000000001,
+    "llm_quality_score": 91.97500000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 94.89089178188654,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is factually correct and aligns well with the expected answer. It covers the key points about compositionality, including expressiveness, modularity, optimization, and simplification,",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4a9f2146-13dd-4f75-b096-cba5150688d9",
+    "model_id": "gpt-4o",
+    "question_id": "8c61735b-507d-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "7f052591-9e40-42c6-9207-b29b78062f7f",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 64.17580702939098,
+    "db_correctness_score": 71.00000000000001,
+    "llm_quality_score": 63.00416666666666,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 45.491140587819466,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_method",
+        "text": "Use of 'LIKE' in relational algebra and calculus for exact matches.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Explanation for why queries 8, 10, and 11 cannot be expressed in relational algebra or calculus.",
+      "Expressions for queries 5-11."
+    ],
+    "justification_preview": "The model answer correctly addresses the first three queries with appropriate relational algebra, TRC, and DRC expressions. However, it incorrectly uses 'LIKE' for exact matches in relational algebra ",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "Syntax check error: DDL statement, not a query"
+    }
+  },
+  {
+    "run_id": "53fa2932-9b06-4ae0-a56c-7a3296afcb45",
+    "model_id": "gpt-4o",
+    "question_id": "91d0bd09-fe08-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "be633e47-1251-470d-a03c-658f3413d72b",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 68.8995077319867,
+    "db_correctness_score": 76.00000000000001,
+    "llm_quality_score": 70.2625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 46.41515463973388,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Solutions for queries 5 to 12 in RA, TRC, DRC, and SQL.",
+      "SQL solutions for queries 1 to 4."
+    ],
+    "justification_preview": "The model answer provides solutions for the first four queries in RA, TRC, and DRC, but it lacks completeness as it does not cover all 12 queries. The provided solutions are mostly correct but contain",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.0,
+      "db_execution_context": "Syntax check error: DDL statement, not a query"
+    }
+  },
+  {
+    "run_id": "283dab3a-d335-44b5-8dd6-01cf7c74847d",
+    "model_id": "llama-3.1-70b",
+    "question_id": "7f30162b-5f47-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "9c4fc367-f137-4021-a881-95b4e008b605",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 69.28635485385375,
+    "db_correctness_score": 83.50000000000001,
+    "llm_quality_score": 50.487500000000004,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.80209707707496,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_r_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_b_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_c_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_a_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      }
+    ],
+    "missing_points": [
+      "Merging the relationship R into table A to capture the total participation constraint."
+    ],
+    "justification_preview": "The model answer correctly creates tables for entities A, B, and C with primary keys, and a table for the relationship R with foreign keys. However, it fails to merge the relationship R into table A, ",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Syntax check error: DDL statement, not a query"
+    }
+  },
+  {
+    "run_id": "5dbb7da1-c425-4310-a8c9-c14644b2900a",
+    "model_id": "llama-3.1-70b",
+    "question_id": "c6c4ce74-44f2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "945c8ea5-d423-4189-b5f5-674ccba4b5dc",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 80.44383129590128,
+    "db_correctness_score": 79.82499999999999,
+    "llm_quality_score": 93.725,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.27662591802577,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly modifies the query to include only the login column and accurately describes the effect of adding the GPA constraint. It uses appropriate SQL syntax and handles constraints ",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 2, Expected rows: 2"
+    }
+  },
+  {
+    "run_id": "d352b7ce-ef15-40d1-ab21-1ec1510a56f6",
+    "model_id": "gpt-4o",
+    "question_id": "0c053e7b-ed52-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "d7ac296e-65d9-4627-a2ac-83373d48de10",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 76.85505314757015,
+    "db_correctness_score": 78.15,
+    "llm_quality_score": 91.05000000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 59.30106295140292,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly explains the query rewriting process and provides valid examples for both automatically updatable and non-updatable views. It aligns well with the expected answer, demonstra",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 1, Expected rows: 1"
+    }
+  },
+  {
+    "run_id": "61f3e3d3-2c8b-4d7d-917e-24719dcdd825",
+    "model_id": "llama-3.1-70b",
+    "question_id": "66f0e4d6-5fb0-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "6f615bb0-dde2-48dc-a660-047d18281411",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 81.13533555312334,
+    "db_correctness_score": 93.0,
+    "llm_quality_score": 74.07916666666668,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.23171106246677,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: Meets_In(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "unnecessary_detail",
+        "text": "In PostgreSQL syntax, these foreign key constraints can be defined as: ...",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [
+      "Standardizing lengths of sid, cid, and fid",
+      "Checksums for identification numbers",
+      "Limits on size of numbers in credits, capacity, and salary fields",
+      "Enumerated type for grade field"
+    ],
+    "justification_preview": "The model answer correctly identifies the foreign key constraints and provides a plausible non-primary key, non-foreign key constraint. However, it introduces unnecessary PostgreSQL syntax, which is n",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "be46b081-2e80-433a-8028-abe964940bd3",
+    "model_id": "llama-3.1-70b",
+    "question_id": "0c053e7b-ed52-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "c0d748b9-2951-4bdc-ac00-f7ee1fe59275",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 85.49942859347262,
+    "db_correctness_score": 94.25,
+    "llm_quality_score": 86.675,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.43857186945246,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Explicit SQL query rewrite for the first question",
+      "Example of a non-updatable view using GROUP BY"
+    ],
+    "justification_preview": "The model answer correctly explains the query processing for the view and provides valid examples for both updatable and non-updatable views. However, it omits the explicit SQL query rewrite for the f",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "No SQL statement found in model answer."
+    }
+  },
+  {
+    "run_id": "310b629a-9ffb-48a8-8c64-eb6c00204752",
+    "model_id": "gpt-4o",
+    "question_id": "c6c4ce74-44f2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "ad82aab1-60aa-45f4-9839-bcbb39d80de5",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 77.03626795598744,
+    "db_correctness_score": 79.82499999999999,
+    "llm_quality_score": 88.37083333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 62.25035911974898,
+    "hallucinations_detected": [
+      {
+        "type": "syntactic",
+        "text": "SELECT sid, sname, login, age, gpa",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly modifies the query to include only the login column and accurately identifies the tuple that remains when the GPA condition is added. It uses appropriate SQL clauses and han",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 1.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=1.0, precision=1.0, recall=1.0\nReturned rows: 2, Expected rows: 2"
+    }
+  },
+  {
+    "run_id": "f1edf10d-9089-4c06-8c10-50b30a99d89d",
+    "model_id": "llama-3.1-70b",
+    "question_id": "41de485a-98af-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "c7857d35-3373-4ec9-af2b-bea37d53759f",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 83.1716162871855,
+    "db_correctness_score": 94.0,
+    "llm_quality_score": 79.25416666666666,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.90732574370999,
+    "hallucinations_detected": [
+      {
+        "type": "limitation",
+        "text": "However, if the changes to the conceptual schema affect the tables or attributes used in the queries, the queries may need to be modified.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Explicit mention of views as a mechanism for achieving logical data independence"
+    ],
+    "justification_preview": "The model answer correctly explains physical and logical data independence, aligning well with the expected answer. It provides a detailed explanation and example, demonstrating domain knowledge. Howe",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "5f862e31-b599-432d-8593-ced583c1c52c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "6e9e7751-c76c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e4f6d633-020c-4f26-bb22-6d803c4458f3",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.44103876201304,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.32077524026069,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "ddcc4a4b-b480-490e-bab5-01769dcc5552",
+    "model_id": "gpt-4o",
+    "question_id": "6e9e7751-c76c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "ffb86d58-33ee-4d15-b81f-6270d7ad47ae",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 86.65820345900516,
+    "db_correctness_score": 97.49999999999999,
+    "llm_quality_score": 90.78750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 63.439069180103424,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Emphasis on the inability to determine a candidate key from a single instance without schema constraints"
+    ],
+    "justification_preview": "The model answer correctly identifies 'name' as not a candidate key and explains the limitations of determining candidate keys from a single instance. However, it suggests 'sid' could be a candidate k",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "df74f94b-8eb4-42a6-97c6-8bf6807f932c",
+    "model_id": "gpt-4o",
+    "question_id": "7f30162b-5f47-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "ca058c83-9044-4abe-bef5-0d392b1288a8",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 62.235716144318644,
+    "db_correctness_score": 73.5,
+    "llm_quality_score": 51.52916666666667,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 50.53932288637284,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_r_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_b_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_c_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: rel_a_7f30(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "incorrect_constraint_handling",
+        "text": "ON DELETE CASCADE enforces total participation of A in R.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Merging relationship R into table A to capture total participation constraint."
+    ],
+    "justification_preview": "The model answer correctly creates tables for entities A, B, and C with primary keys and a relationship table R with foreign keys. However, it incorrectly uses ON DELETE CASCADE for A's foreign key, w",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.5,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Syntax check error: DDL statement, not a query"
+    }
+  },
+  {
+    "run_id": "e1318a45-dfd3-48d6-9e9a-2fb0d74a2c3c",
+    "model_id": "gpt-4o",
+    "question_id": "41de485a-98af-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "fd62bb37-0bb5-418e-a650-249867062062",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 86.78245912737628,
+    "db_correctness_score": 97.49999999999999,
+    "llm_quality_score": 91.35,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 62.549182547525874,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly explains both physical and logical data independence, aligning well with the expected answer. It provides a detailed explanation of how SQL abstracts physical storage and ho",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "65d8f195-b15d-4ddb-8ac6-39a024466c84",
+    "model_id": "gpt-4o",
+    "question_id": "66f0e4d6-5fb0-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e262bb6a-c7be-4709-9d2f-4e4ae73ce6b1",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 76.81762898969126,
+    "db_correctness_score": 95.0,
+    "llm_quality_score": 63.6625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 54.37757979382539,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: Meets_In(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      }
+    ],
+    "missing_points": [
+      "Explanation of why there are no foreign key constraints on Students, Faculty, Courses, or Rooms.",
+      "Additional examples of non-primary key, non-foreign key constraints such as standardizing lengths, checksums, and enumerated types."
+    ],
+    "justification_preview": "The model answer correctly identifies the foreign key constraints and provides a plausible non-primary key, non-foreign key constraint. However, it lacks the detailed reasoning about why certain relat",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "32860023-2d6d-469a-81a0-821517f355a8",
+    "model_id": "llama-3.1-70b",
+    "question_id": "94f3945c-a596-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "066732af-7b93-4b1b-ae2f-6650e4612cc6",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 90.53751317979139,
+    "db_correctness_score": 98.74999999999999,
+    "llm_quality_score": 95.82499999999999,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.30026359582808,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Domain is synonymous with data type"
+    ],
+    "justification_preview": "The model answer is factually correct and covers all key points from the expected answer. It provides clear definitions for each term without contradictions and demonstrates domain-specific knowledge.",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "e1bdbdba-9248-4793-9689-c64b10f6533a",
+    "model_id": "gpt-4o",
+    "question_id": "94f3945c-a596-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "4f161b0d-82b2-4044-9fb9-081e8de4877c",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 88.9583775972923,
+    "db_correctness_score": 98.74999999999999,
+    "llm_quality_score": 95.82499999999999,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 66.71755194584617,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Attributes can be thought of as columns in a table."
+    ],
+    "justification_preview": "The model answer is factually correct and aligns well with the expected answer. It covers all key points, including definitions of relation schema, relational database schema, domain, relation instanc",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "602eb8ec-942c-44f4-af0b-9b50d47c9272",
+    "model_id": "llama-3.1-70b",
+    "question_id": "2ca79e49-a73b-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "525edd1c-5b28-47cc-81ac-766229ea42be",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 80.57186236111112,
+    "db_correctness_score": 97.49999999999999,
+    "llm_quality_score": 64.85000000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.33724722222222,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: insert_user(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer provides accurate definitions and explanations for Cursor, Embedded SQL, JDBC, SQLJ, and stored procedures. It correctly distinguishes between JDBC and SQLJ, explaining their differen",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "f6fa84c1-ed10-428b-8ecc-f60833040978",
+    "model_id": "gpt-4o",
+    "question_id": "ed2b175f-e63d-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "880e391e-dacd-49ee-9295-51eaa909d029",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 85.06398594698406,
+    "db_correctness_score": 95.5,
+    "llm_quality_score": 90.78750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 51.55471893968119,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Application servers eliminate the problems with process-creation overload and can also provide extra functionality like abstracting away heterogeneous data sources and maintaining session state information."
+    ],
+    "justification_preview": "The model answer is mostly correct and covers the majority of the key points from the expected answer. It accurately explains most terms and concepts, though it lacks some details about application se",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d6643e78-aefe-43a7-9036-8352b64adc66",
+    "model_id": "llama-3.1-70b",
+    "question_id": "ed2b175f-e63d-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "765e8b84-d671-4184-84d7-56a8352823e7",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.427370858296285,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.04741716592578,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "e8fbdab6-54e5-454b-b3cb-d69500a85727",
+    "model_id": "llama-3.1-70b",
+    "question_id": "e1330b9f-31d3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0d3533df-ce84-496a-825e-b9125d0e18aa",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 84.8758242361111,
+    "db_correctness_score": 91.75,
+    "llm_quality_score": 88.775,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.36648472222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed explanation of SQLSTATE/SQLCODE in embedded SQL"
+    ],
+    "justification_preview": "The model answer provides a comprehensive comparison of exception and warning handling across embedded SQL, dynamic SQL, JDBC, and SQLJ. It correctly describes the use of `WHENEVER` in embedded SQL, `",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4590e2bd-994b-4a2a-b9d3-5b9ddcc2a8b2",
+    "model_id": "gpt-4o",
+    "question_id": "2ca79e49-a73b-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "4244c629-1ca6-448f-b085-cc204931bcc6",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 87.56969248742028,
+    "db_correctness_score": 98.74999999999999,
+    "llm_quality_score": 93.925,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 50.34384974840579,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer provides accurate and comprehensive explanations of the terms Cursor, Embedded SQL, JDBC, SQLJ, and stored procedures. It correctly identifies the differences between JDBC and SQLJ, i",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "71e57948-a4b4-49e0-bd9b-dbc733d8cc09",
+    "model_id": "llama-3.1-70b",
+    "question_id": "4d30f627-adcf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "6fb354ed-6903-4804-ad62-044d72bb7215",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 70.10478423611112,
+    "db_correctness_score": 84.50000000000001,
+    "llm_quality_score": 51.6625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.12068472222222,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: my_stored_procedure(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      }
+    ],
+    "missing_points": [
+      "Complete explanation of SQLJ steps for connecting to a data source.",
+      "Explanation of SQLJ steps for starting, committing, and aborting transactions.",
+      "Explanation of SQLJ steps for calling a stored procedure."
+    ],
+    "justification_preview": "The model answer provides a detailed explanation of JDBC steps, including connecting to a data source, managing transactions, and calling stored procedures. However, it lacks a complete explanation of",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "54f56fc0-eef3-4dac-96db-516584f3b181",
+    "model_id": "gpt-4o",
+    "question_id": "e1330b9f-31d3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "2a11642a-3ad3-44c9-8bc3-20e459ade4b5",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 88.66022170726522,
+    "db_correctness_score": 100.0,
+    "llm_quality_score": 94.2375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.779434145304556,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer accurately describes exception and warning handling in embedded SQL, dynamic SQL, JDBC, and SQLJ, aligning well with the expected answer. It covers the use of SQLCODE/SQLSTATE for emb",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "7845a6b0-bdfb-458a-88d3-3ba35cc0c92f",
+    "model_id": "gpt-4o",
+    "question_id": "5704959a-3fbf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "3c8ac045-bfa1-43a6-8758-cd6a0811498f",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 62.88542046810657,
+    "db_correctness_score": 69.5,
+    "llm_quality_score": 59.37083333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 56.48340936213137,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_procedure",
+        "text": "Directory index: `0` for key 8 without directory doubling",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_procedure",
+        "text": "Directory index: `1` for key 9 without directory doubling",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Correct directory doubling after inserting 8",
+      "Correct redistribution of keys after directory doubling"
+    ],
+    "justification_preview": "The model answer correctly describes the initial structure and the insertion of keys 4 and 5. However, it incorrectly handles the insertion of 8 and 9, failing to double the directory when necessary a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "6adf2762-9837-46c5-9047-9ca34093bb0c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "9f53f572-cb29-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "2d92e148-ec9d-4843-a38f-2e61c00a4264",
+    "judge_score_0_10": 3.0,
+    "master_composite_score": 37.039307361111106,
+    "db_correctness_score": 28.999999999999996,
+    "llm_quality_score": 33.949999999999996,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.08614722222222,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: insert_element(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: split_bucket(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "ea0f7ba6-3acc-4f08-85fb-217a04f86de9",
+    "model_id": "llama-3.1-70b",
+    "question_id": "496d1f01-b582-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a2f21d95-bcd0-4f6f-9ddb-581f4cea6954",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 62.18600284145874,
+    "db_correctness_score": 64.0,
+    "llm_quality_score": 59.37083333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.4950568291747,
+    "hallucinations_detected": [
+      {
+        "type": "process",
+        "text": "When we try to insert 5 into Bucket B, we find that it is already full (assuming a bucket size of 2). This causes an overflow, and we need to split the bucket.",
+        "severity": "high"
+      },
+      {
+        "type": "process",
+        "text": "The global depth of the directory is still 1, but the local depth of Bucket B has increased to 2.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Split A: A0: [1] A1: [3, 5]",
+      "Local depth becomes 2 \u2192 exceeds global depth \u2192 double directory",
+      "New directory (global depth = 2): 00 \u2192 A0 01 \u2192 A1 10 \u2192 B 11 \u2192 B"
+    ],
+    "justification_preview": "The model answer correctly explains the concept of extendible hashing and the initial setup. However, it incorrectly describes the overflow handling and bucket splitting process, leading to factual in",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "1f5881eb-9eaa-45fa-a653-619f909b5bad",
+    "model_id": "gpt-4o",
+    "question_id": "4d30f627-adcf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "10e070b5-6a58-4dd8-8fe9-e08e73d98fdd",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 79.38612819663238,
+    "db_correctness_score": 98.74999999999999,
+    "llm_quality_score": 67.425,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 45.67256393264786,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: my_stored_procedure(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer accurately describes the steps for connecting to a data source, managing transactions, and calling stored procedures in both JDBC and SQLJ. It aligns well with the expected answer, co",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "43240d9b-3c4e-4b2c-b998-6b80244b913c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "661a48e1-8431-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "de6eec5a-3b38-4159-92ee-d95094c5f579",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 54.96450986111111,
+    "db_correctness_score": 60.0,
+    "llm_quality_score": 41.9875,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.36519722222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_handling",
+        "text": "Bucket 0: [2, 4, 20] (Note: This is not standard; typically, the bucket would split or handle overflow differently.)",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Correct handling of bucket overflow and splitting after inserting 20",
+      "Final correct bucket structure after all operations"
+    ],
+    "justification_preview": "The model answer correctly identifies the initial bucket assignments and the hash function logic but fails to handle bucket overflow and splitting correctly. It incorrectly allows more than two entrie",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "f4115a93-5077-41e2-9bf9-5f52bf91edde",
+    "model_id": "llama-3.1-70b",
+    "question_id": "5704959a-3fbf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0396b5b7-2a22-4bf3-8fd8-51f4cf5939df",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 43.53126236111112,
+    "db_correctness_score": 33.5,
+    "llm_quality_score": 48.087500000000006,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.10024722222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect assumption",
+        "text": "Since this bucket is not full (assuming a bucket can hold more than one key for simplicity), we can simply insert `4` into it",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect process",
+        "text": "The actual directory pointers would be: - `0 \u2192 00` - `1 \u2192 10` - `2 \u2192 01` - `3 \u2192 11`",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Correct bucket split after inserting 4",
+      "Directory doubling after inserting 4",
+      "Correct bucket split after inserting 5",
+      "Correct bucket split after inserting 8",
+      "Final structure with balanced buckets"
+    ],
+    "justification_preview": "The model answer contains several factual inaccuracies and omits key steps such as the correct bucket splits and directory doubling. It also introduces incorrect assumptions about bucket capacity and ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d716571a-777b-4a84-877a-a9a3e61a2b05",
+    "model_id": "gpt-4o",
+    "question_id": "496d1f01-b582-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "5a65c418-d8d1-4110-b6ed-1133cf3e81f0",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 71.1781127230869,
+    "db_correctness_score": 80.0,
+    "llm_quality_score": 69.3125,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.687254461738,
+    "hallucinations_detected": [
+      {
+        "type": "factual",
+        "text": "Bucket B can accommodate 5 without overflow, so it becomes [2, 4, 5].",
+        "severity": "high"
+      },
+      {
+        "type": "factual",
+        "text": "Redistribute the entries based on the first 2 bits of their hash values.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Split bucket when full",
+      "Double directory when needed"
+    ],
+    "justification_preview": "The model answer correctly explains extendible hashing and the initial setup, but it inaccurately describes the handling of overflow and directory doubling. It incorrectly states that Bucket B can acc",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4ba2da21-d01c-45c4-8112-a6b59ca356ca",
+    "model_id": "llama-3.1-70b",
+    "question_id": "00715362-73b3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "dfc89846-be21-422f-81ce-496fb587f32a",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 68.38224243797139,
+    "db_correctness_score": 74.5,
+    "llm_quality_score": 63.179166666666674,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 93.56984875942784,
+    "hallucinations_detected": [
+      {
+        "type": "additional_information",
+        "text": "Extra Space Overhead: Each node must store a pointer to its parent node, which increases the space overhead.",
+        "severity": "medium"
+      },
+      {
+        "type": "additional_information",
+        "text": "In PostgreSQL, the B+ tree implementation does not store parent pointers in the nodes.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Immediate fix: Update all child parent pointers after split",
+      "Lazy fix: Update only when accessed",
+      "Trade-offs between immediate and lazy fixes"
+    ],
+    "justification_preview": "The model answer provides a detailed discussion on the problems of maintaining parent pointers, but it diverges from the expected answer by focusing on space and update overheads rather than the speci",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4b1f9798-2c49-4c0b-be73-4357da33d917",
+    "model_id": "gpt-4o",
+    "question_id": "661a48e1-8431-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "60b481a9-4885-4cd5-a4ca-1f659f971c57",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 57.47489750862375,
+    "db_correctness_score": 66.0,
+    "llm_quality_score": 46.51250000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 60.422950172474934,
+    "hallucinations_detected": [
+      {
+        "type": "overflow_handling",
+        "text": "Assuming overflow handling, Bucket 0 might look like this: Bucket 0: [2, 4] -> [20]",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Correct handling of bucket overflow by splitting as per expected answer"
+    ],
+    "justification_preview": "The model answer correctly identifies the hash function and initial bucket placements but fails to handle bucket overflow correctly as per the expected answer. It assumes overflow handling instead of ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "09414306-eef0-4b45-9927-698cd2614f22",
+    "model_id": "llama-3.1-70b",
+    "question_id": "45e705cf-e771-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "3da37c52-c9ea-4cad-8d87-caff2febbf9e",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 79.33750736111114,
+    "db_correctness_score": 89.50000000000001,
+    "llm_quality_score": 74.10416666666669,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.12514722222222,
+    "hallucinations_detected": [
+      {
+        "type": "unnecessary_complexity",
+        "text": "N \u2264 F^h \u00b7 (P/K)",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Height \u2248 ceil(log_fanout(N))"
+    ],
+    "justification_preview": "The model answer correctly explains the calculation of maximum entries per node and fanout, aligning with the expected answer. However, it introduces unnecessary complexity in the height calculation a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "04552658-b9e0-459b-8140-1ba217507380",
+    "model_id": "gpt-4o",
+    "question_id": "00715362-73b3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "cd9c8f6a-2d0d-4b52-87df-555511ed7379",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 76.35155556225143,
+    "db_correctness_score": 84.50000000000001,
+    "llm_quality_score": 78.1625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 63.056111245028504,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Immediate fix: Update all child parent pointers after split",
+      "Lazy fix: Update only when accessed",
+      "Trade-offs between immediate and lazy fixes"
+    ],
+    "justification_preview": "The model answer correctly identifies issues with maintaining parent pointers, such as complexity, consistency, and performance overhead. However, it misses specific solutions like immediate and lazy ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "124b5914-7e7a-4cd3-b6b4-9aa4f0ecdd54",
+    "model_id": "llama-3.1-70b",
+    "question_id": "38fec19d-a0d2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8c7ac116-da6e-4a59-9715-f4094bb1b675",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 84.62726868739577,
+    "db_correctness_score": 96.49999999999999,
+    "llm_quality_score": 79.87916666666668,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.2703737479157,
+    "hallucinations_detected": [
+      {
+        "type": "factual",
+        "text": "ISAM can have a minimum space utilization of 0% if the index is highly fragmented and there are many empty slots",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is mostly correct and complete, accurately describing the minimum space utilization of B+ trees and ISAM, and when ISAM might be preferred. However, it introduces a minor hallucinatio",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d479277e-fe02-4015-a8c6-5c500bff4733",
+    "model_id": "gpt-4o",
+    "question_id": "9f53f572-cb29-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "641eee33-6d0e-490c-a6ce-2be583564ffb",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 54.77858442916369,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 70.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 31.071688583274003,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4fd67090-1e9a-4ddf-958b-726c35f1a35a",
+    "model_id": "gpt-4o",
+    "question_id": "38fec19d-a0d2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "c3534249-f1f7-462a-b192-0829c58dec5c",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 87.06318044249808,
+    "db_correctness_score": 98.00000000000001,
+    "llm_quality_score": 91.97500000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 59.41360884996145,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is factually correct and covers all key points from the expected answer. It accurately describes the minimum space utilization of both B+ trees and ISAM, and correctly identifies scen",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "94138bd2-8822-461a-938c-ae0b3aadfeb1",
+    "model_id": "gpt-4o",
+    "question_id": "45e705cf-e771-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "92f37b3f-f840-4219-9c34-5edf916dbca0",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 70.61908457166429,
+    "db_correctness_score": 85.5,
+    "llm_quality_score": 58.6875,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.256691433285766,
+    "hallucinations_detected": [
+      {
+        "type": "calculation_error",
+        "text": "The fanout of a B+ tree is the maximum number of children that an internal node can have. In the context of a B+ tree, the fanout is equal to the maximum number of pointers in an internal node, which is `n + 1`.",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly addresses the maximum number of entries per node and the height of the tree, but it incorrectly calculates the fanout. The fanout should be the same as the maximum number of",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "2b1364c2-342b-4769-b07b-5b30252d34ac",
+    "model_id": "llama-3.1-70b",
+    "question_id": "030a913c-68e4-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "11ce2401-6664-4a7f-a4ca-8ad3da99b509",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 67.62054861111112,
+    "db_correctness_score": 72.00000000000001,
+    "llm_quality_score": 64.1625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.43597222222222,
+    "hallucinations_detected": [
+      {
+        "type": "placement_strategy",
+        "text": "Place these files on the inner tracks of the disk.",
+        "severity": "high"
+      },
+      {
+        "type": "placement_strategy",
+        "text": "interleave the data across the disk",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Place the file in the middle tracks for frequent, random accesses to a small file.",
+      "Place the file and index on the inner tracks for random accesses to a large file via an index.",
+      "Place small files in the inner half of the disk for sequential scans."
+    ],
+    "justification_preview": "The model answer demonstrates a good understanding of DBMS concepts but contains factual inaccuracies and omits key points. It incorrectly suggests placing small, frequently accessed files on inner tr",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "468fc619-b0f8-4913-a051-a3258c228aee",
+    "model_id": "llama-3.1-70b",
+    "question_id": "5b32b074-18b1-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "274f2446-45e6-4910-8c43-819939590acd",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 85.83851236111111,
+    "db_correctness_score": 96.49999999999999,
+    "llm_quality_score": 84.04583333333335,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.49524722222222,
+    "hallucinations_detected": [
+      {
+        "type": "unnecessary_complexity",
+        "text": "The page format includes fields like record_offset and record_length, which are not directly relevant to the directory organization as described.",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is mostly correct and covers the key points about the two internal organizations for heap files and their trade-offs. It correctly identifies the directory of pages as preferable for ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "77f4c192-1547-4c3f-a279-68b1bf3cdf4c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "2f20bbee-5774-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "623af098-1473-42f9-a7d2-1bab1378375a",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.374709861111114,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.99419722222223,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "73f40453-ca0a-4f58-b1e9-b2ed8f92573a",
+    "model_id": "gpt-4o",
+    "question_id": "030a913c-68e4-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e71ccab2-bd42-4e52-8c4c-f1a9583159ea",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 67.31532942818536,
+    "db_correctness_score": 76.5,
+    "llm_quality_score": 61.920833333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 59.78158856370713,
+    "hallucinations_detected": [
+      {
+        "type": "placement_strategy",
+        "text": "Place these files on the inner tracks.",
+        "severity": "high"
+      },
+      {
+        "type": "placement_strategy",
+        "text": "Place these files on the middle tracks.",
+        "severity": "high"
+      },
+      {
+        "type": "placement_strategy",
+        "text": "Place these files on the outer tracks.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Place the file and index on the inner tracks for random access to a large file.",
+      "Place small files in the inner half of the disk for sequential scans."
+    ],
+    "justification_preview": "The model answer correctly identifies strategies for file placement based on access patterns but contains factual inaccuracies and omissions. It incorrectly suggests placing small files with frequent ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d4e41ea8-a0c4-42b8-8976-4205202cc215",
+    "model_id": "llama-3.1-70b",
+    "question_id": "d0b5debe-1efb-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "9a926f03-df6c-43cb-8e60-0c7444186efa",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 78.89233111111112,
+    "db_correctness_score": 85.0,
+    "llm_quality_score": 80.0875,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.32162222222223,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "The pre-fetching done at the disk level varies widely across different drives and manufacturers.",
+      "Segmented caches will not be useful if more files are being accessed than the number of segments."
+    ],
+    "justification_preview": "The model answer is mostly correct but lacks completeness and specificity. It correctly identifies the issues with relying on disk prefetching and the impact of concurrent queries on disk cache. Howev",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "917013f2-7f0c-4d89-8ccb-5d53ec2f7ab8",
+    "model_id": "gpt-4o",
+    "question_id": "2f20bbee-5774-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "f15c0891-1ec8-42a4-b97e-3e8816a14288",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 52.20885770576938,
+    "db_correctness_score": 56.50000000000001,
+    "llm_quality_score": 45.66527777777778,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.185487448720934,
+    "hallucinations_detected": [
+      {
+        "type": "factual",
+        "text": "Since the node can hold a maximum of 2d = 4 keys, no split is needed.",
+        "severity": "critical"
+      },
+      {
+        "type": "factual",
+        "text": "Redistribute from left sibling: No redistribution is needed as the node still has 2 keys which is the minimum for d = 2.",
+        "severity": "high"
+      },
+      {
+        "type": "factual",
+        "text": "Split the leaf node: No split is needed as the node can hold 4 keys.",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Specific page reads/writes for insertion operations",
+      "Impact of deletions on tree structure and potential merges",
+      "Correct handling of node splits and redistributions"
+    ],
+    "justification_preview": "The model answer contains several factual inaccuracies, such as incorrect handling of node splits and redistributions. It also omits key points like the specific page reads/writes for insertion operat",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d18f951a-13c4-4e8b-a2c5-f4b4b0a8d9c5",
+    "model_id": "llama-3.1-70b",
+    "question_id": "7e69b80b-219e-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "cfabd14e-f193-42fb-8f6e-f3208d0322b0",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 82.6111368832983,
+    "db_correctness_score": 96.49999999999999,
+    "llm_quality_score": 73.24583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.74773766596616,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_fact",
+        "text": "51200 bytes is a valid block size",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is mostly correct and complete, with accurate calculations for track, surface, and disk capacities, as well as the number of cylinders. It correctly identifies valid block sizes and c",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "72ad95cf-d361-4836-8c7c-aecebaac6e24",
+    "model_id": "gpt-4o",
+    "question_id": "5b32b074-18b1-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "21bddd2e-77b0-4f8a-97f7-742b65cd9f0b",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 87.98611916140099,
+    "db_correctness_score": 100.0,
+    "llm_quality_score": 91.97500000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.87238322801972,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is factually correct and covers all key points from the expected answer, including the description of both file organizations, trade-offs, and the choice for variable-length records. ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "549146af-f854-4419-ad84-45674507d927",
+    "model_id": "gpt-4o",
+    "question_id": "dcbc750f-9798-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a5e5ad08-d220-4e09-8240-a034f1505e80",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 87.71836294604837,
+    "db_correctness_score": 98.00000000000001,
+    "llm_quality_score": 93.775,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 61.71725892096737,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is factually correct and covers all key points from the expected answer. It accurately describes the process of checking the buffer pool, handling pinned and unpinned pages, and bring",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "fe41e37d-31f2-42a4-b3aa-6d8ea0c9e76f",
+    "model_id": "llama-3.1-70b",
+    "question_id": "dcbc750f-9798-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "80faecf8-2b6d-42ee-b966-52580dcfa443",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.43596405051902,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.21928101038037,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "27ea97eb-fb70-42a8-9fac-f2868ad0bc17",
+    "model_id": "gpt-4o",
+    "question_id": "d0b5debe-1efb-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8f33d945-33d0-4674-bc5c-a7a644b308fb",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 86.40266011027677,
+    "db_correctness_score": 97.49999999999999,
+    "llm_quality_score": 90.78750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 58.328202205535476,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Segmented caches will not be useful if more files are being accessed than the number of segments."
+    ],
+    "justification_preview": "The model answer is largely correct and covers most key points from the expected answer. It accurately explains why a DBMS might not rely on disk prefetching, the impact of concurrent queries on disk ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "57e00335-7cb2-48ad-a233-5e5500f16b0c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "7214203d-8a10-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "4e5e4384-2390-443e-bda2-51932946f100",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 67.09646548611111,
+    "db_correctness_score": 73.5,
+    "llm_quality_score": 59.99583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.95430972222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect recommendation",
+        "text": "Option (c) Clustered B+ tree index on (ename, age, sal) fields of Emp could be beneficial.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Explicit recommendation of unclustered hash index for Query 1 if index-only plans are supported.",
+      "Clear explanation that no index is optimal for Query 1 without index-only plans."
+    ],
+    "justification_preview": "The model answer correctly identifies the best index for Query 2 but fails to clearly recommend the best index for Query 1. It also incorrectly suggests a clustered B+ tree index for Query 1, which is",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "978d0601-f381-4d53-8a3f-b124d03801bc",
+    "model_id": "llama-3.1-70b",
+    "question_id": "68be450a-bd7c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "94d4719d-235e-4cb1-a8b4-731d888436e7",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 76.84717611111111,
+    "db_correctness_score": 89.50000000000001,
+    "llm_quality_score": 65.77083333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.31852222222223,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: static_hash(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: extendible_hash(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: linear_hash(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "irrelevant_example",
+        "text": "Example of static hashing in PostgreSQL",
+        "severity": "low"
+      },
+      {
+        "type": "irrelevant_example",
+        "text": "Example of extendible hashing in PostgreSQL",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [
+      "Overflow handling via chaining in static hashing",
+      "Gradual split in linear hashing"
+    ],
+    "justification_preview": "The model answer is mostly correct and covers key aspects of the hashing techniques, but it includes unnecessary PostgreSQL examples and lacks some specific details from the expected answer. It does n",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "2f478c9b-eb3f-47b1-b126-569fca7c5091",
+    "model_id": "llama-3.1-70b",
+    "question_id": "92d2fe23-fe81-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "5f7b333f-a86e-4e78-b540-73697f8938c7",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 75.0969442361111,
+    "db_correctness_score": 90.49999999999999,
+    "llm_quality_score": 58.312500000000014,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.06388472222223,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: table_name(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      }
+    ],
+    "missing_points": [
+      "Detailed explanation of composite search keys and considerations in choosing them.",
+      "Discussion on index-only plans and their influence on search key choice."
+    ],
+    "justification_preview": "The model answer is mostly correct and covers key points about index types and their uses. However, it lacks depth in discussing composite search keys and index-only plans, which are crucial for compl",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "b5f1164b-73d9-4a2b-bd3d-3ab28bb4716c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "02d0a5cc-5773-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "4da30071-0236-472e-ba65-78d1cc0bed88",
+    "judge_score_0_10": 8.0,
+    "master_composite_score": 86.20003048611112,
+    "db_correctness_score": 95.0,
+    "llm_quality_score": 87.80000000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.20060972222223,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Specific performance metrics for hash and B+-tree indexes (e.g., I/O costs)",
+      "Handling of collisions in hash indexes",
+      "Detailed comparison of insertion and deletion complexities"
+    ],
+    "justification_preview": "The model answer is factually correct and covers most key points, including the use of hash functions for equality searches and the inefficiency of hash indexes for range searches. It also explains B+",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "7fe8c03c-ed33-4fe0-9833-0516814bfe96",
+    "model_id": "gpt-4o",
+    "question_id": "7214203d-8a10-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "af237596-c4c2-4933-91fd-2262998c4a2c",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.2626669013944,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 70.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 60.753338027888105,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "e6da27c8-8e71-4a1b-bd9e-91d827c475bc",
+    "model_id": "gpt-4o",
+    "question_id": "68be450a-bd7c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "7dcf4dcb-2edb-43e3-b4ea-de24ca059b97",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 84.81340855478342,
+    "db_correctness_score": 96.24999999999999,
+    "llm_quality_score": 88.775,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 51.11817109566845,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Overflow handling via chaining in static hashing",
+      "Specific mention of directory doubling in extendible hashing"
+    ],
+    "justification_preview": "The model answer is largely correct and covers most key points, but it omits some details about overflow handling in static hashing and the specific nature of directory doubling in extendible hashing.",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "059b02bd-0f08-46f2-9fae-50c54d056f49",
+    "model_id": "gpt-4o",
+    "question_id": "7e69b80b-219e-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "1b8f7058-4651-4be6-80a8-373e5aefb0a0",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 79.55356384859283,
+    "db_correctness_score": 94.5,
+    "llm_quality_score": 73.24583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 56.59627697185678,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_fact",
+        "text": "51200 bytes is a valid block size",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is mostly correct and complete, with accurate calculations for capacity, cylinders, and rotational delay. However, it incorrectly states that 51200 bytes is a valid block size, which ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "ea98e0fb-b63a-4c83-b2f9-f61a1a5c8b82",
+    "model_id": "llama-3.1-70b",
+    "question_id": "dad55c7e-810c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "28457ee5-a73f-458f-9a99-303c9c51328c",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 89.0585611111111,
+    "db_correctness_score": 97.49999999999999,
+    "llm_quality_score": 93.15,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.27122222222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Interaction details between buffer manager, disk space manager, and file and access methods layer due to truncation"
+    ],
+    "justification_preview": "The model answer is factually correct and aligns well with the expected answer. It covers all key points, including the reasons for storing data on external storage, the importance of I/O costs, the c",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "91da9328-e13c-4bc3-90d2-2ce9b2ef73c3",
+    "model_id": "llama-3.1-70b",
+    "question_id": "f1901f7d-4493-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8b464d5b-4533-4de5-a293-313ff0fcd2f9",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 83.32533849291634,
+    "db_correctness_score": 91.5,
+    "llm_quality_score": 83.9375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.88176985832683,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Using an index is actually worse than a file scan due to high I/O costs with unclustered indexes."
+    ],
+    "justification_preview": "The model answer is factually correct and demonstrates good domain knowledge, but it overemphasizes selectivity without addressing the inefficiency of unclustered index I/Os. It lacks the explicit poi",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "3acc64c0-a979-459f-941d-c1fa133e1f27",
+    "model_id": "gpt-4o",
+    "question_id": "f1901f7d-4493-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "df0625ff-0bd1-48c6-9fdb-d81c7e991a23",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 86.97304900697763,
+    "db_correctness_score": 98.00000000000001,
+    "llm_quality_score": 91.97500000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.610980139552524,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is factually correct and covers the key points from the expected answer, explaining the inefficiency of using an unclustered index for a large number of qualifying records. It lacks a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "c1e43bec-04e6-4ca3-9e80-0a02243a72d8",
+    "model_id": "gpt-4o",
+    "question_id": "92d2fe23-fe81-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0c377197-0991-4025-bf0e-0fd60ba73125",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.11352085557775,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 51.77041711155499,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "6b5f303a-e5af-410a-bc62-3e9ce8391854",
+    "model_id": "llama-3.1-70b",
+    "question_id": "5f979c3f-0e84-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8ca8c4c6-43ed-4ba1-9bcc-b8016c14040d",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 57.266269236111114,
+    "db_correctness_score": 60.0,
+    "llm_quality_score": 49.745833333333344,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.85038472222223,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_information",
+        "text": "Estimated number of tuples: 50,000 * 0.001 = 50",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_information",
+        "text": "Estimated cost: 50 (E) * 2,500 (D) + 50 * 2,500 * 5,000 (F) \u2248 125,000 + 625,000,000",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Correct relational algebra tree",
+      "Correct join orders considered",
+      "Accurate tuple estimates using non-join predicates",
+      "Correct identification of the lowest-cost join order"
+    ],
+    "justification_preview": "The model answer provides a reasonable attempt at addressing the question but contains several inaccuracies and omissions. The relational algebra tree is incorrect, and the join orders considered are ",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.0,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Syntax check error: syntax error at or near \"salary\""
+    }
+  },
+  {
+    "run_id": "56617d4a-f2f4-40b2-842e-7f98b5896b55",
+    "model_id": "gpt-4o",
+    "question_id": "dad55c7e-810c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8b15d749-c610-4de2-97ae-67b24dfcd3f8",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 85.36220111847652,
+    "db_correctness_score": 95.75,
+    "llm_quality_score": 90.78750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.019022369530354,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Explicitly stating that 1 I/O is needed to fetch a record if the page is not in the buffer pool"
+    ],
+    "justification_preview": "The model answer is largely correct and covers most key points from the expected answer. It accurately explains why data is stored on external storage, the importance of I/O costs, and the roles of th",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "c512b22b-93f8-4f11-a2f7-1238f2a6f3ad",
+    "model_id": "llama-3.1-70b",
+    "question_id": "5893d14b-3015-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "98827bdf-fbde-4ac4-a8ef-48466b43f08f",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 49.15011173611111,
+    "db_correctness_score": 46.5,
+    "llm_quality_score": 45.170833333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.97723472222222,
+    "hallucinations_detected": [
+      {
+        "type": "calculation_error",
+        "text": "The number of tuples in R is approximately 34, and in S is 205.",
+        "severity": "high"
+      },
+      {
+        "type": "calculation_error",
+        "text": "The cost of writing out the final result is 15 pages.",
+        "severity": "high"
+      },
+      {
+        "type": "calculation_error",
+        "text": "The total cost for projection followed by join is 710 page accesses.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Cost of join followed by projection on-the-fly",
+      "Impact of having 11 buffer pages on projection sort efficiency"
+    ],
+    "justification_preview": "The model answer contains several factual inaccuracies and omissions. It incorrectly calculates the number of tuples and pages for the final result, and the costs for projection and join operations ar",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d1d4257c-ea10-4450-9e04-c9247577bc5f",
+    "model_id": "gpt-4o",
+    "question_id": "02d0a5cc-5773-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a0740bc7-bab1-4565-b1c4-2a376d166c65",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.089717001905676,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 51.2943400381135,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "5ce48dd6-b4b9-4771-9233-b4ae5b430038",
+    "model_id": "llama-3.1-70b",
+    "question_id": "4e7a2456-43d9-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "c60142c0-0ce2-473b-a00d-52c8c0612dd3",
+    "judge_score_0_10": 10.0,
+    "master_composite_score": 91.38505563645643,
+    "db_correctness_score": 100.0,
+    "llm_quality_score": 96.50000000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.70111272912854,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly identifies the attributes examined for each SQL query, matching the expected answer perfectly. There are no hallucinations or missing points, and the explanation aligns with",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "f17a98ff-f0ae-42c2-9758-c1d99f34e771",
+    "model_id": "gpt-4o",
+    "question_id": "4e7a2456-43d9-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b7b75ae4-fafb-45c4-9c2f-6f777a403d8d",
+    "judge_score_0_10": 10.0,
+    "master_composite_score": 89.7769558158249,
+    "db_correctness_score": 100.0,
+    "llm_quality_score": 96.50000000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 66.53911631649811,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly identifies the attributes examined for each SQL query, matching the expected answer perfectly. There are no factual inaccuracies or omissions, and the explanation is clear a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d3e53aa2-b75e-442e-bb20-1e1ccfa1b05f",
+    "model_id": "llama-3.1-70b",
+    "question_id": "f10e4b18-4023-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a6a9d3bb-0cf4-4018-b573-74af2e454576",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 82.0130948611111,
+    "db_correctness_score": 88.25,
+    "llm_quality_score": 85.125,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.01189722222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed explanation of Sort-Merge Join modifications for outer joins.",
+      "Detailed explanation of Hash Join modifications for outer joins.",
+      "Use of bit flags for unmatched tuples in Sort-Merge and Hash Join."
+    ],
+    "justification_preview": "The model answer correctly describes the modifications needed for Block Nested Loops Join and Index Nested Loops Join for all three types of outer joins. However, it lacks details on Sort-Merge Join a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "b7dab220-489e-4eff-9ecf-a5b1956bb7d6",
+    "model_id": "gpt-4o",
+    "question_id": "5f979c3f-0e84-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "74486d46-8296-4a19-8f34-1ab7653be8cd",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 55.445786541550724,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 68.65,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.0157308310145,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.0,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Syntax check error: syntax error at or near \"\u2265\""
+    }
+  },
+  {
+    "run_id": "06a94229-c3b6-49f3-94e0-d486a49edc83",
+    "model_id": "gpt-4o",
+    "question_id": "5893d14b-3015-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "62eb8391-bc2b-4741-bfa2-e3a50628a664",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 45.399379602068926,
+    "db_correctness_score": 46.5,
+    "llm_quality_score": 40.170833333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 51.962592041378564,
+    "hallucinations_detected": [
+      {
+        "type": "calculation_error",
+        "text": "Number of tuples in R = (Page size * Number of pages) / Tuple size = (1024 * 10) / 300 \u2248 34 tuples",
+        "severity": "critical"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Total pages for result = Number of tuples in R / Tuples per page = 34 / 2 = 17 pages",
+        "severity": "critical"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Cost of writing out the final result: 17 pages",
+        "severity": "critical"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Total cost: 10 (projection) + 1000 (join) = 1010 page I/Os",
+        "severity": "high"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Total cost: 1000 (join) + 0 (projection) = 1000 page I/Os",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Detailed cost analysis for projection followed by join",
+      "Detailed cost analysis for join followed by projection",
+      "Impact of 11 buffer pages on join cost"
+    ],
+    "justification_preview": "The model answer contains several factual inaccuracies, particularly in the calculation of the number of tuples and pages, and the cost of operations. It also omits key points such as the detailed cos",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "02270ecd-a987-4c28-9d5c-9fb542b80937",
+    "model_id": "llama-3.1-70b",
+    "question_id": "d9c7e0be-6bc3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "db75b5a6-ec28-4e4e-8c3c-4938d23f39e9",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 67.52839602333262,
+    "db_correctness_score": 73.5,
+    "llm_quality_score": 61.29583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.79292046665218,
+    "hallucinations_detected": [
+      {
+        "type": "definition",
+        "text": "The reduction factor of an operation is the ratio of the size of the input to the size of the output.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Projection before selection: when inner relation of nested loop is small and projection reduces page count significantly.",
+      "Using unclustered B+ indexes for sort-merge join: good when few tuples/page (one page per tuple), bad when many tuples/page (repeated reads).",
+      "Interesting orders in System R: orderings useful for future operations (ORDER BY, GROUP BY, join) kept even if not cheapest for current step."
+    ],
+    "justification_preview": "The model answer correctly defines an SQL query block and reduction factor, but inaccurately describes the reduction factor as the ratio of input to output size, rather than the fraction of tuples sur",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "cba5dfeb-fdc6-4f53-af76-c86aaf42377f",
+    "model_id": "llama-3.1-70b",
+    "question_id": "bc293c19-a457-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "944dfea9-949d-4349-b564-5e1e3a7eecba",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 73.97443319444444,
+    "db_correctness_score": 85.0,
+    "llm_quality_score": 63.75694444444444,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.94699722222222,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: log_4(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: log_M(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "explanation",
+        "text": "However, a more straightforward approach to estimate the number of passes (P) needed, given the n",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [
+      "Total I/O cost calculation",
+      "Largest file sortable in two passes with 4 buffer pages",
+      "Largest file sortable in two passes with 257 buffer pages"
+    ],
+    "justification_preview": "The model answer correctly calculates the number of sorted subfiles and the number of passes required, aligning with the expected answer. However, it lacks clarity in explaining the total I/O cost and",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "ea3754f4-635b-4db0-acb2-6cf4c2de1894",
+    "model_id": "gpt-4o",
+    "question_id": "f10e4b18-4023-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e83b7348-2922-4ded-92f8-ecc5175689d5",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 79.814828796968,
+    "db_correctness_score": 87.99999999999999,
+    "llm_quality_score": 85.43750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 53.671575939360174,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Explicit mention of using bit flags for unmatched tuples in all join algorithms"
+    ],
+    "justification_preview": "The model answer correctly describes modifications for each join algorithm to handle outer joins, aligning well with the expected answer. However, it lacks explicit mention of using bit flags for unma",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "45472675-dcf6-436b-91c6-dbb2d2f0b86b",
+    "model_id": "gpt-4o",
+    "question_id": "d9c7e0be-6bc3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "c40aedd2-36ec-4b54-b669-f1a558178028",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 69.22831881644497,
+    "db_correctness_score": 77.5,
+    "llm_quality_score": 66.64583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 59.69137632889918,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_statement",
+        "text": "If R and S each have only one tuple per page, using a sort-merge join without sorting via the indexes is not a good idea.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Projection before selection: when inner relation of nested loop is small and projection reduces page count significantly",
+      "Using unclustered B+ indexes for sort-merge join: good when few tuples/page (one page per tuple), bad when many tuples/page (repeated reads)"
+    ],
+    "justification_preview": "The model answer is mostly correct but contains some inaccuracies and omissions. It correctly defines SQL query blocks and reduction factors. However, it inaccurately suggests that using indexes for a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "804b7090-525c-4398-a79f-76bb439844d7",
+    "model_id": "llama-3.1-70b",
+    "question_id": "5875107d-ecdf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "413c78ba-019e-4b4c-874e-f96f21237d65",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 45.65055423611111,
+    "db_correctness_score": 44.50000000000001,
+    "llm_quality_score": 36.8375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.98608472222222,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: log_2(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: log_b(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "calculation_error",
+        "text": "10,000 / (3 - 1) = 10,000 / 2 = 5,000 runs",
+        "severity": "critical"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Total I/O cost would be `number_of_pages * number_of_passes`. Thus, `10,000 * 13 = 130,000` page I/Os.",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Correct calculation of runs in the first pass",
+      "Correct calculation of total I/O cost",
+      "Correct buffer pages required for a two-pass sort"
+    ],
+    "justification_preview": "The model answer contains significant factual inaccuracies, particularly in the calculation of runs and passes, and omits key points such as the correct I/O cost and buffer pages required for a two-pa",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "f7f6669e-4782-44fc-ae9d-23b847434077",
+    "model_id": "llama-3.1-70b",
+    "question_id": "d4ed9772-4281-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "685fc502-ddb9-4159-8116-44b0ea3aae7b",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 30.055841319444447,
+    "db_correctness_score": 14.725,
+    "llm_quality_score": 34.51527777777778,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.77515972222221,
+    "hallucinations_detected": [
+      {
+        "type": "calculation",
+        "text": "The number of sorted runs is 1,000 and the average length of these runs is 10 pages.",
+        "severity": "critical"
+      },
+      {
+        "type": "calculation",
+        "text": "10 merge passes are required to merge all the sorted runs.",
+        "severity": "critical"
+      },
+      {
+        "type": "calculation",
+        "text": "The I/O cost of the additional merge passes is approximately 19,999 pages.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Correct calculation of sorted runs and their average length.",
+      "Correct number of additional merge passes required.",
+      "Accurate I/O cost for sorting and merging.",
+      "Detailed analysis of indexing scenarios and their costs.",
+      "Impact of removing duplicate elimination on query processing."
+    ],
+    "justification_preview": "The model answer contains several inaccuracies and omissions compared to the expected answer. It incorrectly calculates the number of sorted runs and merge passes, leading to incorrect I/O cost estima",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.0,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=0.0, precision=0.0, recall=0.0\nReturned rows: None, Expected rows: None\nExecution error: All SQL candidates failed to execute"
+    }
+  },
+  {
+    "run_id": "7d35ca13-f9ea-475a-a308-474bf0eab80c",
+    "model_id": "gpt-4o",
+    "question_id": "d4ed9772-4281-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "4b9cdddf-6261-4119-bfbe-ec4d8f0d3e83",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 40.225088425113,
+    "db_correctness_score": 19.75,
+    "llm_quality_score": 67.55,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 51.70176850226,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 0.0,
+      "result_set_f1": 0.0,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=0.0, precision=0.0, recall=0.0\nReturned rows: None, Expected rows: None\nExecution error: All SQL candidates failed to execute"
+    }
+  },
+  {
+    "run_id": "e0e51d5c-2ae5-4d12-96e8-badae8e162b3",
+    "model_id": "llama-3.1-70b",
+    "question_id": "7c18de42-3908-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "ab2a2fc7-0ff0-45f1-8b70-ed06a1cb2a7a",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 44.27253048611111,
+    "db_correctness_score": 37.5,
+    "llm_quality_score": 43.920833333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.92560972222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect calculation",
+        "text": "The estimated number of pages retrieved for this condition is `20000 / 80 = 250` pages.",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect assumption",
+        "text": "Since `sid < 50000` covers half of the key range, and there are 50 leaf nodes (pages) in the index, we estimate that approximately half of these pages will be relevant, which is `50 / 2 = 25` pages.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Cost estimation for B+ tree index with clustered and unclustered scenarios",
+      "Full file scan cost for B+ tree index",
+      "Hash index inability to support range queries",
+      "Cost estimation for hash index with primary key"
+    ],
+    "justification_preview": "The model answer provides some correct information about B+ tree indexes but fails to accurately estimate the number of pages retrieved for the given conditions. It lacks specific calculations and con",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "cc8187f1-361c-4cfd-8ea5-be113a093afd",
+    "model_id": "llama-3.1-70b",
+    "question_id": "2b3771b3-253f-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0a381833-e5c1-48fa-a77a-3b9c50343605",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 89.69172185201347,
+    "db_correctness_score": 98.00000000000001,
+    "llm_quality_score": 94.2375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.40943704026937,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly identifies the attributes that must be examined for each query, matching the expected answer. It provides a clear explanation for each query, including the necessity of exam",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "7cb7dda1-ada6-4713-af66-8e421587334f",
+    "model_id": "gpt-4o",
+    "question_id": "5875107d-ecdf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "1b331e2b-6f1a-4cc9-8a87-abfaaa45830e",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 63.85687659398354,
+    "db_correctness_score": 72.50000000000001,
+    "llm_quality_score": 57.75416666666666,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.612531879670755,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: log_4(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: log_2(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: log_16(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Number of runs = 10,000 / 2 = 5,000 runs",
+        "severity": "high"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Number of passes required = \u2308log_2(5000)\u2309 = 13 passes",
+        "severity": "high"
+      },
+      {
+        "type": "calculation_error",
+        "text": "Total I/O cost = 2 * 2,000,000 * 4 = 16,000,000 I/Os",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Correct calculation of runs for scenario (a)",
+      "Correct calculation of passes for scenario (a)",
+      "Correct calculation of I/O cost for scenario (c)",
+      "Correct buffer pages required for two-pass sorting"
+    ],
+    "justification_preview": "The model answer demonstrates a good understanding of external sorting but contains factual inaccuracies and omissions. It incorrectly calculates the number of runs and passes for scenarios (a) and (b",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "344c7de7-a5ee-423f-9eb7-a69f93f29357",
+    "model_id": "gpt-4o",
+    "question_id": "bc293c19-a457-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "ee53735b-3fbc-4c6c-ad7b-3067ddb39300",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 55.99951499291487,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 70.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.49029985829746,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "a21a4051-36ef-4b31-a12a-6c31dbf56799",
+    "model_id": "gpt-4o",
+    "question_id": "7c18de42-3908-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a7e7fed5-9004-4218-8e6f-5a741b492756",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 83.64723392173889,
+    "db_correctness_score": 96.49999999999999,
+    "llm_quality_score": 81.57916666666668,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 68.4696784347777,
+    "hallucinations_detected": [
+      {
+        "type": "underestimation",
+        "text": "1 or 2 (hash index access) + 1 (data page) = 2 or 3 pages.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is mostly correct and aligns well with the expected answer. It accurately describes the use of B+ tree and hash indexes for the given queries, correctly identifying the limitations of",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "c0abefdd-bc73-4171-983f-8517e42888b2",
+    "model_id": "gpt-4o",
+    "question_id": "2b3771b3-253f-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a17913ed-a00a-4268-bb84-fe25ba073885",
+    "judge_score_0_10": 9.5,
+    "master_composite_score": 87.93198878562592,
+    "db_correctness_score": 98.00000000000001,
+    "llm_quality_score": 94.2375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 63.214775712518325,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly identifies the attributes that must be examined for each query, matching the expected answer. It provides a detailed explanation for each query, considering both selected at",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "321d5c5c-7f1b-4373-be43-3779f73b4762",
+    "model_id": "llama-3.1-70b",
+    "question_id": "2bd29bcd-ab98-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "3936d051-4186-4ae0-996f-032e1c26c16a",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 51.35565069312459,
+    "db_correctness_score": 45.00000000000001,
+    "llm_quality_score": 54.7625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 98.53801386249165,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_information",
+        "text": "The maximum number of log records that can be written before restart completes successfully is equal to the number of update and other log records written before the crash.",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_information",
+        "text": "The oldest log record we need to retain is the one that contains the last checkpoint or the first log record that was not checkpointed, whichever is more recent.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "The maximum number of log records is 2n, where n is the number of uncommitted transactions.",
+      "The oldest log record needed is the oldest begin_checkpoint referenced in any fuzzy dump or master log record.",
+      "Ensure storage for twice the current number of log records and perform a fuzzy dump when necessary."
+    ],
+    "justification_preview": "The model answer contains factual inaccuracies and omits key points from the expected answer. It incorrectly states the maximum number of log records as U + O, whereas it should be 2n. It also misrepr",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "75378234-7172-4bee-9e5e-715a1a2316f2",
+    "model_id": "llama-3.1-70b",
+    "question_id": "836478e1-173a-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "210f0778-e06c-4820-9838-16450e7d62f9",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.87286611111111,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.95732222222222,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "a3c0d86c-0cac-473d-a504-7e950fbe5077",
+    "model_id": "llama-3.1-70b",
+    "question_id": "8c8ebfcf-0330-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "5fe7d074-034d-4d02-9242-09f270526b2f",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 42.52157923611111,
+    "db_correctness_score": 35.0,
+    "llm_quality_score": 42.24583333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.95658472222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect assumption",
+        "text": "The LSN in the master log record would be the last one written before the final crash, which we'll consider as part of the recovery process.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Specific actions during Analysis phase",
+      "Detailed steps during Redo phase",
+      "Detailed steps during Undo phase",
+      "Final log state after recovery"
+    ],
+    "justification_preview": "The model answer lacks specificity and contains inaccuracies regarding the LSN in the master log record and the recovery phases. It fails to provide a clear and correct sequence of actions during Anal",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "6167351e-8610-44e0-987b-b710dc203199",
+    "model_id": "gpt-4o",
+    "question_id": "2bd29bcd-ab98-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "28b46ecf-11a9-4eb5-bc4c-4348cc4aaad7",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 57.37793109439608,
+    "db_correctness_score": 55.00000000000001,
+    "llm_quality_score": 64.27916666666668,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 61.88362188792145,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect claim",
+        "text": "The maximum number of log records that can be written during recovery is proportional to the number of update log records written before the crash.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Maximum number of log records is 2n.",
+      "Oldest log record is the oldest begin_checkpoint referenced.",
+      "Need to hold twice as many records as current log records."
+    ],
+    "justification_preview": "The model answer partially addresses the questions but lacks precision and completeness. It fails to specify the maximum number of log records as 2n, omits the specific reference to the oldest begin_c",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "b1919e59-5b8d-4d82-97f1-b858bf16a6e8",
+    "model_id": "llama-3.1-70b",
+    "question_id": "d1d97baf-9e4c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "24e3d242-e0d5-428c-af52-160a8a338068",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 62.12022444000253,
+    "db_correctness_score": 65.0,
+    "llm_quality_score": 58.295833333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 92.62948880005065,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_start_point",
+        "text": "Redo begins after Analysis, at the last complete checkpoint (LSN 10)",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Specific details about the contents of the Transaction Table and Dirty Page Table during Analysis",
+      "Correct starting point for Redo phase (smallest recLSN in DPT)",
+      "Detailed actions during Redo and Undo phases"
+    ],
+    "justification_preview": "The model answer provides a general overview of the ARIES phases but lacks specific details required for full correctness and completeness. It incorrectly states the starting point of the Redo phase a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4a2edc3f-efd2-4aed-a94d-e7fa252c93a2",
+    "model_id": "gpt-4o",
+    "question_id": "d1d97baf-9e4c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "20781681-6208-4026-aa29-edaf1082320c",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 66.255184058757,
+    "db_correctness_score": 65.0,
+    "llm_quality_score": 77.9625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.32868117514,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed reconstruction of the transaction table during Analysis",
+      "Detailed reconstruction of the dirty page table during Analysis",
+      "Specific redo actions for each LSN during Redo phase",
+      "Specific undo actions for each LSN during Undo phase"
+    ],
+    "justification_preview": "The model answer provides a general overview of the ARIES phases but lacks precision and completeness in describing the specific actions during each phase. It misses details about the transaction and ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "88b60b36-5424-4deb-9367-e6b1757dd71a",
+    "model_id": "gpt-4o",
+    "question_id": "836478e1-173a-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "6b638dd7-90ed-4db2-a39f-96eb7bf0f775",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.71872485442772,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 53.87449708855437,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "ca10abe1-307a-4b5e-a700-9c4ebbca88dc",
+    "model_id": "gpt-4o",
+    "question_id": "8c8ebfcf-0330-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "dd35f901-a135-4d10-81cd-cfd347981b00",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 51.09743784522132,
+    "db_correctness_score": 55.00000000000001,
+    "llm_quality_score": 46.11250000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 45.27375690442631,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_fact",
+        "text": "The value of the LSN stored in the master log record is 10.",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Specific actions during Analysis phase",
+      "Detailed Redo actions for each LSN",
+      "Detailed Undo actions with CLRs",
+      "Complete log reconstruction with prevLSN and undonextLSN"
+    ],
+    "justification_preview": "The model answer correctly identifies the phases of the ARIES recovery algorithm but contains factual inaccuracies and omits key details. It incorrectly states the LSN stored in the master log record ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "cbd61866-b1c1-4331-9a8b-5a66e0ea6fe7",
+    "model_id": "llama-3.1-70b",
+    "question_id": "be6d6e30-18b2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b523f62d-2dea-4edb-afe7-b6f6b587c00a",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.89366611111111,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.37332222222223,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "05707575-d95b-401f-b791-df1ee6572700",
+    "model_id": "gpt-4o",
+    "question_id": "be6d6e30-18b2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "c95200a3-3703-4b93-b3af-18f4395745c1",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 83.23501515538084,
+    "db_correctness_score": 90.00000000000001,
+    "llm_quality_score": 93.15,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.80030310761668,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "The model answer is factually correct and aligns well with the expected answer. It covers all key sub-points, including atomicity, durability, stable storage vs. disk, system crash vs. media failure, ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "735daf51-06a7-4e9a-a46e-ad6854f48669",
+    "model_id": "llama-3.1-70b",
+    "question_id": "46a50244-6923-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "2cf42e80-fcb9-4dad-936a-5226f5f2583d",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 63.219292986111114,
+    "db_correctness_score": 65.0,
+    "llm_quality_score": 61.24583333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.91085972222223,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_lock_type",
+        "text": "IS lock on F1 for operation 3 instead of S lock",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_lock_type",
+        "text": "IS lock on F1 for operation 5 instead of S lock",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_lock_type",
+        "text": "IS lock on F1 for operation 6 instead of SIX lock",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Performance consideration for operation 5",
+      "SIX lock on F1 for operation 6"
+    ],
+    "justification_preview": "The model answer demonstrates a good understanding of multiple-granularity locking but contains factual inaccuracies and omissions. It incorrectly suggests IS locks for operations that require S or SI",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "58455a44-8c3a-45b5-99dd-cd067cea31f2",
+    "model_id": "llama-3.1-70b",
+    "question_id": "c0d653bd-3abd-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "f71d54e6-85de-4b77-9e0c-362c307404dd",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 75.47984548611112,
+    "db_correctness_score": 75.0,
+    "llm_quality_score": 85.43750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.97190972222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Specific mention of predicate locks for SERIALIZABLE isolation levels",
+      "Assumptions about other classes' locking protocols"
+    ],
+    "justification_preview": "The model answer provides a detailed explanation of the locking protocols for each class and addresses the questions about schedule properties. However, it lacks specific mention of predicate locks fo",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "9083f351-66b5-4788-bab6-32604f7cff09",
+    "model_id": "llama-3.1-70b",
+    "question_id": "316cc7c0-34d5-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "1f361981-58c9-4b91-95f5-42d96df9b990",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 51.651259236111116,
+    "db_correctness_score": 45.00000000000001,
+    "llm_quality_score": 55.929166666666674,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.45018472222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_detail",
+        "text": "Timestamp without the Thomas Write Rule is a circle that overlaps with 2PL but is not a subset.",
+        "severity": "medium"
+      },
+      {
+        "type": "incorrect_detail",
+        "text": "Multiversion concurrency control is another circle, which may overlap with others but is distinct due to its approach of maintaining multiple versions of data.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Specific regions S1-S32 and their corresponding schedules",
+      "Accurate extension of the Venn diagram to include serializable and conflict-serializable schedules"
+    ],
+    "justification_preview": "The model answer provides a general description of the Venn diagram and example schedules but lacks specific details and accuracy compared to the expected answer. It fails to mention specific regions ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "e8140fe6-9e1b-4c96-a579-094fbbfb18cb",
+    "model_id": "gpt-4o",
+    "question_id": "46a50244-6923-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "30d80e70-3b06-4fb3-94a3-02a59df04f74",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 57.00072809199967,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 59.51456183999342,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "6b13e342-16cd-47c8-9700-5de9ab3d0fc2",
+    "model_id": "llama-3.1-70b",
+    "question_id": "b4e1a627-1c37-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "6b129684-24bb-4361-97dd-b78b660973c0",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 40.90250861111111,
+    "db_correctness_score": 35.0,
+    "llm_quality_score": 36.8375,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.02517222222222,
+    "hallucinations_detected": [
+      {
+        "type": "factual_inaccuracy",
+        "text": "This protocol ensures serializability because every transaction gets an exclusive lock on the data item before writing, and these locks are held until the end of the transaction.",
+        "severity": "critical"
+      },
+      {
+        "type": "factual_inaccuracy",
+        "text": "Since serializability is ensured, conflict-serializability is also ensured.",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Complete analysis for Protocol 3",
+      "Complete analysis for Protocol 4"
+    ],
+    "justification_preview": "The model answer contains factual inaccuracies, particularly in its analysis of Protocol 1, where it incorrectly claims serializability and conflict-serializability. It also fails to complete the anal",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "ba5be7d3-b5f8-4049-b0a8-5a25b1b1895f",
+    "model_id": "gpt-4o",
+    "question_id": "b4e1a627-1c37-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "a8dc3a93-d4c5-49dc-8204-291737efb084",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 61.32669324310284,
+    "db_correctness_score": 65.0,
+    "llm_quality_score": 61.87083333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 55.30886486205675,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_claim",
+        "text": "Recoverability: Ensured. Since exclusive locks are held until the end of the transaction, a transaction can only read committed data.",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_claim",
+        "text": "Avoidance of Cascading Aborts: Ensured. Since exclusive locks are held until the end, no other transaction can read uncommitted data, preventing cascading aborts.",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_claim",
+        "text": "Avoidance of Cascading Aborts: Not ensured. Since shared locks can be released at any time, a transaction might read uncommitted data, leading to cascading aborts if the writing transaction aborts.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer correctly identifies the properties for protocols 2, 3, and 4, but incorrectly claims recoverability and avoidance of cascading aborts for protocol 1. It also incorrectly states that ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "a34f87b3-f1ab-46f3-885d-df768e97e3ab",
+    "model_id": "gpt-4o",
+    "question_id": "c0d653bd-3abd-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "f8d45e37-d4f2-4839-9b7d-5ed65297aa36",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.9660176777324,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 58.820353554648094,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "c7b2641c-ea2a-4a6e-b915-6b69c8c5f56a",
+    "model_id": "gpt-4o",
+    "question_id": "316cc7c0-34d5-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "04f7fe86-bba5-4efd-9da9-85bad582679c",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 50.11075588486842,
+    "db_correctness_score": 45.00000000000001,
+    "llm_quality_score": 59.55416666666666,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 44.890117697368304,
+    "hallucinations_detected": [
+      {
+        "type": "diagram_structure",
+        "text": "The Venn diagram structure provided is not fully accurate or detailed as per the expected answer.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Specific example schedules for each region in the Venn diagram",
+      "Extension of the Venn diagram to include serializable and conflict-serializable schedules"
+    ],
+    "justification_preview": "The model answer provides a partial explanation of the Venn diagram and concurrency control protocols but lacks specific example schedules for each region and does not fully extend the diagram to incl",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "7d720f0f-4d08-4ad8-aa5d-117c4868ae40",
+    "model_id": "llama-3.1-70b",
+    "question_id": "76579c82-c472-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "abab76ef-8003-487a-8912-f6eb59fe1b60",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 53.96474298611112,
+    "db_correctness_score": 45.00000000000001,
+    "llm_quality_score": 63.72083333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.96985972222222,
+    "hallucinations_detected": [
+      {
+        "type": "irrelevant_detail",
+        "text": "The detailed creation of Suppliers and Parts tables, which are not directly relevant to the isolation level differences being demonstrated.",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [
+      "Specific SQL statements and database instances for REPEATABLE READ vs READ COMMITTED.",
+      "Specific SQL statements and database instances for READ COMMITTED vs READ UNCOMMITTED.",
+      "Explanation of unrepeatable read and dirty read scenarios."
+    ],
+    "justification_preview": "The model answer provides a basic setup for demonstrating isolation level differences but lacks specific examples for each scenario. It correctly outlines the SERIALIZABLE vs REPEATABLE READ scenario ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "2e4f5505-8796-49e0-84cf-207e06bc795e",
+    "model_id": "llama-3.1-70b",
+    "question_id": "8166dd0c-cff1-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0e8b7acf-180c-493f-a882-fcb06e27fde5",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 57.95988611111111,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 68.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.69772222222221,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "5c4f3353-c6fa-43e0-8a80-2f26ebe82f3c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "e4e291f7-4535-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b07491c7-160f-477d-be7a-67f923255c6f",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 68.68779611111111,
+    "db_correctness_score": 65.0,
+    "llm_quality_score": 79.4625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.98092222222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed explanation of convoys and how a lock manager should handle them",
+      "Explanation of why downgrades violate 2PL but are acceptable",
+      "Use of update locks in conjunction with lock downgrades",
+      "Comparison of timestamps for deadlock prevention vs. concurrency control",
+      "Thomas Write Rule",
+      "Conflict and view equivalence",
+      "Examples of serializable and strict schedules",
+      "Use of locks in Optimistic Concurrency Control"
+    ],
+    "justification_preview": "The model answer covers several key points but lacks completeness and specificity. It correctly describes lock manager implementation, atomicity of lock operations, and differences between locks and l",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "95022369-28ca-4eeb-908f-d0765c062667",
+    "model_id": "gpt-4o",
+    "question_id": "8166dd0c-cff1-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "2788ed24-7e99-4016-bee3-037de5bebef3",
+    "judge_score_0_10": 3.5,
+    "master_composite_score": 40.904156960873166,
+    "db_correctness_score": 35.0,
+    "llm_quality_score": 45.87083333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 42.85813921746321,
+    "hallucinations_detected": [
+      {
+        "type": "factual",
+        "text": "Schedule 1 is allowed under Optimistic and Multiversion protocols.",
+        "severity": "high"
+      },
+      {
+        "type": "factual",
+        "text": "Schedule 2 is allowed under Strict 2PL and Conservative 2PL.",
+        "severity": "high"
+      },
+      {
+        "type": "factual",
+        "text": "Schedule 3 is allowed under Optimistic protocol.",
+        "severity": "high"
+      },
+      {
+        "type": "factual",
+        "text": "Schedule 4 is allowed under Optimistic protocol.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Correct analysis for all schedules and protocols.",
+      "Equivalent serial schedules for Thomas Write Rule."
+    ],
+    "justification_preview": "The model answer contains several factual inaccuracies and omissions compared to the expected answer. It incorrectly states that some schedules are allowed under certain protocols when they are not, a",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "2a888a4c-f793-4363-a9e5-f1fafe4c7150",
+    "model_id": "gpt-4o",
+    "question_id": "e4e291f7-4535-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "9aa95f94-dc34-4604-ba8d-217355e1e078",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 72.64906723531145,
+    "db_correctness_score": 75.0,
+    "llm_quality_score": 84.8125,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 44.10634470622903,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Specific handling techniques for convoys like lock timeouts and priority inheritance",
+      "Explanation of why downgrades are acceptable if the transaction has not modified the object",
+      "Detailed explanation of the Thomas Write Rule"
+    ],
+    "justification_preview": "The model answer is mostly correct and covers many key points, but it is incomplete and lacks some specific details from the expected answer. It correctly describes lock manager implementation, atomic",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "d0f49bde-102c-4cd1-bae0-283e853f31c2",
+    "model_id": "llama-3.1-70b",
+    "question_id": "f25e0c1c-d0e0-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "66618f2d-4a72-48ea-a8b6-f3ce1d124946",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.5807379861111,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 70.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.11475972222222,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "c34d0f22-f6dd-45a9-992f-562ddcf0e031",
+    "model_id": "gpt-4o",
+    "question_id": "76579c82-c472-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "2c72c2a0-7b3e-427e-af18-32e007834600",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 47.85647104873617,
+    "db_correctness_score": 45.00000000000001,
+    "llm_quality_score": 50.59583333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 53.55442097472335,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_explanation",
+        "text": "Under SERIALIZABLE, T2 will see the cost as 100.0 because it must appear as if T1 and T2 execute in some serial order, and T2 reads the initial state before T1's update.",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_explanation",
+        "text": "Under REPEATABLE READ, T2 will also see the cost as 100.0 because it holds a read lock on the row, preventing T1's update from being visible until T2 commits.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Phantom problem illustration for SERIALIZABLE vs REPEATABLE READ",
+      "Unrepeatable read illustration for REPEATABLE READ vs READ COMMITTED",
+      "Dirty read illustration for READ COMMITTED vs READ UNCOMMITTED"
+    ],
+    "justification_preview": "The model answer provides some correct SQL statements and schedules for illustrating isolation level differences, but it lacks completeness and accuracy. It fails to address the phantom problem in SER",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "9a1d18bb-f34c-4920-bf39-29cc3f07febb",
+    "model_id": "gpt-4o",
+    "question_id": "f25e0c1c-d0e0-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "fbf8a019-b23c-4a25-b631-b01795f2562a",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 61.18289989502218,
+    "db_correctness_score": 65.0,
+    "llm_quality_score": 60.62083333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 59.93299790044356,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_isolation_level",
+        "text": "Read Committed for enrolling a student into a class",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_isolation_level",
+        "text": "Read Committed for showing the number of students enrolled in each class",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Use of READ UNCOMMITTED for inserting a new enrollment",
+      "Use of SERIALIZABLE for counting students per class to prevent phantom reads"
+    ],
+    "justification_preview": "The model answer correctly identifies the isolation levels for transactions 2 and 3, aligning with the expected answer. However, it incorrectly suggests 'Read Committed' for transactions 1 and 4, wher",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "9c1e6d10-b5c2-47cf-b198-f25b49087990",
+    "model_id": "llama-3.1-70b",
+    "question_id": "a9462bff-64df-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "cfe93922-403e-4612-be23-2c342fde6065",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.88189486111111,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.13789722222222,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "bf387dde-f504-4eea-bfed-81095caad48c",
+    "model_id": "llama-3.1-70b",
+    "question_id": "a16ad64a-b216-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "127ff9f7-a11b-438b-a6c9-7beb5b4493b7",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 79.06776486111112,
+    "db_correctness_score": 85.00000000000001,
+    "llm_quality_score": 80.64166666666668,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.50529722222223,
+    "hallucinations_detected": [
+      {
+        "type": "minor_inaccuracy",
+        "text": "This problem can occur even in a database where the set of database objects is fixed and only the values of objects can be changed.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Detailed explanation of unrepeatable read with example",
+      "Explanation of avoids-cascading-aborts schedule with example"
+    ],
+    "justification_preview": "The model answer is mostly correct and covers the key points, but it lacks some details and has minor inaccuracies. It correctly defines transactions and the ACID properties, but the explanation of th",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "0e37f233-033e-4a51-b5ae-29a231df5c9f",
+    "model_id": "llama-3.1-70b",
+    "question_id": "848c4a51-e9ab-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "06700c1f-6aa8-418b-8d99-80aa17d9bddc",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 82.73882861111112,
+    "db_correctness_score": 89.50000000000001,
+    "llm_quality_score": 85.43750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.15157222222221,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Verification methods like confirming address or social security number",
+      "External steps to verify Mary's information such as calling or mailing"
+    ],
+    "justification_preview": "The model answer is mostly correct and covers key points, but lacks some details from the expected answer. It correctly explains SSL/TLS and digital signatures but omits specific verification methods ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "99a67e7d-3e9d-4a10-ba7a-637555439fe5",
+    "model_id": "gpt-4o",
+    "question_id": "a9462bff-64df-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b450151b-a839-450d-b4f4-8077746ee6dc",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 73.25710357443366,
+    "db_correctness_score": 75.0,
+    "llm_quality_score": 85.43750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 52.51707148867304,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed explanation of conflict pairs (IR, IW, DR, DW) and their ordering in a serial schedule."
+    ],
+    "justification_preview": "The model answer is mostly correct and covers the key points about concurrency and serializability with I and D locks. However, it lacks a detailed explanation of the specific conflict pairs and their",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "5b05e905-4077-4259-bd1b-991f6454f484",
+    "model_id": "llama-3.1-70b",
+    "question_id": "f4ddd3bd-b9b0-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "3de56876-56b4-4023-980a-b8d34cb36f26",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 84.76355736111111,
+    "db_correctness_score": 90.00000000000001,
+    "llm_quality_score": 91.35,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.17114722222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Complete explanation for how Strict 2PL disallows the write-write conflict schedule."
+    ],
+    "justification_preview": "The model answer correctly provides examples of write-read, read-write, and write-write conflicts and explains how Strict 2PL disallows each schedule. The examples align with the criteria for each con",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4743ad1b-750b-46ec-b31c-54e498e7df9d",
+    "model_id": "gpt-4o",
+    "question_id": "f4ddd3bd-b9b0-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "25b8a327-f469-4556-b717-6c6b14769288",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.43548138442503,
+    "db_correctness_score": 50.0,
+    "llm_quality_score": 68.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 66.20962768850069,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "86d3968e-c783-44f3-86a1-cad210bd92a4",
+    "model_id": "gpt-4o",
+    "question_id": "a16ad64a-b216-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e764c842-efd9-458a-bd02-adb23dcb4430",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 80.24519775071225,
+    "db_correctness_score": 85.00000000000001,
+    "llm_quality_score": 90.47500000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 62.05395501424484,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed explanation of how a transaction is seen by the DBMS as a series of actions.",
+      "Explanation of 'unrepeatable read' involving another transaction modifying the value.",
+      "Complete explanation of the phantom problem in a fixed set of database objects."
+    ],
+    "justification_preview": "The model answer is mostly correct and covers the key points, but it lacks some details and has minor omissions. It accurately describes transactions and ACID properties, defines most terms correctly,",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "30604060-f801-4ddf-8ce3-fb9752ce22eb",
+    "model_id": "gpt-4o",
+    "question_id": "848c4a51-e9ab-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "abd1fc01-3aea-4cc3-b98e-ea42731ade78",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 83.50978007885453,
+    "db_correctness_score": 92.5,
+    "llm_quality_score": 90.47500000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 52.3456015770907,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Verification methods like confirming Mary's address or social security number",
+      "External steps to verify Mary's information such as calling her or sending a letter"
+    ],
+    "justification_preview": "The model answer is largely correct and covers most key points from the expected answer. It accurately describes authentication mechanisms, SSL/TLS, and the role of a CA. It also discusses email authe",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "fbbe8dfc-8200-417e-a409-02d4f09b334d",
+    "model_id": "llama-3.1-70b",
+    "question_id": "ed3b91e8-8cb8-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "18453388-13c0-4098-b265-a720a96dc38d",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 60.06850361111111,
+    "db_correctness_score": 60.0,
+    "llm_quality_score": 59.01250000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.29507222222222,
+    "hallucinations_detected": [
+      {
+        "type": "index_suggestion",
+        "text": "B-Tree Index on Dept(did)",
+        "severity": "high"
+      },
+      {
+        "type": "index_suggestion",
+        "text": "B-Tree Index on Dept(dname)",
+        "severity": "high"
+      },
+      {
+        "type": "strategy_suggestion",
+        "text": "Denormalization by adding manager_name to Dept",
+        "severity": "medium"
+      },
+      {
+        "type": "strategy_suggestion",
+        "text": "Materialized Views for Average Salary Calculation",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Clustered B+ tree index on (location, dname) of Dept",
+      "Hash index on eid of Emp",
+      "Horizontal decomposition of Dept by location",
+      "Sorted file organizations"
+    ],
+    "justification_preview": "The model answer provides some correct suggestions but deviates significantly from the expected answer. It incorrectly suggests B-Tree indexes on attributes not aligned with the query requirements and",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "c8213f6d-af64-4e1b-8c69-009089e99093",
+    "model_id": "gpt-4o",
+    "question_id": "ed3b91e8-8cb8-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e30781ef-2776-4ab5-bbdb-3d292ca4aa1b",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 67.16862561001058,
+    "db_correctness_score": 75.5,
+    "llm_quality_score": 64.1625,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 53.39751220021163,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_index_suggestion",
+        "text": "Create a B-tree index on the `dname` attribute to facilitate sorting.",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_index_suggestion",
+        "text": "Create a B-tree index on `managerid` to efficiently join with the `Dept` relation.",
+        "severity": "high"
+      },
+      {
+        "type": "unnecessary_strategy",
+        "text": "Consider denormalizing the relations by adding `sal` directly to the `Dept` relation.",
+        "severity": "medium"
+      },
+      {
+        "type": "unnecessary_strategy",
+        "text": "Create a materialized view that precomputes the necessary joins and aggregates for the queries.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Horizontal decomposition of Dept by location",
+      "Sorted file organizations for Dept on dname and Emp on eid"
+    ],
+    "justification_preview": "The model answer provides a reasonable approach to file structures and indexes but deviates from the expected answer by suggesting denormalization and materialized views, which are not mentioned in th",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "7ad586d2-b365-4e58-8463-89c33b20f619",
+    "model_id": "llama-3.1-70b",
+    "question_id": "165c1883-b2d7-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "0f07bd30-db33-4b52-8294-bf0d319e3fb0",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.38206861111111,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.14137222222222,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "01c11247-6df5-45a8-a7a4-1b6e445a67ab",
+    "model_id": "llama-3.1-70b",
+    "question_id": "8fdae0f0-6d9c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "58501f7e-78a0-4344-92fb-3581ff267175",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 82.75359776402647,
+    "db_correctness_score": 89.50000000000001,
+    "llm_quality_score": 85.43750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.44695528052912,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Short-circuit evaluation in the first query when few employees have sal > 100k.",
+      "Impact of indexing on the view in the second query.",
+      "Specific indexing strategy using B+ Tree on age, sal for the alternative query."
+    ],
+    "justification_preview": "The model answer correctly identifies scenarios where each query might outperform the other, but it lacks specific details about short-circuit evaluation and the impact of indexing on the view. The al",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "520e7aee-eecc-4dbe-a808-f676219c9069",
+    "model_id": "llama-3.1-70b",
+    "question_id": "7d55f825-7bb2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "f87ac90a-7e4f-45ed-b641-b3e458d6f940",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 56.30751611111111,
+    "db_correctness_score": 60.0,
+    "llm_quality_score": 46.51250000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.07532222222221,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: functional_dependencies(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: compute_closure(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "incorrect_claim",
+        "text": "testing whether a relation scheme is in 3NF can be done in polynomial time as well",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "Explanation of why there is no polynomial time algorithm for 3NF due to NP-completeness",
+      "Detailed complexity analysis for BCNF testing as O(|f|\u00b7|F|)"
+    ],
+    "justification_preview": "The model answer provides a general approach to testing BCNF and 3NF but contains inaccuracies and lacks completeness. It incorrectly claims polynomial time for 3NF testing and omits key details about",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "c87ed2c1-7e18-4f1c-a85a-0c1df3e0d8d4",
+    "model_id": "gpt-4o",
+    "question_id": "de8d7541-6edf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8eff07e5-408e-4516-9bd1-2459609d1bf3",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 75.94169658962853,
+    "db_correctness_score": 83.50000000000001,
+    "llm_quality_score": 80.0875,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 53.30893179257059,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Dense unclustered B+ tree index on (age, sal) for index-only scan (query e).",
+      "Dense unclustered B+ tree index on sal for average salary (query d).",
+      "Detailed steps of the automatic index tuning wizard."
+    ],
+    "justification_preview": "The model answer provides a reasonable approach to designing the physical schema with appropriate indexes for the given queries. However, it lacks some specific details from the expected answer, such ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "ecdc6962-c4e7-489f-ba2b-a3feab28f5dd",
+    "model_id": "llama-3.1-70b",
+    "question_id": "de8d7541-6edf-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b7c71427-9e15-4022-ac82-49924fd34fec",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 55.273026111111115,
+    "db_correctness_score": 55.50000000000001,
+    "llm_quality_score": 50.59583333333333,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.88552222222222,
+    "hallucinations_detected": [
+      {
+        "type": "indexing_strategy",
+        "text": "Create a clustered B+ tree index on Emp(ename) to support query 1, which retrieves employees by name.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Dense unclustered B+ tree on (age, sal) for index-only scan (query e).",
+      "Unclustered B+ on deptid of Emp + unclustered on (dname, did) of Dept (query b).",
+      "Dense unclustered B+ tree on sal for average salary (query d)."
+    ],
+    "justification_preview": "The model answer provides some correct indexing strategies but lacks completeness and specificity. It misses key points such as the dense unclustered B+ tree on (age, sal) for index-only scans and the",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "84bb2c4e-1399-4613-8d37-0c4f0c8a4d44",
+    "model_id": "gpt-4o",
+    "question_id": "165c1883-b2d7-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "c7b3b62b-e41b-4551-8368-1c5ffb67db81",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 78.61468467089173,
+    "db_correctness_score": 87.0,
+    "llm_quality_score": 84.8125,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 43.41869341783493,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Specific example of covert channels using statistical databases.",
+      "Detailed example of polyinstantiation with specific data entries.",
+      "Complete explanation of statistical database system limits, including maximum intersection of queries."
+    ],
+    "justification_preview": "The model answer is mostly correct and covers many key points, but it lacks completeness in some areas and omits specific examples and details from the expected answer. It correctly explains the Bell-",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "0f1c5ac9-72f6-405a-abca-e76b9d6f9340",
+    "model_id": "llama-3.1-70b",
+    "question_id": "a0444786-68c6-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "634f55e0-1197-4a76-8970-1ffcac6289cc",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 49.02834780239496,
+    "db_correctness_score": 48.50000000000001,
+    "llm_quality_score": 41.362500000000004,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.3919560478992,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_definition",
+        "text": "F is preserved if for every functional dependency X \u2192 Y in F, there exists a relation Ri such that X \u2286 attributes(Ri) and Y \u2286 attributes(Ri).",
+        "severity": "critical"
+      },
+      {
+        "type": "incorrect_algorithm",
+        "text": "The algorithm checks if X \u2286 attributes(Ri) and Y \u2286 attributes(Ri) for each dependency.",
+        "severity": "critical"
+      }
+    ],
+    "missing_points": [
+      "The closure of the union of the projections of F on Ri should equal F.",
+      "The algorithm should involve computing the closure of S \u2229 Ri relative to F and projecting this closure."
+    ],
+    "justification_preview": "The model answer provides a basic understanding of dependency preservation but deviates significantly from the expected answer. It incorrectly defines dependency preservation and provides an incorrect",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "cc16f7ad-a1a9-420d-99fd-7400551eee29",
+    "model_id": "gpt-4o",
+    "question_id": "8fdae0f0-6d9c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e18e7630-e4a9-4a6b-98a3-18f1760eb9d3",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 70.35873710858603,
+    "db_correctness_score": 79.5,
+    "llm_quality_score": 70.25416666666668,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 40.649742171720575,
+    "hallucinations_detected": [
+      {
+        "type": "performance_assumption",
+        "text": "The optimizer can efficiently handle the correlated subquery, especially if the correlation between E1.dname and D2.dname is strong and the subquery returns a small result set.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Short-circuit evaluation in the first query when few/no employees have sal > 100k.",
+      "Impact of indexing on the view in the second query."
+    ],
+    "justification_preview": "The model answer provides a reasonable analysis of the scenarios where each query might outperform the other, but it lacks specific details about short-circuit evaluation and the impact of indexing on",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "f051a244-a8cd-46f3-8cf0-cef00613d1e8",
+    "model_id": "gpt-4o",
+    "question_id": "7d55f825-7bb2-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "9a85a010-42ec-4fca-97f0-ca4d4042428c",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.67745750897975,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 63.04915017959498,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "bd52d682-d289-48fd-9d21-22380b59d1ff",
+    "model_id": "llama-3.1-70b",
+    "question_id": "586b20c9-c06c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "f1cf3d5f-3147-46eb-9190-5077a203c999",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 82.73534798611112,
+    "db_correctness_score": 89.50000000000001,
+    "llm_quality_score": 85.43750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.08195972222222,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Use of notation C = R1\u2229R2, X = R1\u2212C, Y = R2\u2212C",
+      "Explicit demonstration of join dependency violation for lossy case"
+    ],
+    "justification_preview": "The model answer correctly addresses the lossless-join decomposition condition and provides a structured proof for both directions. However, it lacks the detailed explanation and notation used in the ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "95cb9676-f92b-44f6-b584-7e1d2ad1e038",
+    "model_id": "llama-3.1-70b",
+    "question_id": "e6f3c650-6091-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b08f1643-30b2-426d-82aa-4e3a1c8d4d9a",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 53.69780361111111,
+    "db_correctness_score": 52.5,
+    "llm_quality_score": 50.32083333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.03107222222222,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_key",
+        "text": "Candidate key: BC (since B \u2192 C and C \u2192 AD, BC can determine all attributes)",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_decomposition",
+        "text": "R1(BC): This relation is in BCNF because B \u2192 C.",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_key",
+        "text": "Candidate key: BCD (since ABC \u2192 D and D \u2192 A, BCD can determine all attributes)",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect_decomposition",
+        "text": "R1(BCD): This relation is in BCNF because ABC \u2192 D.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "No BCNF decomposition for case 3",
+      "Further decomposition needed for case 5"
+    ],
+    "justification_preview": "The model answer contains several factual inaccuracies and omissions compared to the expected answer. It incorrectly identifies candidate keys and BCNF violations, leading to incorrect decompositions.",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "b178268d-6eb1-42c3-b0e0-6737d53e337c",
+    "model_id": "gpt-4o",
+    "question_id": "a0444786-68c6-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b95d8423-5678-4119-8e89-5b5f3219a2c2",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 72.94123171184549,
+    "db_correctness_score": 84.5,
+    "llm_quality_score": 67.27083333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 60.199634236909716,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect_statement",
+        "text": "The union of the projections of F onto each Ri is equivalent to F+.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Iterative process of updating S in the algorithm"
+    ],
+    "justification_preview": "The model answer correctly defines dependency preservation and outlines a polynomial-time algorithm. However, it inaccurately states that the union of projections should equal the closure of F, rather",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "28238b97-a9eb-4633-bde6-cca6c22573fb",
+    "model_id": "gpt-4o",
+    "question_id": "586b20c9-c06c-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "324c5c3d-fab8-4a87-a5a8-5a4700c9391e",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 84.90230776638332,
+    "db_correctness_score": 95.0,
+    "llm_quality_score": 90.16250000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 57.07115532766645,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed notation and example using C = R1\u2229R2, X = R1\u2212C, Y = R2\u2212C, so that R1 = XC, R2 = CY, and R = XCY.",
+      "Explicit demonstration of a lossy join when neither C \u2192 X nor C \u2192 Y holds."
+    ],
+    "justification_preview": "The model answer is largely correct and aligns well with the expected answer. It accurately describes the conditions for a lossless-join decomposition and provides a logical explanation for both direc",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "25289427-9cab-4515-b72d-2e4c004ac8c1",
+    "model_id": "gpt-4o",
+    "question_id": "e6f3c650-6091-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "8969639f-c5de-4570-b12f-c9ffaf19d327",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 63.63100737333226,
+    "db_correctness_score": 70.0,
+    "llm_quality_score": 61.29583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 54.84514746664515,
+    "hallucinations_detected": [
+      {
+        "type": "incorrect claim",
+        "text": "Final BCNF relations: R_1(D, A), R_2(A, B, C, D) for set 3",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect claim",
+        "text": "Final BCNF relations: R_1(A, B), R_3(A, C), R_4(A, D) for set 4",
+        "severity": "high"
+      },
+      {
+        "type": "incorrect claim",
+        "text": "Final BCNF relations: R_1(C, A), R_3(D, B), R_4(A, D) for set 5",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "No BCNF decomposition for set 3",
+      "No BCNF decomposition for set 5"
+    ],
+    "justification_preview": "The model answer correctly identifies BCNF violations and attempts decompositions, but it contains factual errors and omissions. It incorrectly claims preservation of dependencies in some cases and mi",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "5869c482-ce0e-4273-923c-51ad92068cf3",
+    "model_id": "llama-3.1-70b",
+    "question_id": "27e488d7-24f3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "9980bfa0-3902-4988-83f9-a96b33b92ea5",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.07441486111111,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 70.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 96.98829722222222,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "77d75619-8485-426f-9566-90c8a4b96fa6",
+    "model_id": "llama-3.1-70b",
+    "question_id": "85e72f20-267a-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "59f3d6bf-4866-4d68-bd09-1cd336060f2b",
+    "judge_score_0_10": 5.5,
+    "master_composite_score": 63.55979611111111,
+    "db_correctness_score": 69.5,
+    "llm_quality_score": 54.84583333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.12092222222222,
+    "hallucinations_detected": [
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: Parts_Type(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "fabricated_sql_function",
+        "text": "Unknown PostgreSQL function: Parts_Detail(\u2026)",
+        "severity": "critical",
+        "detected_by": "regex+pg_catalog"
+      },
+      {
+        "type": "index_type",
+        "text": "A B-tree index on the `pname` attribute to facilitate efficient grouping and aggregation for the first query.",
+        "severity": "medium"
+      },
+      {
+        "type": "index_type",
+        "text": "A B-tree index on the `cost` attribute to support efficient retrieval of parts with the highest cost.",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Dense unclustered B+Tree index on (pname, num_avail) for query 1.",
+      "Dense unclustered B+Tree index on (cost, pid) for query 2.",
+      "Vertical partitioning into Parts1(pid, cost) and Parts2(pid, pname, num_avail).",
+      "Clustered indexes for schema redesign."
+    ],
+    "justification_preview": "The model answer provides a reasonable approach to the physical design and schema redesign but deviates from the expected answer in key areas. It suggests B-tree indexes instead of B+Tree and does not",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "6d9a8c1a-92a6-4d0a-be49-ff6c1235e8d6",
+    "model_id": "gpt-4o",
+    "question_id": "27e488d7-24f3-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "3dbccece-c050-4044-8161-ec34bc375bb4",
+    "judge_score_0_10": 4.5,
+    "master_composite_score": 53.29429438209486,
+    "db_correctness_score": 56.50000000000001,
+    "llm_quality_score": 50.32083333333334,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 48.96088764189717,
+    "hallucinations_detected": [
+      {
+        "type": "normal_form_analysis",
+        "text": "R2 is in BCNF because B \u2192 F does not violate BCNF (B is a superkey).",
+        "severity": "high"
+      },
+      {
+        "type": "normal_form_analysis",
+        "text": "R3 is not in 3NF because G \u2192 H violates 3NF.",
+        "severity": "high"
+      }
+    ],
+    "missing_points": [
+      "Correct BCNF decomposition for R1",
+      "Correct BCNF decomposition for R2",
+      "Correct BCNF decomposition for R3",
+      "Analysis and conclusion for R5"
+    ],
+    "justification_preview": "The model answer contains several factual inaccuracies and omissions. It incorrectly identifies the normal forms and decompositions for some relations, and it truncates before completing the analysis ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "229d77c1-223c-425e-8427-3f605f2817f9",
+    "model_id": "llama-3.1-70b",
+    "question_id": "f31cf7c1-6458-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "6f0ce367-d8cc-454c-9e4c-27e9622c0d28",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 58.381469861111114,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.12939722222222,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "0ea0a3d6-9f79-456c-ae70-0f97db8e3182",
+    "model_id": "llama-3.1-70b",
+    "question_id": "9d080a66-a9fc-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "54de9c73-2ce4-4a55-b9a8-0b2c657b8ba6",
+    "judge_score_0_10": 6.5,
+    "master_composite_score": 72.78695548611111,
+    "db_correctness_score": 79.5,
+    "llm_quality_score": 68.95416666666667,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.01410972222222,
+    "hallucinations_detected": [
+      {
+        "type": "SQL syntax",
+        "text": "ORDER BY numres DESC LIMIT 1",
+        "severity": "medium"
+      }
+    ],
+    "missing_points": [
+      "Discuss the pros and cons of materialization for the query: SELECT N.sname, MAX(N.numres) FROM NumReservations N GROUP BY N.sname"
+    ],
+    "justification_preview": "The model answer correctly addresses the query modification and discusses the pros and cons of computing on demand vs. view materialization. However, it includes a hallucination regarding the use of L",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "47659ee2-c8fb-4aec-9e7d-db7be15ed0c4",
+    "model_id": "llama-3.1-70b",
+    "question_id": "30541b0a-864e-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "9c4e1263-49b1-4be8-85a6-42c4d64c9177",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 63.72228396940861,
+    "db_correctness_score": 53.97500000000001,
+    "llm_quality_score": 81.18333333333332,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.5956793881721,
+    "hallucinations_detected": [
+      {
+        "type": "explanation",
+        "text": "WINDOW clause groups rows into a set of related rows, called a window, based on a specific condition.",
+        "severity": "low"
+      }
+    ],
+    "missing_points": [],
+    "justification_preview": "The model answer is mostly correct and aligns well with the expected answer. It accurately describes the differences between the WINDOW and GROUP BY clauses, provides a valid example of a query that r",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 0.25,
+      "idiomatic_postgresql": 0.15,
+      "db_execution_context": "Result set accuracy: F1=0.25, precision=0.2, recall=0.3333\nReturned rows: 5, Expected rows: 3"
+    }
+  },
+  {
+    "run_id": "998546bb-59ad-4185-bcd7-98087879ea19",
+    "model_id": "gpt-4o",
+    "question_id": "f31cf7c1-6458-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "56485c79-99bb-4b10-a654-8a25c1d96bf0",
+    "judge_score_0_10": 5.0,
+    "master_composite_score": 56.04266793746197,
+    "db_correctness_score": 49.0,
+    "llm_quality_score": 71.75,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 50.35335874923938,
+    "hallucinations_detected": [],
+    "missing_points": [],
+    "justification_preview": "[FALLBACK-SCORED] [AUTO-FALLBACK \u2014 judge call failed: [gpt-4o] API call failed after 3 retries: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more infor",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "744089de-bf59-47b3-959c-952468703ecf",
+    "model_id": "gpt-4o",
+    "question_id": "85e72f20-267a-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "e9593674-ddb4-489c-87fc-10c7b353b5a2",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 80.79107708485711,
+    "db_correctness_score": 89.50000000000001,
+    "llm_quality_score": 85.43750000000001,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 58.19654169714196,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Use of dense unclustered B+Tree indexes",
+      "Vertical partitioning in schema redesign"
+    ],
+    "justification_preview": "The model answer is mostly correct but lacks some specificity and completeness. It correctly identifies the need for B-tree indexes on pname and cost but does not specify the use of dense unclustered ",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "707d6d8a-a7c7-4860-a09f-9b4fea085a4f",
+    "model_id": "llama-3.1-70b",
+    "question_id": "2e8fe7d4-d629-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "b4d6f878-77f4-4047-9648-9f380a779380",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 81.29881548611111,
+    "db_correctness_score": 87.0,
+    "llm_quality_score": 84.8125,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 97.10130972222221,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Detailed explanation of metadata repository vs. relational catalog",
+      "Explanation of star schema not being in BCNF",
+      "Differences between MOLAP and ROLAP"
+    ],
+    "justification_preview": "The model answer is mostly correct and covers many key points, but it is incomplete and lacks some specific details. It correctly identifies the complementary roles of warehousing, OLAP, and data mini",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "e37881bd-6f71-4f43-9a52-aa9377647d48",
+    "model_id": "gpt-4o",
+    "question_id": "30541b0a-864e-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "bf0cd3cd-236a-4510-8663-ae945ed778fb",
+    "judge_score_0_10": 9.0,
+    "master_composite_score": 66.17194139738996,
+    "db_correctness_score": 58.650000000000006,
+    "llm_quality_score": 88.35,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 56.83882794779931,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Running total example uses ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW"
+    ],
+    "justification_preview": "The model answer is mostly correct and aligns well with the expected answer. It accurately describes the differences between WINDOW and GROUP BY clauses, provides a valid example of a query that requi",
+    "sql_execution_details": {
+      "harness_ran": true,
+      "syntactic_parse_success": 1.0,
+      "result_set_f1": 0.25,
+      "idiomatic_postgresql": 0.3,
+      "db_execution_context": "Result set accuracy: F1=0.25, precision=0.2, recall=0.3333\nReturned rows: 5, Expected rows: 3"
+    }
+  },
+  {
+    "run_id": "386a48d7-6cc6-433f-b4d0-5cce9afda515",
+    "model_id": "gpt-4o",
+    "question_id": "9d080a66-a9fc-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "78e06e17-744f-43a2-b997-b715635c5bc5",
+    "judge_score_0_10": 8.5,
+    "master_composite_score": 82.92578644491834,
+    "db_correctness_score": 91.75,
+    "llm_quality_score": 88.775,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 58.365728898367074,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Specific query modification using WHERE clause: WHERE numres = (SELECT MAX(numres) FROM <view>)"
+    ],
+    "justification_preview": "The model answer correctly rewrites the query using query modification and discusses the pros and cons of computing on demand vs. view materialization. However, it omits the specific query modificatio",
+    "sql_execution_details": null
+  },
+  {
+    "run_id": "4bb5fdb5-e325-4402-91cb-eca4f0fc7bf6",
+    "model_id": "gpt-4o",
+    "question_id": "2e8fe7d4-d629-0000-0000-000000000000",
+    "ok": true,
+    "error": null,
+    "score_id": "372d45e2-5de8-4652-aa1f-979aaca7058c",
+    "judge_score_0_10": 7.5,
+    "master_composite_score": 78.54700219141691,
+    "db_correctness_score": 87.0,
+    "llm_quality_score": 84.8125,
+    "prompting_effectiveness_score": 50.0,
+    "efficiency_score": 42.06504382833836,
+    "hallucinations_detected": [],
+    "missing_points": [
+      "Differences between metadata repository and relational catalog",
+      "Star schema not usually in BCNF",
+      "Detailed explanation of MOLAP vs ROLAP",
+      "Specifics on maintaining history and purging old data"
+    ],
+    "justification_preview": "The model answer is mostly correct and covers many key points, but it is incomplete and lacks some specific details from the expected answer. It correctly describes the complementary roles of warehous",
+    "sql_execution_details": null
+  }
+]

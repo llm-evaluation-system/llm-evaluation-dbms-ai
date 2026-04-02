@@ -1,0 +1,51 @@
+{
+  "total_models": 2,
+  "total_contests": 80,
+  "total_runs": 1600,
+  "entries": [
+    {
+      "rank": 1,
+      "model_id": "llama-3.1-70b",
+      "display_name": "Llama 3.1 70B",
+      "provider": "groq",
+      "mcs_score": 70.05,
+      "db_correctness": 70.43,
+      "llm_quality": 67.55,
+      "elo_rating": 1126,
+      "contest_wins": 29,
+      "contest_total": 80,
+      "win_rate": 0.3625,
+      "best_prompt_strategy": "few-shot-cot",
+      "best_topic": "OVERVIEW OF STORAGE AND INDEXING",
+      "worst_topic": "HASH-BASED INDEXING",
+      "avg_latency_ms": 2836.7,
+      "hallucination_rate": 0.3929,
+      "last_updated": "2026-04-01T08:51:55.848255Z"
+    },
+    {
+      "rank": 2,
+      "model_id": "gpt-4o",
+      "display_name": "GPT-4o (Judge)",
+      "provider": "openai",
+      "mcs_score": 68.78,
+      "db_correctness": 77.3,
+      "llm_quality": 74.67,
+      "elo_rating": 1274,
+      "contest_wins": 51,
+      "contest_total": 80,
+      "win_rate": 0.6375,
+      "best_prompt_strategy": "zero-shot",
+      "best_topic": "OVERVIEW OF QUERY EVALUATION",
+      "worst_topic": "CONCURRENCY CONTROL",
+      "avg_latency_ms": 9319.6,
+      "hallucination_rate": 0.2852,
+      "last_updated": "2026-04-01T08:51:58.468951Z"
+    }
+  ],
+  "generated_at": "2026-04-01T08:52:00.948734",
+  "notes": [
+    "best_prompt_strategy: recomputed on 20-question stratified sample (equal representation across all 9 strategies). Original was dominated by zero-shot volume (80Q vs 20Q).",
+    "best_topic / worst_topic: recomputed from Phase 1 zero-shot default-HP runs only (80Q). Original included 960 hyperparam-sweep runs which skewed subtopic averages.",
+    "All other fields (mcs_score, elo_rating, contest stats, hallucination_rate, latency) are unchanged from the DB-generated leaderboard."
+  ]
+}

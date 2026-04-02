@@ -1,0 +1,53 @@
+{
+  "run_started_at": "2026-04-01T15:02:26.087188",
+  "run_ended_at": "2026-04-01T16:52:01.327427",
+  "elapsed_seconds": 6575,
+  "base_url": "http://localhost:8000",
+  "models": [
+    "llama-3.1-70b",
+    "gpt-4o"
+  ],
+  "all_strategies": [
+    "zero-shot",
+    "one-shot",
+    "few-shot",
+    "cot",
+    "few-shot-cot",
+    "self-consistency",
+    "role-prompting",
+    "least-to-most",
+    "react"
+  ],
+  "all_questions_count": 80,
+  "stratified_sample_count": 20,
+  "temperature_sweep": [
+    0.0,
+    0.7,
+    1.0
+  ],
+  "top_p_sweep": [
+    0.7,
+    0.85,
+    1.0
+  ],
+  "phase1": {
+    "generates_ok": 160,
+    "generates_total": 160,
+    "scores_ok": 160,
+    "scores_total": 160,
+    "contests_ok": 80,
+    "contests_total": 80
+  },
+  "phase2": {
+    "generates_ok": 320,
+    "generates_total": 320,
+    "scores_ok": 320,
+    "scores_total": 320
+  },
+  "phase3": {
+    "generates_ok": 960,
+    "generates_total": 960,
+    "scores_ok": 960,
+    "scores_total": 960
+  }
+}

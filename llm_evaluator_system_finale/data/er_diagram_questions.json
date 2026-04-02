@@ -1,0 +1,98 @@
+[
+    {
+    "id": "5cbd2eb337f8",
+    "topic": "FOUNDATIONS",
+    "subtopic": "INTRODUCTION TO DATABASE DESIGN",
+    "exercise_number": "Exercise 2.1",
+    "question_text": "Explain the following terms briefly: attribute, domain, entity, relationship, entity set, relationship set, one-to-many relationship, many-to-many relationship, participation constraint, overlap constraint, covering constraint, weak entity set, aggregation, and role indicator.",
+    "expected_answer": "Exercise 2.1: Term explanations: Attribute: a property or description of an entity. A toy department employee entity could have attributes describing the employee's name, salary, and years of service. Domain: a set of possible values for an attribute. Entity: an object in the real world that is distinguishable from other objects such as the green dragon toy. Relationship: an association among two or more entities. Entity set: a collection of similar entities such as all of the toys in the toy department. Relationship set: a collection of similar relationships. One-to-many relationship: a key constraint that indicates that one entity can be associated with many of another entity. An example of a one-to-many relationship is when an employee can work for only one department, and a department can have many employees. Many-to-many relationship: a key constraint that indicates that many of one entity can be associated with many of another entity. An example of a many-to-many relationship is employees and their hobbies: a person can have many different hobbies, and many people can have the same hobby. Participation constraint: a participation constraint determines whether relationships must involve certain entities. An example is if every department entity has a manager entity. Participation constraints can either be total or partial. A total participation constraint says that every department has a manager. A partial participation constraint says that every employee does not have to be a manager. Overlap constraint: within an ISA hierarchy, an overlap constraint determines whether or not two subclasses can contain the same entity. Covering constraint: within an ISA hierarchy, a covering constraint determines where the entities in the subclasses collectively include all entities in the superclass. For example, with an Employees entity set with subclasses Hourly Employee and Salary Employee, does every Employee entity necessarily have to be within either Hourly Employee or Salary Employee? Weak entity set: an entity that cannot be identified uniquely without considering some primary key attributes of another identifying owner entity. An example is including Dependent information for employees for insurance purposes. Aggregation: a feature of the entity relationship model that allows a relationship set to participate in another relationship set. This is indicated on an ER diagram by drawing a dashed box around the aggregation. Role indicator: If an entity set plays more than one role, role indicators describe the different purpose in the relationship. An example is a single Employee entity set with a relation Reports-To that relates supervisors and subordinates.",
+    "question_type": "conceptual",
+    "difficulty": "easy",
+    "tags": [
+      "er_diagram",
+      "database_concepts"
+    ]
+  },
+
+  {
+    "id": "347b8b75b327",
+    "topic": "FOUNDATIONS",
+    "subtopic": "INTRODUCTION TO DATABASE DESIGN",
+    "exercise_number": "Exercise 2.3",
+    "question_text": "Consider the following information about a university database: Professors have an SSN, a name, an age, a rank, and a research specialty. Projects have a project number, a sponsor name (e.g., NSF), a starting date, an ending date, and a budget. Graduate students have an SSN, a name, an age, and a degree program (e.g., M.S. or Ph.D.). Each project is managed by one professor (known as the project's principal investigator). Each project is worked on by one or more professors (known as the project's co-investigators). Professors can manage and/or work on multiple projects. Each project is worked on by one or more graduate students (known as the project's research assistants). When graduate students work on a project, a professor must supervise their work on the project. Graduate students can work on multiple projects, in which case they will have a (potentially different) supervisor for each one. Departments have a department number, a department name, and a main office. Departments have a professor (known as the chairman) who runs the department. Professors work in one or more departments, and for each department that they work in, a time percentage is associated with their job. Graduate students have one major department in which they are working on their degree. Each graduate student has another, more senior graduate student (known as a student advisor) who advises him or her on what courses to take. Design and draw an ER diagram that captures the information about the university. Use only the basic ER model here; that is, entities, relationships, and attributes. Be sure to indicate any key and participation constraints.",
+    "expected_answer": "Exercise 2.3: The ER diagram is shown in Figure 2.1. Entities and Attributes: Professor: ssn (key), age, rank, speciality. Dept: dno (key), dname, office. Project: pid (key), sponsor, start_date, end_date, budget. Graduate: ssn (key), name, age, deg_prog. Relationships: work_in: Connects Professor and project. Manages: Connects Professor and project. Work_dept: Connects Professor and Dept. Has attribute *pc_time*. Runs: Connects Professor and Dept. Supervises: Connects Professor, Graduate, and project. Major: Connects Dept and Graduate. Work_proj: Connects project and Graduate. Advisor: Connects Graduate to Graduate (with roles *senior* and *grad*).",
+    "question_type": "practical",
+    "difficulty": "hard",
+    "tags": [
+      "er_diagram"
+    ]
+  },
+  {
+    "id": "ee779d733498",
+    "topic": "FOUNDATIONS",
+    "subtopic": "INTRODUCTION TO DATABASE DESIGN",
+    "exercise_number": "Exercise 2.5",
+    "question_text": "Notown Records has decided to store information about musicians who perform on its albums (as well as other company data) in a database. The company has wisely chosen to hire you as a database designer (at your usual consulting fee of $2500/day). Each musician that records at Notown has an SSN, a name, an address, and a phone number. Poorly paid musicians often share the same address, and no address has more than one phone. Each instrument used in songs recorded at Notown has a name (e.g., guitar, synthesizer, flute) and a musical key (e.g., C, B-flat, E-flat). Each album recorded on the Notown label has a title, a copyright date, a format (e.g., CD or MC), and an album identifier. Each song recorded at Notown has a title and an author. Each musician may play several instruments, and a given instrument may be played by several musicians. Each album has a number of songs on it, but no song may appear on more than one album. Each song is performed by one or more musicians, and a musician may perform a number of songs. Each album has exactly one musician who acts as its producer. A musician may produce several albums, of course. Design a conceptual schema for Notown and draw an ER diagram for your schema. The preceding information describes the situation that the Notown database must model. Be sure to indicate all key and cardinality constraints and any assumptions you make. Identify any constraints you are unable to capture in the ER diagram and briefly explain why you could not express them.",
+    "expected_answer": "Exercise 2.5: The ER diagram is shown in Figure 2.2. Entities and Attributes: Musicians: ssn (key), name. Place (Weak Entity): address. Telephone (Weak Entity): phone_no. Instrument: instrid (key), dname, key. Album: albumIdentifier (key), speed, copyrightDate, title. Songs: songId (key), title, author. Relationships: Home: Connects Musicians to Place and Telephone. Lives: Connects Musicians to Place. Producer: Connects Musicians to Album. Plays: Connects Musicians to Instrument. Perform: Connects Musicians to Songs. Appears: Connects Album to Songs.",
+    "question_type": "practical",
+    "difficulty": "medium",
+    "tags": [
+      "er_diagram"
+    ]
+  },
+  {
+    "id": "358e37bbc675",
+    "topic": "FOUNDATIONS",
+    "subtopic": "INTRODUCTION TO DATABASE DESIGN",
+    "exercise_number": "Exercise 2.7",
+    "question_text": "The Prescriptions-R-X chain of pharmacies has offered to give you a free lifetime supply of medicine if you design its database. Given the rising cost of health care, you agree. Here's the information that you gather: Patients are identified by an SSN, and their names, addresses, and ages must be recorded. Doctors are identified by an SSN. For each doctor, the name, specialty, and years of experience must be recorded. Each pharmaceutical company is identified by name and has a phone number. For each drug, the trade name and formula must be recorded. Each drug is sold by a given pharmaceutical company, and the trade name identifies a drug uniquely from among the products of that company. If a pharmaceutical company is deleted, you need not keep track of its products any longer. Each pharmacy has a name, address, and phone number. Every patient has a primary physician. Every doctor has at least one patient. Each pharmacy sells several drugs and has a price for each. A drug could be sold at several pharmacies, and the price could vary from one pharmacy to another. Doctors prescribe drugs for patients. A doctor could prescribe one or more drugs for several patients, and a patient could obtain prescriptions from several doctors. Each prescription has a date and a quantity associated with it. You can assume that, if a doctor prescribes the same drug for the same patient more than once, only the last such prescription needs to be stored. Pharmaceutical companies have long-term contracts with pharmacies. A pharmaceutical company can contract with several pharmacies, and a pharmacy can contract with several pharmaceutical companies. For each contract, you have to store a start date, an end date, and the text of the contract. Pharmacies appoint a supervisor for each contract. There must always be a supervisor for each contract, but the contract supervisor can change over the lifetime of the contract. 1. Draw an ER diagram that captures the preceding information. Identify any constraints not captured by the ER diagram. 2. How would your design change if each drug must be sold at a fixed price by all pharmacies? 3. How would your design change if the design requirements change as follows: If a doctor prescribes the same drug for the same patient more than once, several such prescriptions may have to be stored.",
+    "expected_answer": "Exercise 2.7: The ER diagram is shown in Figure 2.3. Entities and Attributes: Patient: ssn (key), age, name, address. Doctor: phy_ssn (key), name, speciality, exp_years. Pharmacy: name (key), address, phone_num. Pharm_co: name (key), phone_num. Drug (Weak Entity): trade_name (key), formula. Relationships: Pri_physician: Connects Patient and Doctor. Prescription: Connects Patient, Doctor, and Drug. Has attributes *date* and *quantity*. Sell: Connects Pharmacy and Drug. Has attribute *price*. Make: Connects Pharm_co and Drug (Identifying relationship). Contract: Connects Pharmacy and Pharm_co. Has attributes *start_date*, *end_date*, *text*, and *supervisor*. If the drug is to be sold at a fixed price we can add the price attribute to the Drug entity set and eliminate the price from the Sell relationship set. The date information can no longer be modeled as an attribute of Prescription. We have to create a new entity set called Prescription_date and make Prescription a 4-way relationship set that involves this additional entity set.",
+    "question_type": "practical",
+    "difficulty": "hard",
+    "tags": [
+      "er_diagram"
+    ]
+  },
+  {
+    "id": "53f9113f9138",
+    "topic": "FOUNDATIONS",
+    "subtopic": "THE RELATIONAL MODEL",
+    "exercise_number": "Exercise 3.13",
+    "question_text": "Consider the university database from Exercise 2.3 and the ER diagram you designed. Write SQL statements to create the corresponding relations and capture as many of the constraints as possible. If you cannot capture some constraints, explain why.",
+    "expected_answer": "Exercise 3.13: The following SQL statements create the corresponding relations: 1. ```sql CREATE TABLE Professors ( prof_ssn CHAR(10), name CHAR(64), age INTEGER, rank INTEGER, speciality CHAR(64), PRIMARY KEY (prof_ssn) ) ``` 2. ```sql CREATE TABLE Depts ( dno INTEGER, dname CHAR(64), office CHAR(10), PRIMARY KEY (dno) ) ``` 3. ```sql CREATE TABLE Runs ( dno INTEGER, prof_ssn CHAR(10), PRIMARY KEY (dno, prof_ssn), FOREIGN KEY (prof_ssn) REFERENCES Professors, FOREIGN KEY (dno) REFERENCES Depts ) ``` 4. ```sql CREATE TABLE Work_Dept ( dno INTEGER, prof_ssn CHAR(10), pc_time INTEGER, PRIMARY KEY (dno, prof_ssn), FOREIGN KEY (prof_ssn) REFERENCES Professors, FOREIGN KEY (dno) REFERENCES Depts ) ``` Observe that we would need check constraints or assertions in SQL to enforce the rule that Professors work in at least one department. 5. ```sql CREATE TABLE Project ( pid INTEGER, sponsor CHAR(32), start_date DATE, end_date DATE, budget FLOAT, PRIMARY KEY (pid) ) ``` 6. ```sql CREATE TABLE Graduates ( grad_ssn CHAR(10), age INTEGER, name CHAR(64), deg_prog CHAR(32), major INTEGER, PRIMARY KEY (grad_ssn), FOREIGN KEY (major) REFERENCES Depts ) ``` Note that the `Major` table is not necessary since each Graduate has only one major and so this can be an attribute in the `Graduates` table. 7. ```sql CREATE TABLE Advisor ( senior_ssn CHAR(10), grad_ssn CHAR(10), PRIMARY KEY (senior_ssn, grad_ssn), FOREIGN KEY (senior_ssn) REFERENCES Graduates (grad_ssn), FOREIGN KEY (grad_ssn) REFERENCES Graduates ) ``` 8. ```sql CREATE TABLE Manages ( pid INTEGER, prof_ssn CHAR(10), PRIMARY KEY (pid, prof_ssn), FOREIGN KEY (prof_ssn) REFERENCES Professors, FOREIGN KEY (pid) REFERENCES Projects ) ``` 9. ```sql CREATE TABLE Work_In ( pid INTEGER, prof_ssn CHAR(10), PRIMARY KEY (pid, prof_ssn), FOREIGN KEY (prof_ssn) REFERENCES Professors, FOREIGN KEY (pid) REFERENCES Projects ) ``` Observe that we cannot enforce the participation constraint for `Projects` in the `Work_In` table without check constraints or assertions in SQL. 10. ```sql CREATE TABLE Supervises ( prof_ssn CHAR(10), grad_ssn CHAR(10), pid INTEGER, PRIMARY KEY (prof_ssn, grad_ssn, pid), FOREIGN KEY (prof_ssn) REFERENCES Professors, FOREIGN KEY (grad_ssn) REFERENCES Graduates, FOREIGN KEY (pid) REFERENCES Projects ) ``` Note that we do not need an explicit table for the `Work_Proj` relation since every time a Graduate works on a Project, he or she must have a Supervisor.",
+    "question_type": "practical",
+    "difficulty": "medium",
+    "tags": [
+      "sql",
+      "er_diagram"
+    ]
+  },
+  {
+    "id": "5a4856d130ba",
+    "topic": "FOUNDATIONS",
+    "subtopic": "THE RELATIONAL MODEL",
+    "exercise_number": "Exercise 3.15",
+    "question_text": "Consider the Notown database from Exercise 2.5. You have decided to recommend that Notown use a relational database system to store company data. Show the SQL statements for creating relations corresponding to the entity sets and relationship sets in your design. Identify any constraints in the ER diagram that you are unable to capture in the SQL statements and briefly explain why you could not express them.",
+    "expected_answer": "Exercise 3.15: The following SQL statements create the corresponding relations: 1. ```sql CREATE TABLE Musicians ( ssn CHAR(10), name CHAR(30), PRIMARY KEY (ssn) ) ``` 2. ```sql CREATE TABLE Instruments ( instrId CHAR(10), dname CHAR(30), key CHAR(5), PRIMARY KEY (instrId) ) ``` 3. ```sql CREATE TABLE Plays ( ssn CHAR(10), instrId INTEGER, PRIMARY KEY (ssn, instrId), FOREIGN KEY (ssn) REFERENCES Musicians, FOREIGN KEY (instrId) REFERENCES Instruments ) ``` 4. ```sql CREATE TABLE Songs_Appears ( songId INTEGER, author CHAR(30), title CHAR(30), albumIdentifier INTEGER NOT NULL, PRIMARY KEY (songId), FOREIGN KEY (albumIdentifier) REFERENCES Album_Producer ) ``` 5. ```sql CREATE TABLE Telephone_Home ( phone CHAR(11), address CHAR(30), PRIMARY KEY (phone), FOREIGN KEY (address) REFERENCES Place ) ``` 6. ```sql CREATE TABLE Lives ( ssn CHAR(10), phone CHAR(11), address CHAR(30), PRIMARY KEY (ssn, address), FOREIGN KEY (phone, address) REFERENCES Telephone_Home, FOREIGN KEY (ssn) REFERENCES Musicians ) ``` 7. ```sql CREATE TABLE Place ( address CHAR(30) ) ``` 8. ```sql CREATE TABLE Perform ( songId INTEGER, ssn CHAR(10), PRIMARY KEY (ssn, songId), FOREIGN KEY (songId) REFERENCES Songs, FOREIGN KEY (ssn) REFERENCES Musicians ) ``` 9. ```sql CREATE TABLE Album_Producer ( albumIdentifier INTEGER, ssn CHAR(10), copyrightDate DATE, speed INTEGER, title CHAR(30), PRIMARY KEY (albumIdentifier), FOREIGN KEY (ssn) REFERENCES Musicians ) ```",
+    "question_type": "practical",
+    "difficulty": "medium",
+    "tags": [
+      "sql",
+      "er_diagram"
+    ]
+  },
+  {
+    "id": "a78502b807ea",
+    "topic": "FOUNDATIONS",
+    "subtopic": "THE RELATIONAL MODEL",
+    "exercise_number": "Exercise 3.17",
+    "question_text": "Consider the ER diagram that you designed for the Prescriptions-R-X chain of pharmacies in Exercise 2.7. Define relations corresponding to the entity sets and relationship sets in your design using SQL.",
+    "expected_answer": "Exercise 3.17: The statements to create tables corresponding to entity sets `Doctor`, `Pharmacy`, and `Pharm_co` are straightforward and omitted. The other required tables can be created as follows: 1. ```sql CREATE TABLE Pri_Phy_Patient ( ssn CHAR(11), name CHAR(20), age INTEGER, address CHAR(20), phy_ssn CHAR(11), PRIMARY KEY (ssn), FOREIGN KEY (phy_ssn) REFERENCES Doctor ) ``` 2. ```sql CREATE TABLE Prescription ( ssn CHAR(11), phy_ssn CHAR(11), date CHAR(11), quantity INTEGER, trade_name CHAR(20), pharm_id CHAR(11), PRIMARY KEY (ssn, phy_ssn), FOREIGN KEY (ssn) REFERENCES Patient, FOREIGN KEY (phy_ssn) REFERENCES Doctor, FOREIGN KEY (trade_name, pharm_id) REFERENCES Make_Drug ) ``` 3. ```sql CREATE TABLE Make_Drug ( trade_name CHAR(20), pharm_id CHAR(11), PRIMARY KEY (trade_name, pharm_id), FOREIGN KEY (trade_name) REFERENCES Drug, FOREIGN KEY (pharm_id) REFERENCES Pharm_co ) ``` 4. ```sql CREATE TABLE Sell ( price INTEGER, name CHAR(10), trade_name CHAR(10), PRIMARY KEY (name, trade_name), FOREIGN KEY (name) REFERENCES Pharmacy, FOREIGN KEY (trade_name) REFERENCES Drug ) ``` 5. ```sql CREATE TABLE Contract ( name CHAR(20), pharm_id CHAR(11), start_date CHAR(11), end_date CHAR(11), text CHAR(10000), supervisor CHAR(20), PRIMARY KEY (name, pharm_id), FOREIGN KEY (name) REFERENCES Pharmacy, FOREIGN KEY (pharm_id) REFERENCES Pharm_co ) ```",
+    "question_type": "practical",
+    "difficulty": "medium",
+    "tags": [
+      "sql",
+      "er_diagram"
+    ]
+  }
+]

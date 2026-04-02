@@ -1,0 +1,73 @@
+{
+  "model_id": "llama-3.1-70b",
+  "parameters": {
+    "temperature": {
+      "results": [
+        {
+          "param_name": "temperature",
+          "param_value": "0.0",
+          "avg_mcs": 67.07,
+          "score_variance": 12.8518,
+          "run_count": 80
+        },
+        {
+          "param_name": "temperature",
+          "param_value": "0.3",
+          "avg_mcs": 69.14,
+          "score_variance": 13.6867,
+          "run_count": 460
+        },
+        {
+          "param_name": "temperature",
+          "param_value": "0.7",
+          "avg_mcs": 68.61,
+          "score_variance": 13.7584,
+          "run_count": 100
+        },
+        {
+          "param_name": "temperature",
+          "param_value": "1.0",
+          "avg_mcs": 68.48,
+          "score_variance": 12.9487,
+          "run_count": 80
+        }
+      ],
+      "recommended_value": "0.3",
+      "sensitivity": "LOW"
+    },
+    "top_p": {
+      "results": [
+        {
+          "param_name": "top_p",
+          "param_value": "0.7",
+          "avg_mcs": 70.02,
+          "score_variance": 13.1129,
+          "run_count": 80
+        },
+        {
+          "param_name": "top_p",
+          "param_value": "0.85",
+          "avg_mcs": 69.16,
+          "score_variance": 13.5728,
+          "run_count": 80
+        },
+        {
+          "param_name": "top_p",
+          "param_value": "0.9",
+          "avg_mcs": 67.91,
+          "score_variance": 13.5515,
+          "run_count": 480
+        },
+        {
+          "param_name": "top_p",
+          "param_value": "1.0",
+          "avg_mcs": 69.91,
+          "score_variance": 13.0911,
+          "run_count": 80
+        }
+      ],
+      "recommended_value": "0.7",
+      "sensitivity": "LOW"
+    }
+  }
+}

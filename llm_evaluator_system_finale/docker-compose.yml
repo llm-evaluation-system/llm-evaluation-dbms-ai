@@ -1,0 +1,119 @@
+version: "3.9"
+
+# ── Master LLM Evaluator System — Docker Compose ─────────────────────────────
+# Spins up the full evaluation stack:
+#   - app:          FastAPI application (port 8000)
+#   - db:           Primary PostgreSQL 16 (port 5432)
+#   - db_test:      Sandboxed test PostgreSQL 16 (port 5433) — SQL harness
+#   - redis:        Celery broker and result backend (port 6379)
+#   - worker:       Celery background worker (batch sweeps)
+
+services:
+
+  # ── Primary Application Database ───────────────────────────────────────────
+  db:
+    image: postgres:16-alpine
+    container_name: llm_eval_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: llm_evaluator
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ── Sandboxed Test Database (SQL Execution Harness) ────────────────────────
+  db_test:
+    image: postgres:16-alpine
+    container_name: llm_eval_db_test
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: llm_evaluator_test
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg_test_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ── Redis (Celery Broker + Result Backend) ─────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: llm_eval_redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ── FastAPI Application ────────────────────────────────────────────────────
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm_eval_app
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/llm_evaluator
+      DATABASE_URL_SYNC: postgresql://postgres:postgres@db:5432/llm_evaluator
+      TEST_DATABASE_URL: postgresql://postgres:postgres@db_test:5432/llm_evaluator_test
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/1
+      QUESTION_BANK_PATH: /app/data/Database_Project_EVALUATIONGroup_4.xlsx
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+      db_test:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+    command: >
+      uvicorn main:app
+        --host 0.0.0.0
+        --port 8000
+        --workers 2
+        --log-level info
+
+  # ── Celery Worker (Background Batch Evaluations) ──────────────────────────
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm_eval_worker
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/llm_evaluator
+      DATABASE_URL_SYNC: postgresql://postgres:postgres@db:5432/llm_evaluator
+      TEST_DATABASE_URL: postgresql://postgres:postgres@db_test:5432/llm_evaluator_test
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/1
+      PYTHONPATH: /app
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: celery -A tasks.celery_app worker --loglevel=info --concurrency=1 --max-tasks-per-child=1
+
+volumes:
+  pg_data:
+  pg_test_data:
+

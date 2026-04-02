@@ -1,0 +1,2882 @@
+[
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "c62a41f9-4461-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2153,
+    "run_id": "4c7332a5-9801-49f3-8921-184713aa8193",
+    "status": "completed",
+    "input_tokens": 350,
+    "output_tokens": 583,
+    "cost_usd": 0.00066707
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "6bd4ccd2-5d85-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2466,
+    "run_id": "b1d701b3-6fca-465c-acb4-3a3a8ce74728",
+    "status": "completed",
+    "input_tokens": 136,
+    "output_tokens": 741,
+    "cost_usd": 0.00066563
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "6c3f53eb-80bb-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1946,
+    "run_id": "3ac9f5c9-0592-4a8a-bc55-f4364b7d8b1a",
+    "status": "completed",
+    "input_tokens": 351,
+    "output_tokens": 631,
+    "cost_usd": 0.0007055799999999999
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "c62a41f9-4461-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9139,
+    "run_id": "41d98c01-44fb-43f5-9220-12f264143155",
+    "status": "completed",
+    "input_tokens": 326,
+    "output_tokens": 512,
+    "cost_usd": 0.005935
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "6bd4ccd2-5d85-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 13796,
+    "run_id": "fc6e4ea4-1816-49d1-b0ae-44e5780852e6",
+    "status": "completed",
+    "input_tokens": 113,
+    "output_tokens": 626,
+    "cost_usd": 0.0065425
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "6c3f53eb-80bb-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9513,
+    "run_id": "1a47eaef-7a26-4189-9583-f0f1ee2d771f",
+    "status": "completed",
+    "input_tokens": 327,
+    "output_tokens": 614,
+    "cost_usd": 0.0069575
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "0def7bdc-534e-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3905,
+    "run_id": "473e7d32-16dd-459e-b7f1-216037a24e71",
+    "status": "completed",
+    "input_tokens": 597,
+    "output_tokens": 1024,
+    "cost_usd": 0.00116119
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "c36cf025-1982-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1416,
+    "run_id": "82f7cd77-5143-4e7f-9c72-1b547da16127",
+    "status": "completed",
+    "input_tokens": 547,
+    "output_tokens": 479,
+    "cost_usd": 0.00070114
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "09f1cb01-bac5-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1920,
+    "run_id": "92ba1b7c-2449-4542-b2c3-d306b201bbab",
+    "status": "completed",
+    "input_tokens": 137,
+    "output_tokens": 436,
+    "cost_usd": 0.00042527
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "c36cf025-1982-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 6738,
+    "run_id": "db95f7bf-37cc-45ab-a58b-9d527cece865",
+    "status": "completed",
+    "input_tokens": 523,
+    "output_tokens": 497,
+    "cost_usd": 0.0062775
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "0def7bdc-534e-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9537,
+    "run_id": "013bc5d2-b6d6-4788-8532-22eef940235d",
+    "status": "completed",
+    "input_tokens": 569,
+    "output_tokens": 936,
+    "cost_usd": 0.0107825
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "8c61735b-507d-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2941,
+    "run_id": "1c32e289-543d-4bbe-a4cb-282b63683e16",
+    "status": "completed",
+    "input_tokens": 745,
+    "output_tokens": 1024,
+    "cost_usd": 0.00124851
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "09f1cb01-bac5-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8206,
+    "run_id": "8a02d5dc-f24f-4023-96cf-e444397c7551",
+    "status": "completed",
+    "input_tokens": 114,
+    "output_tokens": 458,
+    "cost_usd": 0.0048649999999999995
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "91d0bd09-fe08-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2553,
+    "run_id": "308a52db-3e8c-4400-ad91-6f2e428bbb3e",
+    "status": "completed",
+    "input_tokens": 576,
+    "output_tokens": 1024,
+    "cost_usd": 0.0011488000000000002
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "78ebf72b-7b30-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2288,
+    "run_id": "89352a45-3184-4359-8374-bb0db89d9e54",
+    "status": "completed",
+    "input_tokens": 137,
+    "output_tokens": 408,
+    "cost_usd": 0.00040314999999999996
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "8c61735b-507d-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 13457,
+    "run_id": "4a9f2146-13dd-4f75-b096-cba5150688d9",
+    "status": "completed",
+    "input_tokens": 710,
+    "output_tokens": 1024,
+    "cost_usd": 0.012015000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "78ebf72b-7b30-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7520,
+    "run_id": "e736c82d-9c3a-4be1-8212-99f3c583865a",
+    "status": "completed",
+    "input_tokens": 113,
+    "output_tokens": 377,
+    "cost_usd": 0.0040525
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "91d0bd09-fe08-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 13234,
+    "run_id": "53fa2932-9b06-4ae0-a56c-7a3296afcb45",
+    "status": "completed",
+    "input_tokens": 555,
+    "output_tokens": 1024,
+    "cost_usd": 0.0116275
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "0c053e7b-ed52-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2367,
+    "run_id": "be46b081-2e80-433a-8028-abe964940bd3",
+    "status": "completed",
+    "input_tokens": 426,
+    "output_tokens": 593,
+    "cost_usd": 0.00071981
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "7f30162b-5f47-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1908,
+    "run_id": "283dab3a-d335-44b5-8dd6-01cf7c74847d",
+    "status": "completed",
+    "input_tokens": 386,
+    "output_tokens": 579,
+    "cost_usd": 0.00068515
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "c6c4ce74-44f2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1554,
+    "run_id": "5dbb7da1-c425-4310-a8c9-c14644b2900a",
+    "status": "completed",
+    "input_tokens": 316,
+    "output_tokens": 414,
+    "cost_usd": 0.0005135000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "0c053e7b-ed52-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7272,
+    "run_id": "d352b7ce-ef15-40d1-ab21-1ec1510a56f6",
+    "status": "completed",
+    "input_tokens": 402,
+    "output_tokens": 448,
+    "cost_usd": 0.005485
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "66f0e4d6-5fb0-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1618,
+    "run_id": "61f3e3d3-2c8b-4d7d-917e-24719dcdd825",
+    "status": "completed",
+    "input_tokens": 191,
+    "output_tokens": 506,
+    "cost_usd": 0.00051243
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "c6c4ce74-44f2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 6533,
+    "run_id": "310b629a-9ffb-48a8-8c64-eb6c00204752",
+    "status": "completed",
+    "input_tokens": 292,
+    "output_tokens": 459,
+    "cost_usd": 0.00532
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "6e9e7751-c76c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1501,
+    "run_id": "5f862e31-b599-432d-8593-ced583c1c52c",
+    "status": "completed",
+    "input_tokens": 335,
+    "output_tokens": 410,
+    "cost_usd": 0.0005215500000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "7f30162b-5f47-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11494,
+    "run_id": "df74f94b-8eb4-42a6-97c6-8bf6807f932c",
+    "status": "completed",
+    "input_tokens": 362,
+    "output_tokens": 712,
+    "cost_usd": 0.008025
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "41de485a-98af-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2105,
+    "run_id": "f1edf10d-9089-4c06-8c10-50b30a99d89d",
+    "status": "completed",
+    "input_tokens": 138,
+    "output_tokens": 527,
+    "cost_usd": 0.00049775
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "6e9e7751-c76c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 5096,
+    "run_id": "ddcc4a4b-b480-490e-bab5-01769dcc5552",
+    "status": "completed",
+    "input_tokens": 312,
+    "output_tokens": 275,
+    "cost_usd": 0.00353
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "66f0e4d6-5fb0-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9488,
+    "run_id": "65d8f195-b15d-4ddb-8ac6-39a024466c84",
+    "status": "completed",
+    "input_tokens": 168,
+    "output_tokens": 420,
+    "cost_usd": 0.00462
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "94f3945c-a596-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1753,
+    "run_id": "32860023-2d6d-469a-81a0-821517f355a8",
+    "status": "completed",
+    "input_tokens": 141,
+    "output_tokens": 380,
+    "cost_usd": 0.00038339000000000005
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "41de485a-98af-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 5390,
+    "run_id": "e1318a45-dfd3-48d6-9e9a-2fb0d74a2c3c",
+    "status": "completed",
+    "input_tokens": 115,
+    "output_tokens": 252,
+    "cost_usd": 0.0028075
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "ed2b175f-e63d-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1755,
+    "run_id": "d6643e78-aefe-43a7-9036-8352b64adc66",
+    "status": "completed",
+    "input_tokens": 232,
+    "output_tokens": 565,
+    "cost_usd": 0.00058323
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "94f3945c-a596-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 5060,
+    "run_id": "e1bdbdba-9248-4793-9689-c64b10f6533a",
+    "status": "completed",
+    "input_tokens": 118,
+    "output_tokens": 391,
+    "cost_usd": 0.004205
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "2ca79e49-a73b-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3312,
+    "run_id": "602eb8ec-942c-44f4-af0b-9b50d47c9272",
+    "status": "completed",
+    "input_tokens": 181,
+    "output_tokens": 761,
+    "cost_usd": 0.00070798
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "e1330b9f-31d3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2661,
+    "run_id": "e8fbdab6-54e5-454b-b3cb-d69500a85727",
+    "status": "completed",
+    "input_tokens": 136,
+    "output_tokens": 765,
+    "cost_usd": 0.00068459
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "ed2b175f-e63d-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11471,
+    "run_id": "f6fa84c1-ed10-428b-8ecc-f60833040978",
+    "status": "completed",
+    "input_tokens": 209,
+    "output_tokens": 859,
+    "cost_usd": 0.0091125
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "4d30f627-adcf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2554,
+    "run_id": "71e57948-a4b4-49e0-bd9b-dbc733d8cc09",
+    "status": "completed",
+    "input_tokens": 164,
+    "output_tokens": 993,
+    "cost_usd": 0.00088123
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "2ca79e49-a73b-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11802,
+    "run_id": "4590e2bd-994b-4a2a-b9d3-5b9ddcc2a8b2",
+    "status": "completed",
+    "input_tokens": 158,
+    "output_tokens": 639,
+    "cost_usd": 0.006785
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "e1330b9f-31d3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8668,
+    "run_id": "54f56fc0-eef3-4dac-96db-516584f3b181",
+    "status": "completed",
+    "input_tokens": 113,
+    "output_tokens": 600,
+    "cost_usd": 0.0062825
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "5704959a-3fbf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3380,
+    "run_id": "f4115a93-5077-41e2-9bf9-5f52bf91edde",
+    "status": "completed",
+    "input_tokens": 181,
+    "output_tokens": 1001,
+    "cost_usd": 0.0008975799999999998
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "9f53f572-cb29-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3647,
+    "run_id": "6adf2762-9837-46c5-9047-9ca34093bb0c",
+    "status": "completed",
+    "input_tokens": 172,
+    "output_tokens": 1022,
+    "cost_usd": 0.00090886
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "5704959a-3fbf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9493,
+    "run_id": "7845a6b0-bdfb-458a-88d3-3ba35cc0c92f",
+    "status": "completed",
+    "input_tokens": 158,
+    "output_tokens": 758,
+    "cost_usd": 0.007975
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "496d1f01-b582-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2480,
+    "run_id": "ea0f7ba6-3acc-4f08-85fb-217a04f86de9",
+    "status": "completed",
+    "input_tokens": 172,
+    "output_tokens": 644,
+    "cost_usd": 0.0006102400000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "4d30f627-adcf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 14142,
+    "run_id": "1f5881eb-9eaa-45fa-a653-619f909b5bad",
+    "status": "completed",
+    "input_tokens": 140,
+    "output_tokens": 717,
+    "cost_usd": 0.007520000000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "661a48e1-8431-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3275,
+    "run_id": "43240d9b-3c4e-4b2c-b998-6b80244b913c",
+    "status": "completed",
+    "input_tokens": 198,
+    "output_tokens": 720,
+    "cost_usd": 0.00068562
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "496d1f01-b582-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8934,
+    "run_id": "d716571a-777b-4a84-877a-a9a3e61a2b05",
+    "status": "completed",
+    "input_tokens": 148,
+    "output_tokens": 705,
+    "cost_usd": 0.0074199999999999995
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "00715362-73b3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2367,
+    "run_id": "4ba2da21-d01c-45c4-8112-a6b59ca356ca",
+    "status": "completed",
+    "input_tokens": 138,
+    "output_tokens": 407,
+    "cost_usd": 0.00040295
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "661a48e1-8431-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7855,
+    "run_id": "4b1f9798-2c49-4c0b-be73-4357da33d917",
+    "status": "completed",
+    "input_tokens": 175,
+    "output_tokens": 647,
+    "cost_usd": 0.0069075000000000004
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "45e705cf-e771-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 4426,
+    "run_id": "09414306-eef0-4b45-9927-698cd2614f22",
+    "status": "completed",
+    "input_tokens": 170,
+    "output_tokens": 984,
+    "cost_usd": 0.00087766
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "9f53f572-cb29-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 22376,
+    "run_id": "d479277e-fe02-4015-a8c6-5c500bff4733",
+    "status": "completed",
+    "input_tokens": 148,
+    "output_tokens": 782,
+    "cost_usd": 0.008190000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "00715362-73b3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 5899,
+    "run_id": "04552658-b9e0-459b-8140-1ba217507380",
+    "status": "completed",
+    "input_tokens": 115,
+    "output_tokens": 357,
+    "cost_usd": 0.0038575
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "38fec19d-a0d2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1716,
+    "run_id": "124b5914-7e7a-4cd3-b6b4-9aa4f0ecdd54",
+    "status": "completed",
+    "input_tokens": 158,
+    "output_tokens": 434,
+    "cost_usd": 0.00043608000000000004
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "2f20bbee-5774-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3354,
+    "run_id": "77f4c192-1547-4c3f-a279-68b1bf3cdf4c",
+    "status": "completed",
+    "input_tokens": 294,
+    "output_tokens": 1024,
+    "cost_usd": 0.0009824200000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "38fec19d-a0d2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7505,
+    "run_id": "4fd67090-1e9a-4ddf-958b-726c35f1a35a",
+    "status": "completed",
+    "input_tokens": 135,
+    "output_tokens": 440,
+    "cost_usd": 0.0047375
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "45e705cf-e771-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9428,
+    "run_id": "94138bd2-8822-461a-938c-ae0b3aadfeb1",
+    "status": "completed",
+    "input_tokens": 147,
+    "output_tokens": 529,
+    "cost_usd": 0.0056575
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "030a913c-68e4-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2770,
+    "run_id": "2b1364c2-342b-4769-b07b-5b30252d34ac",
+    "status": "completed",
+    "input_tokens": 252,
+    "output_tokens": 608,
+    "cost_usd": 0.000629
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "5b32b074-18b1-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2599,
+    "run_id": "468fc619-b0f8-4913-a051-a3258c228aee",
+    "status": "completed",
+    "input_tokens": 181,
+    "output_tokens": 601,
+    "cost_usd": 0.0005815799999999999
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "2f20bbee-5774-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10284,
+    "run_id": "917013f2-7f0c-4d89-8ccb-5d53ec2f7ab8",
+    "status": "completed",
+    "input_tokens": 271,
+    "output_tokens": 1024,
+    "cost_usd": 0.0109175
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "030a913c-68e4-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7461,
+    "run_id": "73f40453-ca0a-4f58-b1e9-b2ed8f92573a",
+    "status": "completed",
+    "input_tokens": 228,
+    "output_tokens": 492,
+    "cost_usd": 0.00549
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "d0b5debe-1efb-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2937,
+    "run_id": "d4e41ea8-a0c4-42b8-8976-4205202cc215",
+    "status": "completed",
+    "input_tokens": 316,
+    "output_tokens": 676,
+    "cost_usd": 0.0007204800000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "dcbc750f-9798-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1906,
+    "run_id": "fe41e37d-31f2-42a4-b3aa-6d8ea0c9e76f",
+    "status": "completed",
+    "input_tokens": 147,
+    "output_tokens": 376,
+    "cost_usd": 0.00038376999999999997
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "5b32b074-18b1-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8342,
+    "run_id": "72ad95cf-d361-4836-8c7c-aecebaac6e24",
+    "status": "completed",
+    "input_tokens": 158,
+    "output_tokens": 520,
+    "cost_usd": 0.005595000000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "7e69b80b-219e-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2019,
+    "run_id": "d18f951a-13c4-4e8b-a2c5-f4b4b0a8d9c5",
+    "status": "completed",
+    "input_tokens": 270,
+    "output_tokens": 640,
+    "cost_usd": 0.0006649000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "d0b5debe-1efb-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7920,
+    "run_id": "27ea97eb-fb70-42a8-9fac-f2868ad0bc17",
+    "status": "completed",
+    "input_tokens": 295,
+    "output_tokens": 495,
+    "cost_usd": 0.005687500000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "dcbc750f-9798-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 6700,
+    "run_id": "549146af-f854-4419-ad84-45674507d927",
+    "status": "completed",
+    "input_tokens": 123,
+    "output_tokens": 435,
+    "cost_usd": 0.004657499999999999
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "7214203d-8a10-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3285,
+    "run_id": "57e00335-7cb2-48ad-a233-5e5500f16b0c",
+    "status": "completed",
+    "input_tokens": 486,
+    "output_tokens": 921,
+    "cost_usd": 0.0010143300000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "68be450a-bd7c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2635,
+    "run_id": "978d0601-f381-4d53-8a3f-b124d03801bc",
+    "status": "completed",
+    "input_tokens": 193,
+    "output_tokens": 771,
+    "cost_usd": 0.00072296
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "7e69b80b-219e-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9305,
+    "run_id": "059b02bd-0f08-46f2-9fae-50c54d056f49",
+    "status": "completed",
+    "input_tokens": 249,
+    "output_tokens": 744,
+    "cost_usd": 0.0080625
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "7214203d-8a10-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7721,
+    "run_id": "7fe8c03c-ed33-4fe0-9833-0516814bfe96",
+    "status": "completed",
+    "input_tokens": 463,
+    "output_tokens": 725,
+    "cost_usd": 0.0084075
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "92d2fe23-fe81-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3873,
+    "run_id": "2f478c9b-eb3f-47b1-b126-569fca7c5091",
+    "status": "completed",
+    "input_tokens": 237,
+    "output_tokens": 996,
+    "cost_usd": 0.00092667
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "02d0a5cc-5773-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3015,
+    "run_id": "b5f1164b-73d9-4a2b-bd3d-3ab28bb4716c",
+    "status": "completed",
+    "input_tokens": 144,
+    "output_tokens": 927,
+    "cost_usd": 0.00081729
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "68be450a-bd7c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11359,
+    "run_id": "e6da27c8-8e71-4a1b-bd9e-91d827c475bc",
+    "status": "completed",
+    "input_tokens": 170,
+    "output_tokens": 597,
+    "cost_usd": 0.006395
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "f1901f7d-4493-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2072,
+    "run_id": "91da9328-e13c-4bc3-90d2-2ce9b2ef73c3",
+    "status": "completed",
+    "input_tokens": 166,
+    "output_tokens": 548,
+    "cost_usd": 0.0005308600000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "92d2fe23-fe81-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11221,
+    "run_id": "c1e43bec-04e6-4ca3-9e80-0a02243a72d8",
+    "status": "completed",
+    "input_tokens": 214,
+    "output_tokens": 753,
+    "cost_usd": 0.008065000000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "dad55c7e-810c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3311,
+    "run_id": "ea98e0fb-b63a-4c83-b2f9-f61a1a5c8b82",
+    "status": "completed",
+    "input_tokens": 225,
+    "output_tokens": 795,
+    "cost_usd": 0.0007608000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "02d0a5cc-5773-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11411,
+    "run_id": "d1d4257c-ea10-4450-9e04-c9247577bc5f",
+    "status": "completed",
+    "input_tokens": 120,
+    "output_tokens": 647,
+    "cost_usd": 0.00677
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "f1901f7d-4493-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8100,
+    "run_id": "3acc64c0-a979-459f-941d-c1fa133e1f27",
+    "status": "completed",
+    "input_tokens": 143,
+    "output_tokens": 413,
+    "cost_usd": 0.0044875
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "5f979c3f-0e84-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3469,
+    "run_id": "6b5f303a-e5af-410a-bc62-3e9ce8391854",
+    "status": "completed",
+    "input_tokens": 489,
+    "output_tokens": 1024,
+    "cost_usd": 0.0010974700000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "5893d14b-3015-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3796,
+    "run_id": "c512b22b-93f8-4f11-a2f7-1238f2a6f3ad",
+    "status": "completed",
+    "input_tokens": 317,
+    "output_tokens": 1024,
+    "cost_usd": 0.00099599
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "dad55c7e-810c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9772,
+    "run_id": "56617d4a-f2f4-40b2-842e-7f98b5896b55",
+    "status": "completed",
+    "input_tokens": 202,
+    "output_tokens": 668,
+    "cost_usd": 0.007185
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "4e7a2456-43d9-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1041,
+    "run_id": "5ce48dd6-b4b9-4771-9233-b4ae5b430038",
+    "status": "completed",
+    "input_tokens": 326,
+    "output_tokens": 333,
+    "cost_usd": 0.00045541000000000006
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "5f979c3f-0e84-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9152,
+    "run_id": "b7dab220-489e-4eff-9ecf-a5b1956bb7d6",
+    "status": "completed",
+    "input_tokens": 466,
+    "output_tokens": 846,
+    "cost_usd": 0.009625
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "d9c7e0be-6bc3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2175,
+    "run_id": "02270ecd-a987-4c28-9d5c-9fb542b80937",
+    "status": "completed",
+    "input_tokens": 299,
+    "output_tokens": 483,
+    "cost_usd": 0.00055798
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "4e7a2456-43d9-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 5081,
+    "run_id": "f17a98ff-f0ae-42c2-9758-c1d99f34e771",
+    "status": "completed",
+    "input_tokens": 303,
+    "output_tokens": 417,
+    "cost_usd": 0.0049275000000000005
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "f10e4b18-4023-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2947,
+    "run_id": "d3e53aa2-b75e-442e-bb20-1e1ccfa1b05f",
+    "status": "completed",
+    "input_tokens": 270,
+    "output_tokens": 1024,
+    "cost_usd": 0.0009682600000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "5893d14b-3015-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11323,
+    "run_id": "06a94229-c3b6-49f3-94e0-d486a49edc83",
+    "status": "completed",
+    "input_tokens": 295,
+    "output_tokens": 971,
+    "cost_usd": 0.0104475
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "d9c7e0be-6bc3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7548,
+    "run_id": "45472675-dcf6-436b-91c6-dbb2d2f0b86b",
+    "status": "completed",
+    "input_tokens": 275,
+    "output_tokens": 514,
+    "cost_usd": 0.0058275
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "d4ed9772-4281-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3479,
+    "run_id": "f7f6669e-4782-44fc-ae9d-23b847434077",
+    "status": "completed",
+    "input_tokens": 591,
+    "output_tokens": 1024,
+    "cost_usd": 0.00115765
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "bc293c19-a457-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 4150,
+    "run_id": "cba5dfeb-fdc6-4f53-af76-c86aaf42377f",
+    "status": "completed",
+    "input_tokens": 358,
+    "output_tokens": 1024,
+    "cost_usd": 0.00102018
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "f10e4b18-4023-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10712,
+    "run_id": "ea3754f4-635b-4db0-acb2-6cf4c2de1894",
+    "status": "completed",
+    "input_tokens": 250,
+    "output_tokens": 955,
+    "cost_usd": 0.010175
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "d4ed9772-4281-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10760,
+    "run_id": "7d35ca13-f9ea-475a-a308-474bf0eab80c",
+    "status": "completed",
+    "input_tokens": 564,
+    "output_tokens": 725,
+    "cost_usd": 0.00866
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "5875107d-ecdf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3566,
+    "run_id": "804b7090-525c-4398-a79f-76bb439844d7",
+    "status": "completed",
+    "input_tokens": 305,
+    "output_tokens": 1024,
+    "cost_usd": 0.00098891
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "7c18de42-3908-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3781,
+    "run_id": "e0e51d5c-2ae5-4d12-96e8-badae8e162b3",
+    "status": "completed",
+    "input_tokens": 387,
+    "output_tokens": 1024,
+    "cost_usd": 0.0010372900000000002
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "bc293c19-a457-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9970,
+    "run_id": "344c7de7-a5ee-423f-9eb7-a69f93f29357",
+    "status": "completed",
+    "input_tokens": 334,
+    "output_tokens": 922,
+    "cost_usd": 0.010055000000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "2b3771b3-253f-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1369,
+    "run_id": "cc8187f1-361c-4cfd-8ea5-be113a093afd",
+    "status": "completed",
+    "input_tokens": 265,
+    "output_tokens": 450,
+    "cost_usd": 0.00051185
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "5875107d-ecdf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9835,
+    "run_id": "7cb7dda1-ada6-4713-af66-8e421587334f",
+    "status": "completed",
+    "input_tokens": 282,
+    "output_tokens": 857,
+    "cost_usd": 0.009274999999999999
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "7c18de42-3908-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 6103,
+    "run_id": "a21a4051-36ef-4b31-a12a-6c31dbf56799",
+    "status": "completed",
+    "input_tokens": 365,
+    "output_tokens": 780,
+    "cost_usd": 0.0087125
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "836478e1-173a-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3471,
+    "run_id": "75378234-7172-4bee-9e5e-715a1a2316f2",
+    "status": "completed",
+    "input_tokens": 344,
+    "output_tokens": 1024,
+    "cost_usd": 0.0010119200000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "2b3771b3-253f-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 6678,
+    "run_id": "c0abefdd-bc73-4171-983f-8517e42888b2",
+    "status": "completed",
+    "input_tokens": 242,
+    "output_tokens": 567,
+    "cost_usd": 0.006274999999999999
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "2bd29bcd-ab98-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 1392,
+    "run_id": "321d5c5c-7f1b-4373-be43-3779f73b4762",
+    "status": "completed",
+    "input_tokens": 216,
+    "output_tokens": 337,
+    "cost_usd": 0.00039367000000000004
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "8c8ebfcf-0330-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 4410,
+    "run_id": "a3c0d86c-0cac-473d-a504-7e950fbe5077",
+    "status": "completed",
+    "input_tokens": 345,
+    "output_tokens": 1024,
+    "cost_usd": 0.00101251
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "2bd29bcd-ab98-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 6131,
+    "run_id": "6167351e-8610-44e0-987b-b710dc203199",
+    "status": "completed",
+    "input_tokens": 193,
+    "output_tokens": 348,
+    "cost_usd": 0.0039625
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "836478e1-173a-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10538,
+    "run_id": "88b60b36-5424-4deb-9367-e6b1757dd71a",
+    "status": "completed",
+    "input_tokens": 320,
+    "output_tokens": 930,
+    "cost_usd": 0.010100000000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "d1d97baf-9e4c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2659,
+    "run_id": "b1919e59-5b8d-4d82-97f1-b858bf16a6e8",
+    "status": "completed",
+    "input_tokens": 331,
+    "output_tokens": 454,
+    "cost_usd": 0.00055395
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "be6d6e30-18b2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3410,
+    "run_id": "cbd61866-b1c1-4331-9a8b-5a66e0ea6fe7",
+    "status": "completed",
+    "input_tokens": 191,
+    "output_tokens": 717,
+    "cost_usd": 0.0006791200000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "d1d97baf-9e4c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8681,
+    "run_id": "4a2edc3f-efd2-4aed-a94d-e7fa252c93a2",
+    "status": "completed",
+    "input_tokens": 308,
+    "output_tokens": 625,
+    "cost_usd": 0.00702
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "8c8ebfcf-0330-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 14080,
+    "run_id": "ca10abe1-307a-4b5e-a700-9c4ebbca88dc",
+    "status": "completed",
+    "input_tokens": 322,
+    "output_tokens": 777,
+    "cost_usd": 0.008575
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "46a50244-6923-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3803,
+    "run_id": "735daf51-06a7-4e9a-a46e-ad6854f48669",
+    "status": "completed",
+    "input_tokens": 407,
+    "output_tokens": 1024,
+    "cost_usd": 0.0010490900000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "be6d6e30-18b2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9227,
+    "run_id": "05707575-d95b-401f-b791-df1ee6572700",
+    "status": "completed",
+    "input_tokens": 168,
+    "output_tokens": 550,
+    "cost_usd": 0.005920000000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "c0d653bd-3abd-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3570,
+    "run_id": "58455a44-8c3a-45b5-99dd-cd067cea31f2",
+    "status": "completed",
+    "input_tokens": 351,
+    "output_tokens": 1004,
+    "cost_usd": 0.00100025
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "316cc7c0-34d5-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2797,
+    "run_id": "9083f351-66b5-4788-bab6-32604f7cff09",
+    "status": "completed",
+    "input_tokens": 218,
+    "output_tokens": 619,
+    "cost_usd": 0.00061763
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "46a50244-6923-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7758,
+    "run_id": "e8140fe6-9e1b-4c96-a579-094fbbfb18cb",
+    "status": "completed",
+    "input_tokens": 384,
+    "output_tokens": 592,
+    "cost_usd": 0.00688
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "c0d653bd-3abd-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8576,
+    "run_id": "a34f87b3-f1ab-46f3-885d-df768e97e3ab",
+    "status": "completed",
+    "input_tokens": 328,
+    "output_tokens": 781,
+    "cost_usd": 0.00863
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "b4e1a627-1c37-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3978,
+    "run_id": "6b13e342-16cd-47c8-9700-5de9ab3d0fc2",
+    "status": "completed",
+    "input_tokens": 252,
+    "output_tokens": 1024,
+    "cost_usd": 0.00095764
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "8166dd0c-cff1-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3008,
+    "run_id": "2e4f5505-8796-49e0-84cf-207e06bc795e",
+    "status": "completed",
+    "input_tokens": 696,
+    "output_tokens": 1024,
+    "cost_usd": 0.0012196
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "b4e1a627-1c37-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9831,
+    "run_id": "ba5be7d3-b5f8-4049-b0a8-5a25b1b1895f",
+    "status": "completed",
+    "input_tokens": 228,
+    "output_tokens": 757,
+    "cost_usd": 0.00814
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "316cc7c0-34d5-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 14425,
+    "run_id": "c7b2641c-ea2a-4a6e-b915-6b69c8c5f56a",
+    "status": "completed",
+    "input_tokens": 195,
+    "output_tokens": 866,
+    "cost_usd": 0.0091475
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "e4e291f7-4535-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 4648,
+    "run_id": "5c4f3353-c6fa-43e0-8a80-2f26ebe82f3c",
+    "status": "completed",
+    "input_tokens": 312,
+    "output_tokens": 1024,
+    "cost_usd": 0.0009930400000000002
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "76579c82-c472-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3391,
+    "run_id": "7d720f0f-4d08-4ad8-aa5d-117c4868ae40",
+    "status": "completed",
+    "input_tokens": 327,
+    "output_tokens": 1024,
+    "cost_usd": 0.00100189
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "8166dd0c-cff1-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 14704,
+    "run_id": "95022369-28ca-4eeb-908f-d0765c062667",
+    "status": "completed",
+    "input_tokens": 650,
+    "output_tokens": 1024,
+    "cost_usd": 0.011865
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "f25e0c1c-d0e0-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2620,
+    "run_id": "d0f49bde-102c-4cd1-bae0-283e853f31c2",
+    "status": "completed",
+    "input_tokens": 322,
+    "output_tokens": 881,
+    "cost_usd": 0.00088597
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "e4e291f7-4535-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 14638,
+    "run_id": "2a888a4c-f793-4363-a9e5-f1fafe4c7150",
+    "status": "completed",
+    "input_tokens": 293,
+    "output_tokens": 976,
+    "cost_usd": 0.0104925
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "a9462bff-64df-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3161,
+    "run_id": "9c1e6d10-b5c2-47cf-b198-f25b49087990",
+    "status": "completed",
+    "input_tokens": 379,
+    "output_tokens": 815,
+    "cost_usd": 0.00086746
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "76579c82-c472-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10848,
+    "run_id": "c34d0f22-f6dd-45a9-992f-562ddcf0e031",
+    "status": "completed",
+    "input_tokens": 306,
+    "output_tokens": 1024,
+    "cost_usd": 0.011005000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "f25e0c1c-d0e0-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7543,
+    "run_id": "9a1d18bb-f34c-4920-bf39-29cc3f07febb",
+    "status": "completed",
+    "input_tokens": 299,
+    "output_tokens": 545,
+    "cost_usd": 0.006197500000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "f4ddd3bd-b9b0-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2922,
+    "run_id": "5b05e905-4077-4259-bd1b-991f6454f484",
+    "status": "completed",
+    "input_tokens": 275,
+    "output_tokens": 859,
+    "cost_usd": 0.0008408599999999999
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "a16ad64a-b216-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2600,
+    "run_id": "bf387dde-f504-4eea-bfed-81095caad48c",
+    "status": "completed",
+    "input_tokens": 237,
+    "output_tokens": 549,
+    "cost_usd": 0.00057354
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "f4ddd3bd-b9b0-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 5947,
+    "run_id": "4743ad1b-750b-46ec-b31c-54e498e7df9d",
+    "status": "completed",
+    "input_tokens": 252,
+    "output_tokens": 581,
+    "cost_usd": 0.00644
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "848c4a51-e9ab-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3116,
+    "run_id": "0e37f233-033e-4a51-b5ae-29a231df5c9f",
+    "status": "completed",
+    "input_tokens": 331,
+    "output_tokens": 837,
+    "cost_usd": 0.0008565199999999999
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "a9462bff-64df-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10770,
+    "run_id": "99a67e7d-3e9d-4a10-ba7a-637555439fe5",
+    "status": "completed",
+    "input_tokens": 356,
+    "output_tokens": 773,
+    "cost_usd": 0.008620000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "a16ad64a-b216-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7223,
+    "run_id": "86d3968e-c783-44f3-86a1-cad210bd92a4",
+    "status": "completed",
+    "input_tokens": 214,
+    "output_tokens": 618,
+    "cost_usd": 0.006715
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "165c1883-b2d7-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2956,
+    "run_id": "7ad586d2-b365-4e58-8463-89c33b20f619",
+    "status": "completed",
+    "input_tokens": 464,
+    "output_tokens": 748,
+    "cost_usd": 0.00086468
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "ed3b91e8-8cb8-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2905,
+    "run_id": "fbbe8dfc-8200-417e-a409-02d4f09b334d",
+    "status": "completed",
+    "input_tokens": 273,
+    "output_tokens": 735,
+    "cost_usd": 0.0007417200000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "848c4a51-e9ab-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10695,
+    "run_id": "30604060-f801-4ddf-8ce3-fb9752ce22eb",
+    "status": "completed",
+    "input_tokens": 308,
+    "output_tokens": 628,
+    "cost_usd": 0.00705
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "8fdae0f0-6d9c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2362,
+    "run_id": "01c11247-6df5-45a8-a7a4-1b6e445a67ab",
+    "status": "completed",
+    "input_tokens": 366,
+    "output_tokens": 644,
+    "cost_usd": 0.0007247
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "ed3b91e8-8cb8-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10251,
+    "run_id": "c8213f6d-af64-4e1b-8c69-009089e99093",
+    "status": "completed",
+    "input_tokens": 250,
+    "output_tokens": 597,
+    "cost_usd": 0.006594999999999999
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "165c1883-b2d7-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 14751,
+    "run_id": "84bb2c4e-1399-4613-8d37-0c4f0c8a4d44",
+    "status": "completed",
+    "input_tokens": 440,
+    "output_tokens": 929,
+    "cost_usd": 0.010390000000000002
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "de8d7541-6edf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2618,
+    "run_id": "ecdc6962-c4e7-489f-ba2b-a3feab28f5dd",
+    "status": "completed",
+    "input_tokens": 594,
+    "output_tokens": 910,
+    "cost_usd": 0.00106936
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "7d55f825-7bb2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3931,
+    "run_id": "520e7aee-eecc-4dbe-a808-f676219c9069",
+    "status": "completed",
+    "input_tokens": 184,
+    "output_tokens": 1024,
+    "cost_usd": 0.00091752
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "de8d7541-6edf-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10262,
+    "run_id": "c87ed2c1-7e18-4f1c-a85a-0c1df3e0d8d4",
+    "status": "completed",
+    "input_tokens": 571,
+    "output_tokens": 810,
+    "cost_usd": 0.009527500000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "8fdae0f0-6d9c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 16654,
+    "run_id": "cc16f7ad-a1a9-420d-99fd-7400551eee29",
+    "status": "completed",
+    "input_tokens": 341,
+    "output_tokens": 574,
+    "cost_usd": 0.006592499999999999
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "7d55f825-7bb2-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 6401,
+    "run_id": "f051a244-a8cd-46f3-8cf0-cef00613d1e8",
+    "status": "completed",
+    "input_tokens": 161,
+    "output_tokens": 463,
+    "cost_usd": 0.0050325000000000005
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "a0444786-68c6-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2544,
+    "run_id": "0f1c5ac9-72f6-405a-abca-e76b9d6f9340",
+    "status": "completed",
+    "input_tokens": 177,
+    "output_tokens": 718,
+    "cost_usd": 0.00067165
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "586b20c9-c06c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2675,
+    "run_id": "bd52d682-d289-48fd-9d21-22380b59d1ff",
+    "status": "completed",
+    "input_tokens": 175,
+    "output_tokens": 1024,
+    "cost_usd": 0.0009122100000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "e6f3c650-6091-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3522,
+    "run_id": "95cb9676-f92b-44f6-b584-7e1d2ad1e038",
+    "status": "completed",
+    "input_tokens": 244,
+    "output_tokens": 1024,
+    "cost_usd": 0.0009529200000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "a0444786-68c6-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 7308,
+    "run_id": "b178268d-6eb1-42c3-b0e0-6737d53e337c",
+    "status": "completed",
+    "input_tokens": 154,
+    "output_tokens": 466,
+    "cost_usd": 0.005045
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "586b20c9-c06c-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 9478,
+    "run_id": "28238b97-a9eb-4633-bde6-cca6c22573fb",
+    "status": "completed",
+    "input_tokens": 152,
+    "output_tokens": 856,
+    "cost_usd": 0.00894
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "27e488d7-24f3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3734,
+    "run_id": "5869c482-ce0e-4273-923c-51ad92068cf3",
+    "status": "completed",
+    "input_tokens": 302,
+    "output_tokens": 1024,
+    "cost_usd": 0.00098714
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "f31cf7c1-6458-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3093,
+    "run_id": "229d77c1-223c-425e-8427-3f605f2817f9",
+    "status": "completed",
+    "input_tokens": 345,
+    "output_tokens": 849,
+    "cost_usd": 0.00087426
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "e6f3c650-6091-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 10397,
+    "run_id": "25289427-9cab-4515-b72d-2e4c004ac8c1",
+    "status": "completed",
+    "input_tokens": 221,
+    "output_tokens": 992,
+    "cost_usd": 0.0104725
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "85e72f20-267a-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2607,
+    "run_id": "77d75619-8485-426f-9566-90c8a4b96fa6",
+    "status": "completed",
+    "input_tokens": 398,
+    "output_tokens": 818,
+    "cost_usd": 0.00088104
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "27e488d7-24f3-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 12513,
+    "run_id": "6d9a8c1a-92a6-4d0a-be49-ff6c1235e8d6",
+    "status": "completed",
+    "input_tokens": 279,
+    "output_tokens": 988,
+    "cost_usd": 0.0105775
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "f31cf7c1-6458-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 11504,
+    "run_id": "998546bb-59ad-4185-bcd7-98087879ea19",
+    "status": "completed",
+    "input_tokens": 322,
+    "output_tokens": 606,
+    "cost_usd": 0.0068650000000000004
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "9d080a66-a9fc-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3882,
+    "run_id": "0ea0a3d6-9f79-456c-ae70-0f97db8e3182",
+    "status": "completed",
+    "input_tokens": 267,
+    "output_tokens": 1024,
+    "cost_usd": 0.0009664900000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "85e72f20-267a-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8094,
+    "run_id": "744089de-bf59-47b3-959c-952468703ecf",
+    "status": "completed",
+    "input_tokens": 375,
+    "output_tokens": 558,
+    "cost_usd": 0.006517500000000001
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "30541b0a-864e-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 2134,
+    "run_id": "47659ee2-c8fb-4aec-9e7d-db7be15ed0c4",
+    "status": "completed",
+    "input_tokens": 320,
+    "output_tokens": 685,
+    "cost_usd": 0.00072995
+  },
+  {
+    "model_id": "llama-3.1-70b",
+    "question_id": "2e8fe7d4-d629-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 3011,
+    "run_id": "707d6d8a-a7c7-4860-a09f-9b4fea085a4f",
+    "status": "completed",
+    "input_tokens": 363,
+    "output_tokens": 864,
+    "cost_usd": 0.0008967300000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "9d080a66-a9fc-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8466,
+    "run_id": "386a48d7-6cc6-433f-b4d0-5cce9afda515",
+    "status": "completed",
+    "input_tokens": 240,
+    "output_tokens": 650,
+    "cost_usd": 0.0071
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "30541b0a-864e-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 8943,
+    "run_id": "e37881bd-6f71-4f43-9a52-aa9377647d48",
+    "status": "completed",
+    "input_tokens": 296,
+    "output_tokens": 646,
+    "cost_usd": 0.007200000000000001
+  },
+  {
+    "model_id": "gpt-4o",
+    "question_id": "2e8fe7d4-d629-0000-0000-000000000000",
+    "strategy": "zero-shot",
+    "hyperparams": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "max_tokens": 1024
+    },
+    "ok": true,
+    "error": null,
+    "latency_ms": 15587,
+    "run_id": "4bb5fdb5-e325-4402-91cb-eca4f0fc7bf6",
+    "status": "completed",
+    "input_tokens": 339,
+    "output_tokens": 954,
+    "cost_usd": 0.0103875
+  }
+]

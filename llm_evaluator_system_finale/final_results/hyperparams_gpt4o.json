@@ -1,0 +1,73 @@
+{
+  "model_id": "gpt-4o",
+  "parameters": {
+    "temperature": {
+      "results": [
+        {
+          "param_name": "temperature",
+          "param_value": "0.0",
+          "avg_mcs": 72.48,
+          "score_variance": 11.9555,
+          "run_count": 80
+        },
+        {
+          "param_name": "temperature",
+          "param_value": "0.3",
+          "avg_mcs": 72.51,
+          "score_variance": 12.5524,
+          "run_count": 460
+        },
+        {
+          "param_name": "temperature",
+          "param_value": "0.7",
+          "avg_mcs": 69.82,
+          "score_variance": 13.1186,
+          "run_count": 100
+        },
+        {
+          "param_name": "temperature",
+          "param_value": "1.0",
+          "avg_mcs": 72.07,
+          "score_variance": 12.3658,
+          "run_count": 80
+        }
+      ],
+      "recommended_value": "0.3",
+      "sensitivity": "LOW"
+    },
+    "top_p": {
+      "results": [
+        {
+          "param_name": "top_p",
+          "param_value": "0.7",
+          "avg_mcs": 73.12,
+          "score_variance": 11.8475,
+          "run_count": 80
+        },
+        {
+          "param_name": "top_p",
+          "param_value": "0.85",
+          "avg_mcs": 73.08,
+          "score_variance": 12.8618,
+          "run_count": 80
+        },
+        {
+          "param_name": "top_p",
+          "param_value": "0.9",
+          "avg_mcs": 71.22,
+          "score_variance": 12.6463,
+          "run_count": 480
+        },
+        {
+          "param_name": "top_p",
+          "param_value": "1.0",
+          "avg_mcs": 73.34,
+          "score_variance": 11.708,
+          "run_count": 80
+        }
+      ],
+      "recommended_value": "1.0",
+      "sensitivity": "LOW"
+    }
+  }
+}

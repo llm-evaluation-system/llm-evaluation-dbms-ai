@@ -1,0 +1,3922 @@
+[
+  {
+    "question_id": "6bd4ccd2-5d85-0000-0000-000000000000",
+    "subtopic": "SQL: QUERIES, CONSTRAINTS, TRIGGERS",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "b1d701b3-6fca-465c-acb4-3a3a8ce74728",
+      "gpt-4o": "fc6e4ea4-1816-49d1-b0ae-44e5780852e6"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "244986f8-ee75-401d-a36d-05a043ef286f",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1200,
+        "new_rating": 1216,
+        "delta": 16,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1200,
+        "new_rating": 1184,
+        "delta": -16,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide a comprehensive discussion on the strengths and weaknesses of triggers and compare them with other SQL integrity constraints. Answer A includes a detailed example of a trigger, which enhances understanding, and references a textbook, adding credibility. It discusses flex",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a detailed example, includes a reference, and covers all expected points comprehensively."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Covers all expected points but lacks a practical example and reference, making it slightly less complete than A."
+      }
+    ]
+  },
+  {
+    "question_id": "c62a41f9-4461-0000-0000-000000000000",
+    "subtopic": "SQL: QUERIES, CONSTRAINTS, TRIGGERS",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "4c7332a5-9801-49f3-8921-184713aa8193",
+      "gpt-4o": "41d98c01-44fb-43f5-9220-12f264143155"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "129fafb2-53cb-4bad-87c5-c56b3ada0fca",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1216,
+        "new_rating": 1231,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1184,
+        "new_rating": 1169,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly define a table constraint on the Emp table to ensure that every employee makes at least $10,000. However, Answer A provides a more detailed explanation of the assertion on the Dept table, including a trigger function as an alternative due to PostgreSQL's lack of suppor",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a comprehensive solution with a trigger function as an alternative to assertions, aligning well with the ground truth."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correctly identifies the lack of assertion support in PostgreSQL but lacks an alternative solution like a trigger."
+      }
+    ]
+  },
+  {
+    "question_id": "6c3f53eb-80bb-0000-0000-000000000000",
+    "subtopic": "SQL: QUERIES, CONSTRAINTS, TRIGGERS",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "3ac9f5c9-0592-4a8a-bc55-f4364b7d8b1a",
+      "gpt-4o": "1a47eaef-7a26-4189-9583-f0f1ee2d771f"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "7108c6c7-b102-4649-ad38-658e6d9299a9",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1169,
+        "new_rating": 1188,
+        "delta": 19,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1231,
+        "new_rating": 1212,
+        "delta": -19,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly provide SQL queries for computing the average, sum, and count of ratings. However, Answer A includes an additional query for counting all rows, which is not required by the question. For the second part, Answer A provides a correct SQL query to find sailors with a high",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B provides correct SQL queries and a detailed analysis of the two SQL queries, aligning with the expected answer."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A provides correct SQL queries but fails to address the comparison of two SQL queries as required by the question."
+      }
+    ]
+  },
+  {
+    "question_id": "0def7bdc-534e-0000-0000-000000000000",
+    "subtopic": "SQL: QUERIES, CONSTRAINTS, TRIGGERS",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "473e7d32-16dd-459e-b7f1-216037a24e71",
+      "gpt-4o": "013bc5d2-b6d6-4788-8532-22eef940235d"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "37d9c59a-86a1-4111-9b0d-8bfddd7a8959",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1188,
+        "new_rating": 1205,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1212,
+        "new_rating": 1195,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B attempt to solve the SQL queries based on the given database schema. For query 1, both answers correctly identify aircraft where all certified pilots earn more than $80,000. For query 3, both answers correctly find pilots whose salary is less than the cheapest route from Los Ang",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Provides complete and mostly correct solutions for all queries, with a coherent approach."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Incomplete and incorrect attempts for query 7, and missing solutions for queries 9, 11, and 13."
+      }
+    ]
+  },
+  {
+    "question_id": "c36cf025-1982-0000-0000-000000000000",
+    "subtopic": "SQL: QUERIES, CONSTRAINTS, TRIGGERS",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "82f7cd77-5143-4e7f-9c72-1b547da16127",
+      "gpt-4o": "db95f7bf-37cc-45ab-a58b-9d527cece865"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "7116f510-a869-4d91-a36b-5536d1465007",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1195,
+        "new_rating": 1211,
+        "delta": 16,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1205,
+        "new_rating": 1189,
+        "delta": -16,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the SQL queries with respect to the given schema. For query 1, both answers correctly use joins and conditions to find juniors taught by I.Teach. For query 3, Answer A uses UNION to combine results, which is correct, while Answer B uses LEFT JOIN and GROUP BY, ",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is correct for all queries and uses straightforward SQL constructs."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is mostly correct but uses an incorrect HAVING EVERY clause in query 9."
+      }
+    ]
+  },
+  {
+    "question_id": "09f1cb01-bac5-0000-0000-000000000000",
+    "subtopic": "RELATIONAL ALGEBRA AND CALCULUS",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "92ba1b7c-2449-4542-b2c3-d306b201bbab",
+      "gpt-4o": "8a02d5dc-f24f-4023-96cf-e444397c7551"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "c252469e-b70d-4884-9128-9052e76c4775",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1189,
+        "new_rating": 1206,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1211,
+        "new_rating": 1194,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A discusses unsafe queries in the context of recursive queries and provides examples in both Datalog and SQL. It explains the potential for non-termination and excessive resource consumption, aligning with the ground truth's emphasis on infinite results. However, it does not directly address ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a broader context of unsafe queries in recursive queries and SQL, with examples and explanations of potential issues, despite not directly addressing relational calculus."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Defines unsafe queries and discusses their importance but uses an SQL example that doesn't illustrate the infinite result concept, which is central to the ground truth."
+      }
+    ]
+  },
+  {
+    "question_id": "8c61735b-507d-0000-0000-000000000000",
+    "subtopic": "RELATIONAL ALGEBRA AND CALCULUS",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "1c32e289-543d-4bbe-a4cb-282b63683e16",
+      "gpt-4o": "4a9f2146-13dd-4f75-b096-cba5150688d9"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "d7b67f80-1964-4f3b-94bd-b4e7d3b266fe",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1206,
+        "new_rating": 1221,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1194,
+        "new_rating": 1179,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a correct and complete solution for queries 1, 2, and 3 in relational algebra, tuple relational calculus, and domain relational calculus. However, it incorrectly states that query 4 cannot be expressed in relational algebra, while the ground truth provides a solution using division",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Correct for queries 1, 2, and 3, and attempts query 4 using division, aligning with ground truth."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Correct for queries 1, 2, and 3, but incorrectly claims query 4 cannot be expressed."
+      }
+    ]
+  },
+  {
+    "question_id": "91d0bd09-fe08-0000-0000-000000000000",
+    "subtopic": "RELATIONAL ALGEBRA AND CALCULUS",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "308a52db-3e8c-4400-ad91-6f2e428bbb3e",
+      "gpt-4o": "53fa2932-9b06-4ae0-a56c-7a3296afcb45"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "ba528007-0d81-498c-90a5-fed93810941c",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1221,
+        "new_rating": 1235,
+        "delta": 14,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1179,
+        "new_rating": 1165,
+        "delta": -14,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B attempt to solve the given queries using relational algebra, tuple relational calculus, and domain relational calculus. Answer A provides solutions for the first six queries, while Answer B provides solutions for the first seven queries. Both answers correctly address the first ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides more accurate relational algebra expressions, despite being incomplete."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B attempts more queries but contains inaccuracies in relational algebra expressions."
+      }
+    ]
+  },
+  {
+    "question_id": "78ebf72b-7b30-0000-0000-000000000000",
+    "subtopic": "RELATIONAL ALGEBRA AND CALCULUS",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "89352a45-3184-4359-8374-bb0db89d9e54",
+      "gpt-4o": "e736c82d-9c3a-4be1-8212-99f3c583865a"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "d61d211c-817c-47a6-a1d1-c058e97f2271",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1165,
+        "new_rating": 1184,
+        "delta": 19,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1235,
+        "new_rating": 1216,
+        "delta": -19,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly explain the concept of composability in relational algebra, emphasizing that operators can be combined to form complex queries. They both highlight the importance of this feature in terms of expressiveness, modularity, and optimization. Answer A provides a more detaile",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "More detailed and comprehensive, includes textbook reference and additional points on simplification."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correct and concise, but less detailed than Answer A and lacks specific references."
+      }
+    ]
+  },
+  {
+    "question_id": "0c053e7b-ed52-0000-0000-000000000000",
+    "subtopic": "THE RELATIONAL MODEL",
+    "difficulty": "easy",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "be46b081-2e80-433a-8028-abe964940bd3",
+      "gpt-4o": "d352b7ce-ef15-40d1-ab21-1ec1510a56f6"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "6b927c8e-87c8-4b56-bf51-ce1c6c46c88a",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1216,
+        "new_rating": 1231,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1184,
+        "new_rating": 1169,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the three sub-questions. For the first question, both answers accurately describe the process of view expansion and query execution. For the second question, both answers provide examples of views that can be automatically updated, although Answer A's example i",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more concise and directly aligned with the ground truth, especially in the third part regarding non-updatable views."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but slightly less concise and precise compared to Answer A, particularly in the explanation of non-updatable views."
+      }
+    ]
+  },
+  {
+    "question_id": "7f30162b-5f47-0000-0000-000000000000",
+    "subtopic": "THE RELATIONAL MODEL",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "283dab3a-d335-44b5-8dd6-01cf7c74847d",
+      "gpt-4o": "df74f94b-8eb4-42a6-97c6-8bf6807f932c"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "cf1e801a-015c-42b6-9a2f-bb066531da7b",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1169,
+        "new_rating": 1188,
+        "delta": 19,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1231,
+        "new_rating": 1212,
+        "delta": -19,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly creates tables for entities A, B, and C, and a relationship table R. It captures the key constraints using primary keys and foreign keys, and acknowledges the inability to enforce total participation of A in R using standard SQL. However, it incorrectly states that the original ta",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a correct schema and accurately explains the limitations of SQL in capturing total participation constraints."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Attempts to use ON DELETE CASCADE for total participation, which is incorrect, and provides a less accurate explanation of constraints."
+      }
+    ]
+  },
+  {
+    "question_id": "c6c4ce74-44f2-0000-0000-000000000000",
+    "subtopic": "THE RELATIONAL MODEL",
+    "difficulty": "easy",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "5dbb7da1-c425-4310-a8c9-c14644b2900a",
+      "gpt-4o": "310b629a-9ffb-48a8-8c64-eb6c00204752"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3e0dd93d-23c9-42ae-b1f9-9fade119a0e4",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1212,
+        "new_rating": 1227,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1188,
+        "new_rating": 1173,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly modify the SQL query to include only the 'login' column and accurately determine the set of tuples when the condition 'gpa >= 2' is added. Answer A provides a clear explanation of the modifications and the resulting tuples, while Answer B also correctly identifies the ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides a clear and detailed explanation of the SQL query modifications and the resulting tuples, making it more precise and complete."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but includes unnecessary details about table aliasing, making it slightly less precise than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "66f0e4d6-5fb0-0000-0000-000000000000",
+    "subtopic": "THE RELATIONAL MODEL",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "61f3e3d3-2c8b-4d7d-917e-24719dcdd825",
+      "gpt-4o": "65d8f195-b15d-4ddb-8ac6-39a024466c84"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "41acf246-ffde-460c-8ca2-8e539e17d6b1",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1173,
+        "new_rating": 1191,
+        "delta": 18,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1227,
+        "new_rating": 1209,
+        "delta": -18,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed and correct list of foreign key constraints, matching the expected answer. It also offers a plausible non-primary key, non-foreign key constraint involving room capacity and course enrollment, which aligns with the ground truth's suggestion of additional constraints. Ans",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correctly identifies all foreign key constraints and provides a relevant non-primary key, non-foreign key constraint."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correctly identifies foreign key constraints but provides a less relevant non-primary key, non-foreign key constraint compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "6e9e7751-c76c-0000-0000-000000000000",
+    "subtopic": "THE RELATIONAL MODEL",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "5f862e31-b599-432d-8593-ced583c1c52c",
+      "gpt-4o": "ddcc4a4b-b480-490e-bab5-01769dcc5552"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "4b07006e-eaec-432e-9144-2d17dda0a1b5",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1209,
+        "new_rating": 1224,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1191,
+        "new_rating": 1176,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly identifies that 'name' is not a candidate key due to duplicate values, aligning with the ground truth. It also correctly states that a candidate key cannot be definitively determined from a single instance without schema constraints, which is consistent with the expected answer. A",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correctly identifies non-candidate keys and aligns with the ground truth by stating that candidate keys cannot be determined from a single instance."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correctly identifies non-candidate keys but incorrectly asserts candidate keys based on a single instance, which is against the ground truth."
+      }
+    ]
+  },
+  {
+    "question_id": "41de485a-98af-0000-0000-000000000000",
+    "subtopic": "THE RELATIONAL MODEL",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "f1edf10d-9089-4c06-8c10-50b30a99d89d",
+      "gpt-4o": "e1318a45-dfd3-48d6-9e9a-2fb0d74a2c3c"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "1e65c6dd-3625-4f0f-b0c8-fdd4cef31cf5",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1176,
+        "new_rating": 1194,
+        "delta": 18,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1224,
+        "new_rating": 1206,
+        "delta": -18,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly identify that the relational model provides both physical and logical data independence. Answer A provides a detailed explanation with examples, illustrating how SQL queries remain unaffected by changes in physical storage and how logical changes might require query mo",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a detailed explanation with examples, enhancing understanding of both physical and logical data independence."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correctly explains both types of data independence but lacks the illustrative examples provided in Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "94f3945c-a596-0000-0000-000000000000",
+    "subtopic": "THE RELATIONAL MODEL",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "32860023-2d6d-469a-81a0-821517f355a8",
+      "gpt-4o": "e1bdbdba-9248-4793-9689-c64b10f6533a"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "1bbfa7d5-ad70-41a2-a210-5ae49db05786",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1194,
+        "new_rating": 1211,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1206,
+        "new_rating": 1189,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide definitions for the terms: relation schema, relational database schema, domain, relation instance, relation cardinality, and relation degree. Both answers are largely correct and align well with the expected answer. Answer A provides a slightly more detailed explanation ",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides a more precise and comprehensive explanation, including the notation for relation schema and the importance of these definitions."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but slightly less precise in the notation for relation schema compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "ed2b175f-e63d-0000-0000-000000000000",
+    "subtopic": "INTERNET APPLICATIONS",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "d6643e78-aefe-43a7-9036-8352b64adc66",
+      "gpt-4o": "f6fa84c1-ed10-428b-8ecc-f60833040978"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "4b3c8b36-eb6d-476c-b7d9-4e7cf015b63a",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1189,
+        "new_rating": 1206,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1211,
+        "new_rating": 1194,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide explanations for the terms and concepts asked in the question. Answer A is more detailed and aligns closely with the expected answer, providing comprehensive explanations for each term and concept. It covers the functionality of application servers and the differences be",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides a more comprehensive and detailed explanation of the terms and concepts, closely aligning with the expected answer."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed than Answer A, making it less aligned with the expected answer."
+      }
+    ]
+  },
+  {
+    "question_id": "2ca79e49-a73b-0000-0000-000000000000",
+    "subtopic": "DATABASE APPLICATION DEVELOPMENT",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "602eb8ec-942c-44f4-af0b-9b50d47c9272",
+      "gpt-4o": "4590e2bd-994b-4a2a-b9d3-5b9ddcc2a8b2"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "9eea829e-3e8e-494d-855f-1ed5bd40cad8",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1206,
+        "new_rating": 1221,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1194,
+        "new_rating": 1179,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide comprehensive explanations of the terms and differences between JDBC and SQLJ, as well as the usefulness of stored procedures. Answer A includes references to a textbook, which adds credibility but is not necessary for correctness. Both answers correctly describe cursors",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Provides concise and precise explanations, covering all necessary points effectively."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "While comprehensive and including a practical example, it is slightly less concise than Answer B."
+      }
+    ]
+  },
+  {
+    "question_id": "e1330b9f-31d3-0000-0000-000000000000",
+    "subtopic": "DATABASE APPLICATION DEVELOPMENT",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "e8fbdab6-54e5-454b-b3cb-d69500a85727",
+      "gpt-4o": "54f56fc0-eef3-4dac-96db-516584f3b181"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3f888925-e753-4d47-9c59-193e45aadddd",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1221,
+        "new_rating": 1235,
+        "delta": 14,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1179,
+        "new_rating": 1165,
+        "delta": -14,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed comparison of exception and warning handling across embedded SQL, dynamic SQL, JDBC, and SQLJ. It correctly identifies the use of SQLCODE and SQLSTATE in embedded and dynamic SQL, and the use of SQLException and SQLWarning in JDBC and SQLJ. Answer B also covers these asp",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides a comprehensive and accurate comparison of exception and warning handling across all specified SQL interfaces, aligning well with the expected answer."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B contains inaccuracies, particularly in the handling of SQLWarning, and provides less common methods for dynamic SQL, making it less aligned with the expected answer."
+      }
+    ]
+  },
+  {
+    "question_id": "4d30f627-adcf-0000-0000-000000000000",
+    "subtopic": "DATABASE APPLICATION DEVELOPMENT",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "71e57948-a4b4-49e0-bd9b-dbc733d8cc09",
+      "gpt-4o": "1f5881eb-9eaa-45fa-a653-619f909b5bad"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "2606b848-2dd4-4386-b548-ec236781abe2",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1235,
+        "new_rating": 1248,
+        "delta": 13,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1165,
+        "new_rating": 1152,
+        "delta": -13,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly describe the steps for connecting to a data source, starting, committing, and aborting transactions, and calling a stored procedure in JDBC. They also both provide accurate descriptions of how these steps are performed in SQLJ. Answer A provides a more detailed explana",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a more comprehensive explanation with additional context about SQLJ's static SQL and its comparison to JDBC."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correct and complete but lacks the additional context provided in Answer A about SQLJ's static nature."
+      }
+    ]
+  },
+  {
+    "question_id": "5704959a-3fbf-0000-0000-000000000000",
+    "subtopic": "HASH-BASED INDEXING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "f4115a93-5077-41e2-9bf9-5f52bf91edde",
+      "gpt-4o": "7845a6b0-bdfb-458a-88d3-3ba35cc0c92f"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "d37cbade-6c79-49ae-bb00-8e8155c52d0c",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1248,
+        "new_rating": 1260,
+        "delta": 12,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1152,
+        "new_rating": 1140,
+        "delta": -12,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly follows the extendible hashing process, detailing the initial structure, each insertion, bucket splits, and directory doubling. It accurately describes the hash values, directory indices, and the final structure with global depth 2. Answer B, while attempting to follow the process",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides a correct and detailed step-by-step process of extendible hashing, including accurate bucket splits and directory doubling."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B contains errors in the handling of bucket splits and directory doubling, leading to an incorrect final structure."
+      }
+    ]
+  },
+  {
+    "question_id": "9f53f572-cb29-0000-0000-000000000000",
+    "subtopic": "HASH-BASED INDEXING",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "6adf2762-9837-46c5-9047-9ca34093bb0c",
+      "gpt-4o": "d479277e-fe02-4015-a8c6-5c500bff4733"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "4a0bd277-b6c2-4c1a-9b0d-f24258db3a6f",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1260,
+        "new_rating": 1271,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1140,
+        "new_rating": 1129,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed explanation of linear hashing, including the initial state, insertion process, and bucket splitting. It correctly describes the use of hash functions and the progression of levels. However, it incorrectly states that Bucket 0 is split when Bucket 1 overflows, which is no",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a detailed explanation and closely follows the expected answer, despite a minor error in bucket splitting."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Lacks specific details about the insertion sequence and includes unnecessary SQL implementation, making it less precise."
+      }
+    ]
+  },
+  {
+    "question_id": "496d1f01-b582-0000-0000-000000000000",
+    "subtopic": "HASH-BASED INDEXING",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "ea0f7ba6-3acc-4f08-85fb-217a04f86de9",
+      "gpt-4o": "d716571a-777b-4a84-877a-a9a3e61a2b05"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "176a423c-dd98-4361-996d-ff994b3c2ecb",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1271,
+        "new_rating": 1281,
+        "delta": 10,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1129,
+        "new_rating": 1119,
+        "delta": -10,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed explanation of extendible hashing, including the initial setup, the process of inserting elements, handling overflow, and the necessary steps to split buckets and increase the global depth. It correctly describes the redistribution of entries and the doubling of the dire",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "More comprehensive and structured explanation, despite an error in overflow handling."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Incorrect handling of global depth after bucket split, less structured explanation."
+      }
+    ]
+  },
+  {
+    "question_id": "661a48e1-8431-0000-0000-000000000000",
+    "subtopic": "HASH-BASED INDEXING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "43240d9b-3c4e-4b2c-b998-6b80244b913c",
+      "gpt-4o": "4b1f9798-2c49-4c0b-be73-4357da33d917"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "f860d420-d6b8-4ee5-9871-a3b81e1d303b",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1281,
+        "new_rating": 1290,
+        "delta": 9,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1119,
+        "new_rating": 1110,
+        "delta": -9,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly follows the expected operations for inserting and deleting elements in a hash index with a bucket size of 2. It acknowledges the need for overflow handling and suggests a possible solution, although it does not implement a split as expected in the ground truth. Answer B, on the ot",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correctly handles insertions and deletions with acknowledgment of overflow, although it does not perform a split."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Incorrectly allows more than two elements in a bucket, violating the bucket size constraint."
+      }
+    ]
+  },
+  {
+    "question_id": "00715362-73b3-0000-0000-000000000000",
+    "subtopic": "TREE-STRUCTURED INDEXING",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "4ba2da21-d01c-45c4-8112-a6b59ca356ca",
+      "gpt-4o": "04552658-b9e0-459b-8140-1ba217507380"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "cc8ae327-d859-4cc7-8ab3-b17a88e8d5da",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1110,
+        "new_rating": 1134,
+        "delta": 24,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1290,
+        "new_rating": 1266,
+        "delta": -24,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers address the complexities of maintaining parent pointers in B+ trees during insertion and deletion. Answer A provides a detailed explanation of the problems, such as extra space overhead, update overhead, complexity in node splitting and merging, and difficulty in handling node movement.",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more comprehensive and aligns closely with the expected answer, providing specific solutions and examples."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B identifies key issues but lacks specific solutions and examples, making it less complete than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "45e705cf-e771-0000-0000-000000000000",
+    "subtopic": "TREE-STRUCTURED INDEXING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "09414306-eef0-4b45-9927-698cd2614f22",
+      "gpt-4o": "94138bd2-8822-461a-938c-ae0b3aadfeb1"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "4e27e21a-c073-44f0-9b9c-8c581d11c38d",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1134,
+        "new_rating": 1156,
+        "delta": 22,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1266,
+        "new_rating": 1244,
+        "delta": -22,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed explanation of the B+ tree characteristics, including the maximum number of entries per node, fanout, and height. It correctly uses the formula for entries per node and fanout, but it incorrectly calculates the fanout as n + 1 instead of just n. The height calculation is",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B provides a more accurate height calculation and correctly calculates fanout, despite being more complex."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A provides a clear explanation but incorrectly calculates fanout as n + 1."
+      }
+    ]
+  },
+  {
+    "question_id": "38fec19d-a0d2-0000-0000-000000000000",
+    "subtopic": "TREE-STRUCTURED INDEXING",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "124b5914-7e7a-4cd3-b6b4-9aa4f0ecdd54",
+      "gpt-4o": "4fd67090-1e9a-4ddf-958b-726c35f1a35a"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "648edc72-bf5f-4ed8-9bd5-53f219b93c76",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1156,
+        "new_rating": 1176,
+        "delta": 20,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1244,
+        "new_rating": 1224,
+        "delta": -20,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers correctly identify the minimum space utilization of a B+ tree as 50% and acknowledge that ISAM does not have a strict lower bound for space utilization. However, Answer A provides additional context about ISAM's fill factor and potential for 0% utilization, which is more detailed than A",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more comprehensive, providing additional details about ISAM's space utilization and more scenarios for preferring ISAM over a B+ tree."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed than Answer A, lacking some of the additional scenarios and explanations provided in Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "2f20bbee-5774-0000-0000-000000000000",
+    "subtopic": "TREE-STRUCTURED INDEXING",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "77f4c192-1547-4c3f-a279-68b1bf3cdf4c",
+      "gpt-4o": "917013f2-7f0c-4d89-8ccb-5d53ec2f7ab8"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "1223a3b5-0aef-4fd1-9c6b-e4eeb1f33499",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1176,
+        "new_rating": 1194,
+        "delta": 18,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1224,
+        "new_rating": 1206,
+        "delta": -18,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A and Answer B both attempt to address the operations on the B+ tree, but they differ in accuracy and completeness. Answer A incorrectly states that no split is needed for the insertion of 9 and 3, which contradicts the ground truth where splits are required. It also fails to address the redi",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B provides a more accurate and detailed explanation of the operations, aligning better with the ground truth."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A contains inaccuracies regarding splits and redistribution, leading to incorrect conclusions."
+      }
+    ]
+  },
+  {
+    "question_id": "030a913c-68e4-0000-0000-000000000000",
+    "subtopic": "STORING DATA: DISKS AND FILES",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "2b1364c2-342b-4769-b07b-5b30252d34ac",
+      "gpt-4o": "73f40453-ca0a-4f58-b1e9-b2ed8f92573a"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3486bb15-a086-4689-b519-50c801f53526",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1194,
+        "new_rating": 1211,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1206,
+        "new_rating": 1189,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A and Answer B both address the four scenarios but differ in their strategies. For frequent, random accesses to a small file, Answer A suggests inner tracks, which is incorrect as the ground truth suggests middle tracks. Answer B also incorrectly suggests inner tracks. For sequential scans of",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B, despite some inaccuracies, provides a more nuanced approach for random accesses to a large file via an index."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A has multiple inaccuracies and does not align well with the ground truth."
+      }
+    ]
+  },
+  {
+    "question_id": "5b32b074-18b1-0000-0000-000000000000",
+    "subtopic": "STORING DATA: DISKS AND FILES",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "468fc619-b0f8-4913-a051-a3258c228aee",
+      "gpt-4o": "72ad95cf-d361-4836-8c7c-aecebaac6e24"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3321f8fb-b837-4e6b-ab0c-2c1b773eef3e",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1189,
+        "new_rating": 1206,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1211,
+        "new_rating": 1194,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly describe the two internal organizations for heap files: lists of pages and directory of pages. They both identify the trade-offs, noting that the directory of pages is more efficient for variable-length records due to easier management of free space. However, Answer A ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more detailed and aligns closely with the expected answer, providing a comprehensive explanation and a practical page format suggestion."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less precise due to the inclusion of SQL-like syntax in the page format suggestion, which is unnecessary."
+      }
+    ]
+  },
+  {
+    "question_id": "d0b5debe-1efb-0000-0000-000000000000",
+    "subtopic": "STORING DATA: DISKS AND FILES",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "d4e41ea8-a0c4-42b8-8976-4205202cc215",
+      "gpt-4o": "27ea97eb-fb70-42a8-9fac-f2868ad0bc17"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "cba8fd3e-4f61-4efa-8183-6a6436dd60b2",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1194,
+        "new_rating": 1211,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1206,
+        "new_rating": 1189,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B address the four parts of the question, but with varying levels of detail and precision. Answer A provides a more comprehensive explanation for each part, aligning closely with the expected answer. It discusses the importance of DBMS control over prefetching, the impact of concu",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more detailed and aligns closely with the expected answer, providing comprehensive explanations for each part of the question."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed and precise compared to Answer A, particularly in explaining the impact of segmented caches and the DBMS buffer manager's role."
+      }
+    ]
+  },
+  {
+    "question_id": "dcbc750f-9798-0000-0000-000000000000",
+    "subtopic": "STORING DATA: DISKS AND FILES",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "fe41e37d-31f2-42a4-b3aa-6d8ea0c9e76f",
+      "gpt-4o": "549146af-f854-4419-ad84-45674507d927"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "92f374e6-2f0f-4c0b-bb27-b33979fc67c8",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1189,
+        "new_rating": 1206,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1211,
+        "new_rating": 1194,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly describe the process the buffer manager follows when handling a read request for a page. They both mention checking the buffer pool, pinning the page if it is found, and the steps involved if the page is not in the buffer pool. However, Answer A provides additional con",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Correct and concise, directly addresses the question without unnecessary details."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Provides correct information with additional context, but less concise."
+      }
+    ]
+  },
+  {
+    "question_id": "7e69b80b-219e-0000-0000-000000000000",
+    "subtopic": "STORING DATA: DISKS AND FILES",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "d18f951a-13c4-4e8b-a2c5-f4b4b0a8d9c5",
+      "gpt-4o": "059b02bd-0f08-46f2-9fae-50c54d056f49"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "ee40ce77-736b-47d3-80b5-cf091732a12c",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1206,
+        "new_rating": 1221,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1194,
+        "new_rating": 1179,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly calculate the capacity of a track, surface, and disk, as well as the number of cylinders. They both correctly identify valid block sizes and calculate the maximum rotational delay and transfer rate. However, Answer A provides a more detailed explanation and includes ad",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more detailed and provides clearer explanations, making it slightly better than Answer B."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but slightly less detailed than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "7214203d-8a10-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF STORAGE AND INDEXING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "57e00335-7cb2-48ad-a233-5e5500f16b0c",
+      "gpt-4o": "7fe8c03c-ed33-4fe0-9833-0516814bfe96"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3081248c-e18f-45f2-88cd-5f0d5a0a49bc",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1221,
+        "new_rating": 1235,
+        "delta": 14,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1179,
+        "new_rating": 1165,
+        "delta": -14,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly identify that for Query 1, if index-only plans are not considered, no index (option e) is the best choice due to the need for a full table scan. They also agree that for Query 2, a clustered B+ tree index on (floor, budget) fields of Dept (option c) is optimal for effi",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a detailed and clear explanation for both queries, considering both index-only and non-index-only scenarios."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correctly identifies the best index choices but is slightly less detailed in explaining the impact of index-only plans for Query 1."
+      }
+    ]
+  },
+  {
+    "question_id": "68be450a-bd7c-0000-0000-000000000000",
+    "subtopic": "HASH-BASED INDEXING",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "978d0601-f381-4d53-8a3f-b124d03801bc",
+      "gpt-4o": "e6da27c8-8e71-4a1b-bd9e-91d827c475bc"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "f14fb928-b1dc-471a-9a53-7d6a87f7af94",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1235,
+        "new_rating": 1248,
+        "delta": 13,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1165,
+        "new_rating": 1152,
+        "delta": -13,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed comparison of static, extendible, and linear hashing techniques, covering performance, space usage, and flexibility. It aligns well with the expected answer by discussing the characteristics and trade-offs of each technique. Answer B also covers the same aspects but incl",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is concise, focused, and directly addresses the question with relevant details on performance, space usage, and flexibility."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B, while correct, includes unnecessary SQL examples that do not enhance the comparison of hashing techniques, making it less precise than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "92d2fe23-fe81-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF STORAGE AND INDEXING",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "2f478c9b-eb3f-47b1-b126-569fca7c5091",
+      "gpt-4o": "c1e43bec-04e6-4ca3-9e80-0a02243a72d8"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3f6a1a6a-8245-4016-af8a-239a491e83a3",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1152,
+        "new_rating": 1172,
+        "delta": 20,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1248,
+        "new_rating": 1228,
+        "delta": -20,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B address the key considerations for creating an index on a relation, including the choice of primary index, clustered versus unclustered indexes, hash versus tree indexes, the use of a sorted file, and the choice of search key. Answer A provides a more detailed explanation of eac",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more detailed, includes examples, and references a textbook, providing a comprehensive explanation."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed and lacks specific examples or references, making it less informative than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "02d0a5cc-5773-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF STORAGE AND INDEXING",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "b5f1164b-73d9-4a2b-bd3d-3ab28bb4716c",
+      "gpt-4o": "d1d4257c-ea10-4450-9e04-c9247577bc5f"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "0e68789a-b76c-43e1-8cc2-dfd86ca02aa0",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1172,
+        "new_rating": 1191,
+        "delta": 19,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1228,
+        "new_rating": 1209,
+        "delta": -19,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly describe the differences between Hash indexes and B+-tree indexes, focusing on their structures and suitability for equality and range searches. Answer A provides a detailed explanation with examples, including SQL syntax and references, which enhances its completeness",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more comprehensive, includes examples, and provides a detailed explanation of both index types, making it the best answer."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed and lacks specific examples compared to Answer A, placing it second."
+      }
+    ]
+  },
+  {
+    "question_id": "f1901f7d-4493-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF STORAGE AND INDEXING",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "91da9328-e13c-4bc3-90d2-2ce9b2ef73c3",
+      "gpt-4o": "3acc64c0-a979-459f-941d-c1fa133e1f27"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "d5e37734-6cdb-44b5-8f68-4cc1d32e995c",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1191,
+        "new_rating": 1208,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1209,
+        "new_rating": 1192,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly identify that using an unclustered index is not always the best alternative for retrieving records with 'sal > 20'. They both explain that the decision depends on the selectivity of the query. Answer A provides a more detailed explanation, including an example with SQL",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a detailed explanation with examples and discusses DBMS optimizer behavior, making it more informative."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correctly explains the concept but lacks the depth and illustrative examples found in Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "dad55c7e-810c-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF STORAGE AND INDEXING",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "ea98e0fb-b63a-4c83-b2f9-f61a1a5c8b82",
+      "gpt-4o": "56617d4a-f2f4-40b2-842e-7f98b5896b55"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "a541a324-502a-4489-9685-15119379dc76",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1192,
+        "new_rating": 1209,
+        "delta": 17,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1208,
+        "new_rating": 1191,
+        "delta": -17,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the four questions about data on external storage in a DBMS. Answer A provides a detailed explanation for each question, covering the reasons for storing data on external storage, the importance of I/O costs, the concept of a record id, and the roles of the buf",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is concise, focused, and directly addresses all questions without additional context, making it slightly better based on the brevity-precision heuristic."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct and thorough but includes additional context about PostgreSQL, which is not required by the question, making it less concise than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "5f979c3f-0e84-0000-0000-000000000000",
+    "subtopic": "A TYPICAL RELATIONAL QUERY OPTIMIZER",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "6b5f303a-e5af-410a-bc62-3e9ce8391854",
+      "gpt-4o": "b7dab220-489e-4eff-9ecf-a5b1956bb7d6"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "a7e5d6a6-a91e-43a2-b227-0dd0f87b46cc",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1209,
+        "new_rating": 1224,
+        "delta": 15,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1191,
+        "new_rating": 1176,
+        "delta": -15,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed breakdown of the relational algebra tree, join orders, and tuple estimates. It correctly identifies the relational algebra tree and considers the join orders without cross-products. The tuple estimates are consistent with the ground truth, and the join order with the low",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correct relational algebra tree, accurate tuple estimates, and correct join order with lowest cost."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Incorrect tuple estimates for Emp and incorrect join order with lowest cost."
+      }
+    ]
+  },
+  {
+    "question_id": "5893d14b-3015-0000-0000-000000000000",
+    "subtopic": "A TYPICAL RELATIONAL QUERY OPTIMIZER",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "c512b22b-93f8-4f11-a2f7-1238f2a6f3ad",
+      "gpt-4o": "06a94229-c3b6-49f3-94e0-d486a49edc83"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "b400d083-453b-4bb1-bef7-45e449003f43",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1224,
+        "new_rating": 1238,
+        "delta": 14,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1176,
+        "new_rating": 1162,
+        "delta": -14,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly calculates the cost of writing out the final result as 17 pages, which is incorrect compared to the ground truth of 100 pages. It also provides a detailed breakdown of the costs for each scenario with 3 buffer pages, but the calculations deviate from the expected values, particula",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a more structured and detailed explanation, despite numerical inaccuracies."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Less structured and contains similar numerical inaccuracies as Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "4e7a2456-43d9-0000-0000-000000000000",
+    "subtopic": "A TYPICAL RELATIONAL QUERY OPTIMIZER",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "5ce48dd6-b4b9-4771-9233-b4ae5b430038",
+      "gpt-4o": "f17a98ff-f0ae-42c2-9758-c1d99f34e771"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "22a47ff3-3976-4819-a199-9405b453cbe8",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1162,
+        "new_rating": 1181,
+        "delta": 19,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1238,
+        "new_rating": 1219,
+        "delta": -19,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both Answer A and Answer B correctly identify the attributes examined for each SQL query. They both list the attributes used in the WHERE clause, SELECT clause, GROUP BY clause, and any aggregate functions. Both answers are complete and match the expected ground truth. Since both answers are equally",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correct and concise, directly lists attributes without extra commentary."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correct but includes additional commentary, making it less concise than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "d9c7e0be-6bc3-0000-0000-000000000000",
+    "subtopic": "A TYPICAL RELATIONAL QUERY OPTIMIZER",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "02270ecd-a987-4c28-9d5c-9fb542b80937",
+      "gpt-4o": "45472675-dcf6-436b-91c6-dbb2d2f0b86b"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "e36f0382-daba-451a-ab13-fa56da046e15",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1219,
+        "new_rating": 1233,
+        "delta": 14,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1181,
+        "new_rating": 1167,
+        "delta": -14,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly define an SQL query block and reduction factor, aligning with the expected answer. For projection vs. selection, Answer A provides a more nuanced explanation, mentioning computational expense and duplicate elimination, which is closer to the expected answer. Answer B's",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more comprehensive and aligns closely with the expected answer, providing detailed explanations for each part."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed, particularly in the explanation of projection vs. selection and the use of indexes in joins."
+      }
+    ]
+  },
+  {
+    "question_id": "f10e4b18-4023-0000-0000-000000000000",
+    "subtopic": "EVALUATING RELATIONAL OPERATORS",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "d3e53aa2-b75e-442e-bb20-1e1ccfa1b05f",
+      "gpt-4o": "ea3754f4-635b-4db0-acb2-6cf4c2de1894"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3c2fe7f3-e218-4a4c-908a-ea75ced277c6",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1233,
+        "new_rating": 1246,
+        "delta": 13,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1167,
+        "new_rating": 1154,
+        "delta": -13,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide modifications for the four join algorithms to compute outer joins directly. Answer A is more detailed and aligns closely with the expected answer, mentioning specific techniques like using flags to track unmatched tuples and ensuring all unmatched tuples are output with ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "More detailed and aligns closely with the expected answer, providing a comprehensive explanation for each join type."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correct approach but lacks some details such as the use of flags or markers, making it less comprehensive than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "d4ed9772-4281-0000-0000-000000000000",
+    "subtopic": "EVALUATING RELATIONAL OPERATORS",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "f7f6669e-4782-44fc-ae9d-23b847434077",
+      "gpt-4o": "7d35ca13-f9ea-475a-a308-474bf0eab80c"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "aa6701bb-c12a-4732-968e-82b3f036dab8",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1154,
+        "new_rating": 1174,
+        "delta": 20,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1246,
+        "new_rating": 1226,
+        "delta": -20,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A incorrectly calculates the number of sorted runs as 1,000 instead of the correct 250, and the average length of runs as 10 pages instead of 20. It also overestimates the I/O cost of the sorting pass as 20,000 I/Os instead of 15,000. The number of additional merge passes is incorrectly calcu",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Despite errors in sorting calculations, it provides a more aligned discussion on indexing scenarios and the impact of removing duplicate elimination."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Incorrectly calculates the number of sorted runs and overestimates I/O costs, with less alignment on indexing scenarios."
+      }
+    ]
+  },
+  {
+    "question_id": "bc293c19-a457-0000-0000-000000000000",
+    "subtopic": "EXTERNAL SORTING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "cba5dfeb-fdc6-4f53-af76-c86aaf42377f",
+      "gpt-4o": "344c7de7-a5ee-423f-9eb7-a69f93f29357"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "ac6c3631-412c-46ac-b69b-3ecfdf993885",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1226,
+        "new_rating": 1240,
+        "delta": 14,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1174,
+        "new_rating": 1160,
+        "delta": -14,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly calculates the number of sorted subfiles (113 runs) and the number of passes (6 passes) required, matching the expected answer. It also accurately computes the total I/O cost (5400 I/Os) and the largest file sizes for two passes with 4 and 257 buffer pages. Answer B, however, inco",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is accurate and complete, matching the expected answer in all aspects."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B contains errors in the number of passes and lacks precision in explaining the largest file sizes."
+      }
+    ]
+  },
+  {
+    "question_id": "5875107d-ecdf-0000-0000-000000000000",
+    "subtopic": "EXTERNAL SORTING",
+    "difficulty": "hard",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "804b7090-525c-4398-a79f-76bb439844d7",
+      "gpt-4o": "7cb7dda1-ada6-4713-af66-8e421587334f"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "4ad24b0f-61b4-478f-bcc6-ca609809af1c",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1240,
+        "new_rating": 1252,
+        "delta": 12,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1160,
+        "new_rating": 1148,
+        "delta": -12,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers attempt to solve the external sorting problem using the general external sorting algorithm. Answer A incorrectly calculates the number of runs in the first pass for scenario (a) as 5,000 instead of the correct 3,334. It also miscalculates the total I/O cost as 130,000 instead of 260,000",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B provides more accurate calculations for the number of runs, passes, and total I/O cost, despite a mistake in the buffer pages required for two-pass sorting."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A contains multiple calculation errors, particularly in the number of runs and total I/O cost for scenario (a)."
+      }
+    ]
+  },
+  {
+    "question_id": "7c18de42-3908-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF QUERY EVALUATION",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "e0e51d5c-2ae5-4d12-96e8-badae8e162b3",
+      "gpt-4o": "a21a4051-36ef-4b31-a12a-6c31dbf56799"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "662149a0-8ecd-42c0-9182-4c7aa3a8a6e6",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1252,
+        "new_rating": 1263,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1148,
+        "new_rating": 1137,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed explanation of the B+ tree index and hash index, but it lacks precise calculations for the number of pages retrieved, especially for the B+ tree range query. It also does not conclude with a clear total I/O cost for each query. Answer B, on the other hand, directly addre",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Provides clear, concise, and accurate I/O cost estimates for each query, closely matching the ground truth."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Lacks precise I/O calculations and clarity in conclusions, making it less aligned with the expected answer."
+      }
+    ]
+  },
+  {
+    "question_id": "2b3771b3-253f-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF QUERY EVALUATION",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "cc8187f1-361c-4cfd-8ea5-be113a093afd",
+      "gpt-4o": "c0abefdd-bc73-4171-983f-8517e42888b2"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "a0ad8b9f-1387-4293-8b3c-16f963675c30",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1263,
+        "new_rating": 1273,
+        "delta": 10,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1137,
+        "new_rating": 1127,
+        "delta": -10,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly identify the attributes that need to be examined for each query. They both recognize that for queries 1, 2, and 3, all attributes from the respective tables must be examined due to the 'SELECT *' syntax. For query 4, both answers correctly identify that only the attrib",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is correct and provides a more detailed explanation, enhancing clarity."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed in its explanation compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "836478e1-173a-0000-0000-000000000000",
+    "subtopic": "CRASH RECOVERY",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "75378234-7172-4bee-9e5e-715a1a2316f2",
+      "gpt-4o": "88b60b36-5424-4deb-9367-e6b1757dd71a"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "114aa503-afff-429e-a651-e52b21dd02bf",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1127,
+        "new_rating": 1149,
+        "delta": 22,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1273,
+        "new_rating": 1251,
+        "delta": -22,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the reasons why log records could be written between the begin_checkpoint and end_checkpoint records, aligning with the ground truth. However, Answer A provides a more detailed explanation of how the Analysis phase should be modified, including specific steps a",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "More detailed and comprehensive explanation of the Analysis phase modification and execution illustration, despite some inaccuracies."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Accurate but less detailed explanation and illustration of the Analysis phase."
+      }
+    ]
+  },
+  {
+    "question_id": "2bd29bcd-ab98-0000-0000-000000000000",
+    "subtopic": "CRASH RECOVERY",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "321d5c5c-7f1b-4373-be43-3779f73b4762",
+      "gpt-4o": "6167351e-8610-44e0-987b-b710dc203199"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "d01fb48c-0fc4-4193-8b92-ceac7301e386",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1251,
+        "new_rating": 1262,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1149,
+        "new_rating": 1138,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly identifies that the maximum number of log records written during recovery is related to the number of update records, but it does not specify the exact maximum as 2n, which is the correct answer. It also correctly identifies the oldest log record needed for recovery but lacks the ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "More aligned with the ground truth, despite some missing details."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Contains incorrect information about the maximum number of log records and less precise details about the oldest log record needed."
+      }
+    ]
+  },
+  {
+    "question_id": "8c8ebfcf-0330-0000-0000-000000000000",
+    "subtopic": "CRASH RECOVERY",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "a3c0d86c-0cac-473d-a504-7e950fbe5077",
+      "gpt-4o": "ca10abe1-307a-4b5e-a700-9c4ebbca88dc"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "e5ac71fe-159e-4043-8345-c6b190886ca4",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1262,
+        "new_rating": 1273,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1138,
+        "new_rating": 1127,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly identifies the LSN stored in the master log record as 10, which aligns with the ground truth. It provides a detailed explanation of the Analysis, Redo, and Undo phases, and reconstructs the log with appropriate prevLSN and undonextLSN values. However, it incorrectly states that th",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "More detailed and structured explanation, closer to the expected answer despite a minor error."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Lacks specificity in the master log record LSN and log reconstruction, making it less complete."
+      }
+    ]
+  },
+  {
+    "question_id": "d1d97baf-9e4c-0000-0000-000000000000",
+    "subtopic": "CRASH RECOVERY",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "b1919e59-5b8d-4d82-97f1-b858bf16a6e8",
+      "gpt-4o": "4a2edc3f-efd2-4aed-a94d-e7fa252c93a2"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "aaa56c60-a191-44ae-8bf1-b67ad74c38ac",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1273,
+        "new_rating": 1283,
+        "delta": 10,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1127,
+        "new_rating": 1117,
+        "delta": -10,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed explanation of the roles of the Analysis, Redo, and Undo phases in ARIES, closely aligning with the expected answer. It correctly identifies the starting and ending points for each phase and accurately describes the actions taken during each phase, including the construc",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more precise and aligns closely with the expected answer, correctly identifying the starting points and actions for each phase."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B contains inaccuracies regarding the starting point of the Redo phase and lacks the detailed precision found in Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "be6d6e30-18b2-0000-0000-000000000000",
+    "subtopic": "CRASH RECOVERY",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "cbd61866-b1c1-4331-9a8b-5a66e0ea6fe7",
+      "gpt-4o": "05707575-d95b-401f-b791-df1ee6572700"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "ba918eac-4df3-447f-ac4e-9fdfe262b94f",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1283,
+        "new_rating": 1292,
+        "delta": 9,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1117,
+        "new_rating": 1108,
+        "delta": -9,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the questions regarding atomicity, durability, stable storage vs. disk, system crash vs. media failure, WAL protocol, and steal/no-force policies. Answer A provides a concise and precise explanation for each point, closely aligning with the expected answer. Ans",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is concise, precise, and aligns closely with the expected answer, making it the best response."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but more verbose than necessary, making it slightly less effective than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "46a50244-6923-0000-0000-000000000000",
+    "subtopic": "CONCURRENCY CONTROL",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "735daf51-06a7-4e9a-a46e-ad6854f48669",
+      "gpt-4o": "e8140fe6-9e1b-4c96-a579-094fbbfb18cb"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "75252609-3211-4296-9e22-666cc9fb1ec9",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1292,
+        "new_rating": 1300,
+        "delta": 8,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1108,
+        "new_rating": 1100,
+        "delta": -8,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B attempt to address the multiple-granularity locking protocol for the given operations. Answer A correctly identifies the lock sequences for most operations, aligning closely with the ground truth. It correctly uses IS, IX, and SIX locks where appropriate, such as using SIX on F1",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A closely follows the ground truth, correctly using the appropriate lock types and levels for each operation."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B contains several inaccuracies in lock usage, such as incorrect lock types for operations 6 and 9, and is less efficient in its approach to operation 8."
+      }
+    ]
+  },
+  {
+    "question_id": "c0d653bd-3abd-0000-0000-000000000000",
+    "subtopic": "CONCURRENCY CONTROL",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "58455a44-8c3a-45b5-99dd-cd067cea31f2",
+      "gpt-4o": "a34f87b3-f1ab-46f3-885d-df768e97e3ab"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "07c76fc4-5df7-4545-912d-64ba797027cd",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1100,
+        "new_rating": 1124,
+        "delta": 24,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1300,
+        "new_rating": 1276,
+        "delta": -24,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B attempt to address the question by describing locking protocols for each of the eight classes of SQL transactions, discussing schedule guarantees, and proposing a timestamp-based concurrency control scheme. Answer A provides a more detailed and accurate description of the lockin",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more detailed and aligns closely with the expected answer, providing accurate descriptions of locking protocols and schedule guarantees."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B, while correct in many aspects, lacks the depth and precision of Answer A, particularly in its explanation of locking protocols and timestamp-based concurrency control."
+      }
+    ]
+  },
+  {
+    "question_id": "316cc7c0-34d5-0000-0000-000000000000",
+    "subtopic": "CONCURRENCY CONTROL",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "9083f351-66b5-4788-bab6-32604f7cff09",
+      "gpt-4o": "c7b2641c-ea2a-4a6e-b915-6b69c8c5f56a"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "331c4cb7-038a-4027-a64c-bf911da2857d",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1276,
+        "new_rating": 1285,
+        "delta": 9,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1124,
+        "new_rating": 1115,
+        "delta": -9,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers attempt to describe the Venn diagram and provide example schedules for each concurrency control protocol. Answer A provides a detailed textual description of the Venn diagram, including the relationships between different concurrency control protocols and their inclusion within serializ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "More comprehensive explanation of the relationships between concurrency control protocols and serializable schedules."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Lacks detailed explanation of the relationships between protocols and serializable schedules compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "b4e1a627-1c37-0000-0000-000000000000",
+    "subtopic": "CONCURRENCY CONTROL",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "6b13e342-16cd-47c8-9700-5de9ab3d0fc2",
+      "gpt-4o": "ba5be7d3-b5f8-4049-b0a8-5a25b1b1895f"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "7bdfd763-61eb-4afb-b792-6b4aecc20486",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1115,
+        "new_rating": 1138,
+        "delta": 23,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1285,
+        "new_rating": 1262,
+        "delta": -23,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly identifies the properties for each protocol, except it incorrectly states that Protocol 1 ensures recoverability and avoidance of cascading aborts, which contradicts the ground truth. Answer B also makes errors, claiming Protocol 1 ensures serializability and conflict-serializabil",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 1,
+        "justification": "More accurately assesses Protocol 1, aligning closer with the ground truth."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 2,
+        "justification": "Incorrectly claims Protocol 1 ensures recoverability and avoidance of cascading aborts."
+      }
+    ]
+  },
+  {
+    "question_id": "8166dd0c-cff1-0000-0000-000000000000",
+    "subtopic": "CONCURRENCY CONTROL",
+    "difficulty": "hard",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "2e4f5505-8796-49e0-84cf-207e06bc795e",
+      "gpt-4o": "95022369-28ca-4eeb-908f-d0765c062667"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "77211f49-a625-4e9a-ba6c-0192d254c7a3",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1262,
+        "new_rating": 1273,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1138,
+        "new_rating": 1127,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed analysis of each schedule against the concurrency control protocols, but it contains inaccuracies. For example, it incorrectly states that Schedule 1 is allowed by Optimistic, Timestamp without Thomas Write Rule, Timestamp with Thomas Write Rule, and Multiversion protoco",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B, while also inaccurate, is more concise and slightly better aligned with the brevity-precision heuristic."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A provides a detailed analysis but contains several inaccuracies and is less concise."
+      }
+    ]
+  },
+  {
+    "question_id": "e4e291f7-4535-0000-0000-000000000000",
+    "subtopic": "CONCURRENCY CONTROL",
+    "difficulty": "hard",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "5c4f3353-c6fa-43e0-8a80-2f26ebe82f3c",
+      "gpt-4o": "2a888a4c-f793-4363-a9e5-f1fafe4c7150"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "7978f11b-44d5-4fd7-9222-8b5a8dfe9f0f",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1273,
+        "new_rating": 1283,
+        "delta": 10,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1127,
+        "new_rating": 1117,
+        "delta": -10,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a comprehensive explanation for each question, closely aligning with the expected answer. It correctly describes the implementation of a lock manager, the necessity of atomic lock operations, and the differences between locks and latches. It also accurately discusses convoys, lock ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more accurate and aligns closely with the expected answer, providing clear and correct explanations for each question."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B contains some inaccuracies and lacks clarity in certain areas, making it less precise than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "76579c82-c472-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF TRANSACTION MANAGEMENT",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "7d720f0f-4d08-4ad8-aa5d-117c4868ae40",
+      "gpt-4o": "c34d0f22-f6dd-45a9-992f-562ddcf0e031"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "451dc24d-fd01-498d-974a-1622504469cb",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1283,
+        "new_rating": 1292,
+        "delta": 9,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1117,
+        "new_rating": 1108,
+        "delta": -9,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed explanation of the differences between isolation levels, including specific SQL statements and schedules for each scenario. It correctly identifies the differences in behavior between SERIALIZABLE and REPEATABLE READ, REPEATABLE READ and READ COMMITTED, and READ COMMITTE",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "More concise and focused explanation, despite being incomplete."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Detailed explanation but more verbose and less precise than A."
+      }
+    ]
+  },
+  {
+    "question_id": "f25e0c1c-d0e0-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF TRANSACTION MANAGEMENT",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "d0f49bde-102c-4cd1-bae0-283e853f31c2",
+      "gpt-4o": "9a1d18bb-f34c-4920-bf39-29cc3f07febb"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "6bc89f27-b3d3-4485-b270-4d2c52203d54",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1292,
+        "new_rating": 1300,
+        "delta": 8,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1108,
+        "new_rating": 1100,
+        "delta": -8,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly identifies the isolation levels for transactions 1, 2, and 3, aligning with the expected answer. However, it incorrectly suggests 'Read Committed' for transaction 4, where 'Serializable' is expected to prevent phantom reads. Answer B correctly identifies 'Serializable' for transac",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A correctly identifies the isolation levels for three out of four transactions, providing detailed explanations."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B correctly identifies the isolation level for transaction 3 but incorrectly suggests 'Repeatable Read' for transaction 2 and 'Read Committed' for transaction 4."
+      }
+    ]
+  },
+  {
+    "question_id": "a9462bff-64df-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF TRANSACTION MANAGEMENT",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "9c1e6d10-b5c2-47cf-b198-f25b49087990",
+      "gpt-4o": "99a67e7d-3e9d-4a10-ba7a-637555439fe5"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "4056a133-09c5-441e-a452-1506120af895",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1100,
+        "new_rating": 1124,
+        "delta": 24,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1300,
+        "new_rating": 1276,
+        "delta": -24,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the two parts of the question: how I and D locks increase concurrency and how Strict 2PL guarantees serializability with these locks. Answer A provides a detailed explanation with a clear example of how I and D locks allow interleaving of operations, enhancing ",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Provides a detailed and clear explanation of both concurrency and serializability with I and D locks, using a well-structured example."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Correctly addresses the question but lacks the depth and clarity of Answer A, particularly in explaining lock compatibility and conflict resolution."
+      }
+    ]
+  },
+  {
+    "question_id": "f4ddd3bd-b9b0-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF TRANSACTION MANAGEMENT",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "5b05e905-4077-4259-bd1b-991f6454f484",
+      "gpt-4o": "4743ad1b-750b-46ec-b31c-54e498e7df9d"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "bc28c6b3-436f-4451-a041-c4954aad6cda",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1124,
+        "new_rating": 1147,
+        "delta": 23,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1276,
+        "new_rating": 1253,
+        "delta": -23,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides detailed examples for each type of conflict and explains how Strict 2PL disallows each schedule. It correctly identifies the conflicts and the locking mechanisms involved. However, it includes unnecessary details about lock acquisition and release, which are not directly asked in t",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correctly identifies and explains each conflict type with distinct schedules and how Strict 2PL disallows them."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Repeats the same schedule for all conflict types, indicating a misunderstanding of the distinct nature of each conflict."
+      }
+    ]
+  },
+  {
+    "question_id": "a16ad64a-b216-0000-0000-000000000000",
+    "subtopic": "OVERVIEW OF TRANSACTION MANAGEMENT",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "bf387dde-f504-4eea-bfed-81095caad48c",
+      "gpt-4o": "86d3968e-c783-44f3-86a1-cad210bd92a4"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "6329f2c9-5ca7-4dd4-b09d-660eef7d051b",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1253,
+        "new_rating": 1264,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1147,
+        "new_rating": 1136,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide definitions and explanations for the terms and concepts related to transactions and database management. Answer A correctly defines a transaction and distinguishes it from an ordinary program, but it inaccurately states that the phantom problem can occur in a fixed set o",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B correctly addresses the phantom problem and aligns with the ground truth, providing accurate definitions and explanations."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A provides a good explanation but incorrectly states that the phantom problem can occur in a fixed set of database objects, which is incorrect."
+      }
+    ]
+  },
+  {
+    "question_id": "848c4a51-e9ab-0000-0000-000000000000",
+    "subtopic": "SECURITY AND AUTHORIZATION",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "0e37f233-033e-4a51-b5ae-29a231df5c9f",
+      "gpt-4o": "30604060-f801-4ddf-8ce3-fb9752ce22eb"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "ebcbd8fc-c3fb-4e09-b181-950f88be914b",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1136,
+        "new_rating": 1158,
+        "delta": 22,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1264,
+        "new_rating": 1242,
+        "delta": -22,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B address the four questions regarding secure electronic transactions and communications. For question 1, both answers suggest using username/password, two-factor authentication, and digital certificates, aligning with the expected answer. For question 2, both answers correctly de",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides a more detailed and precise explanation, especially regarding SSL and encryption methods."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed and precise compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "165c1883-b2d7-0000-0000-000000000000",
+    "subtopic": "SECURITY AND AUTHORIZATION",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "7ad586d2-b365-4e58-8463-89c33b20f619",
+      "gpt-4o": "84bb2c4e-1399-4613-8d37-0c4f0c8a4d44"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "3e5e665f-da42-48de-84ba-4d315a09dd3c",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1158,
+        "new_rating": 1178,
+        "delta": 20,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1242,
+        "new_rating": 1222,
+        "delta": -20,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide correct explanations for the Bell-LaPadula model, covert channels, polyinstantiation, and the need for encryption. They also correctly describe scenarios for mandatory and discretionary access controls, statistical database limits, the use of audit trails, the role of th",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is concise, precise, and directly addresses each question with clear examples."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but slightly more verbose and less precise in some explanations compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "ed3b91e8-8cb8-0000-0000-000000000000",
+    "subtopic": "PHYSICAL DATABASE DESIGN AND TUNING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "fbbe8dfc-8200-417e-a409-02d4f09b334d",
+      "gpt-4o": "c8213f6d-af64-4e1b-8c69-009089e99093"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "af96bde9-1f5c-4a22-bf5f-06e681e156e2",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1222,
+        "new_rating": 1236,
+        "delta": 14,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1178,
+        "new_rating": 1164,
+        "delta": -14,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide strategies for file structures and indexes, as well as alternatives to improve performance without indexes. Answer A suggests a clustered file organization for the Dept relation and a heap file for Emp, with B-tree indexes on location and dname, and a hash index on eid. ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more comprehensive, covering all expected strategies and providing detailed alternatives, including batch updates."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed than Answer A, missing some alternative strategies like batch updates."
+      }
+    ]
+  },
+  {
+    "question_id": "8fdae0f0-6d9c-0000-0000-000000000000",
+    "subtopic": "PHYSICAL DATABASE DESIGN AND TUNING",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "01c11247-6df5-45a8-a7a4-1b6e445a67ab",
+      "gpt-4o": "cc16f7ad-a1a9-420d-99fd-7400551eee29"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "2e3ac883-27e0-49c8-81a1-ef2ce886269c",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1236,
+        "new_rating": 1249,
+        "delta": 13,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1164,
+        "new_rating": 1151,
+        "delta": -13,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly identify scenarios where each query might outperform the other. Answer A provides a detailed analysis of the conditions under which each query might be more efficient, considering factors like table size, indexing, and query execution plans. Answer B also correctly ide",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A provides a more detailed and precise analysis of the scenarios and offers a comprehensive equivalent query explanation."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but slightly less detailed and precise compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "de8d7541-6edf-0000-0000-000000000000",
+    "subtopic": "PHYSICAL DATABASE DESIGN AND TUNING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "ecdc6962-c4e7-489f-ba2b-a3feab28f5dd",
+      "gpt-4o": "c87ed2c1-7e18-4f1c-a85a-0c1df3e0d8d4"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "c1272be9-d37f-49d0-9632-7b575146dc0b",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1151,
+        "new_rating": 1171,
+        "delta": 20,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1249,
+        "new_rating": 1229,
+        "delta": -20,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B attempt to address the indexing needs for the given workloads. Answer A provides a detailed breakdown of the initial and redesigned workloads, suggesting specific indexes for each query. However, it incorrectly suggests a clustered index on `Emp(eid)` which is unnecessary for th",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "More comprehensive explanation of index tuning algorithm and detailed workload analysis."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Provides a good analysis but lacks precision in index recommendations compared to the ground truth."
+      }
+    ]
+  },
+  {
+    "question_id": "7d55f825-7bb2-0000-0000-000000000000",
+    "subtopic": "SCHEMA REFINEMENT AND NORMAL FORMS",
+    "difficulty": "hard",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "520e7aee-eecc-4dbe-a808-f676219c9069",
+      "gpt-4o": "f051a244-a8cd-46f3-8cf0-cef00613d1e8"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "5fc13f04-dac0-4485-8ddd-50eb2493bc5c",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1229,
+        "new_rating": 1242,
+        "delta": 13,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1171,
+        "new_rating": 1158,
+        "delta": -13,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A provides a detailed algorithm for testing BCNF, including steps to compute the closure of FDs and check for superkeys. However, it incorrectly claims that testing for 3NF can be done in polynomial time, which contradicts the ground truth. Answer B correctly outlines the BCNF testing algorit",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Correctly describes the BCNF algorithm and accurately addresses the complexity of testing 3NF, aligning with the ground truth."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Provides a detailed BCNF algorithm but incorrectly claims polynomial time for 3NF testing, which is inaccurate."
+      }
+    ]
+  },
+  {
+    "question_id": "a0444786-68c6-0000-0000-000000000000",
+    "subtopic": "SCHEMA REFINEMENT AND NORMAL FORMS",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "0f1c5ac9-72f6-405a-abca-e76b9d6f9340",
+      "gpt-4o": "b178268d-6eb1-42c3-b0e0-6737d53e337c"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "22f98040-096a-47a0-8858-9f5eabd933c0",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1242,
+        "new_rating": 1254,
+        "delta": 12,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1158,
+        "new_rating": 1146,
+        "delta": -12,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly defines dependency preservation by stating that the closure of the union of the projections of F onto each decomposed relation should equal the closure of F. It also provides a polynomial-time algorithm that aligns with the ground truth by iteratively computing closures and checki",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correctly defines dependency preservation and provides an accurate polynomial-time algorithm."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Incorrect definition of dependency preservation and incorrect algorithm."
+      }
+    ]
+  },
+  {
+    "question_id": "586b20c9-c06c-0000-0000-000000000000",
+    "subtopic": "SCHEMA REFINEMENT AND NORMAL FORMS",
+    "difficulty": "hard",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "bd52d682-d289-48fd-9d21-22380b59d1ff",
+      "gpt-4o": "28238b97-a9eb-4633-bde6-cca6c22573fb"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "a93e067a-b753-4e7f-af0e-d4be31729669",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1254,
+        "new_rating": 1265,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1146,
+        "new_rating": 1135,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers attempt to prove the lossless-join decomposition condition using the given functional dependencies. Answer A provides a detailed explanation for both directions of the proof, but it is verbose and lacks a clear conclusion for the second direction. Answer B is more concise and structured",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 1,
+        "justification": "Answer B is concise, well-structured, and provides clear logical steps and conclusions."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 2,
+        "justification": "Answer A is correct but verbose and lacks a clear conclusion for the second direction."
+      }
+    ]
+  },
+  {
+    "question_id": "e6f3c650-6091-0000-0000-000000000000",
+    "subtopic": "SCHEMA REFINEMENT AND NORMAL FORMS",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "95cb9676-f92b-44f6-b584-7e1d2ad1e038",
+      "gpt-4o": "25289427-9cab-4515-b72d-2e4c004ac8c1"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "076f33ee-4274-435a-9b7e-19808a1dd92f",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1135,
+        "new_rating": 1157,
+        "delta": 22,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1265,
+        "new_rating": 1243,
+        "delta": -22,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly identifies the BCNF violations and provides decompositions for each set of functional dependencies. However, it makes errors in the decomposition process, particularly in the fifth set, where it fails to preserve all dependencies and incorrectly assesses the candidate keys. Answer",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more aligned with the ground truth in terms of decomposition strategy, despite errors in candidate key identification and dependency preservation."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B makes several errors in decomposition and candidate key identification, leading to less accurate results compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "27e488d7-24f3-0000-0000-000000000000",
+    "subtopic": "SCHEMA REFINEMENT AND NORMAL FORMS",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "5869c482-ce0e-4273-923c-51ad92068cf3",
+      "gpt-4o": "6d9a8c1a-92a6-4d0a-be49-ff6c1235e8d6"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "a132fd1b-7f5d-4b4a-a626-f087268ca8aa",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1243,
+        "new_rating": 1255,
+        "delta": 12,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1157,
+        "new_rating": 1145,
+        "delta": -12,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Answer A correctly identifies the normal forms for each relation and provides appropriate decompositions into BCNF where necessary. It accurately states that R1 is in 1NF and provides a correct BCNF decomposition. It also correctly identifies R2 as already in BCNF, which aligns with the ground truth",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Correctly identifies normal forms and decompositions for most relations, with minor errors."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Provides incorrect analysis and decompositions, leading to incorrect conclusions about normal forms."
+      }
+    ]
+  },
+  {
+    "question_id": "f31cf7c1-6458-0000-0000-000000000000",
+    "subtopic": "SCHEMA REFINEMENT AND NORMAL FORMS",
+    "difficulty": "easy",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "229d77c1-223c-425e-8427-3f605f2817f9",
+      "gpt-4o": "998546bb-59ad-4185-bcd7-98087879ea19"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "5feec562-fbf8-42f4-9983-9d36bc335c5c",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1255,
+        "new_rating": 1266,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1145,
+        "new_rating": 1134,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly define functional dependency and trivial functional dependencies. For question 3, Answer A correctly identifies a partial dependency with A \u2192 C, while Answer B incorrectly suggests C \u2192 D, which does not demonstrate a partial dependency on a candidate key. For question ",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more precise, correctly identifies dependencies, and aligns well with the expected answer."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B contains inaccuracies in questions 3 and 4 and provides a less clear explanation for BCNF."
+      }
+    ]
+  },
+  {
+    "question_id": "85e72f20-267a-0000-0000-000000000000",
+    "subtopic": "PHYSICAL DATABASE DESIGN AND TUNING",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "77d75619-8485-426f-9566-90c8a4b96fa6",
+      "gpt-4o": "744089de-bf59-47b3-959c-952468703ecf"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "b07ce894-5f8c-4882-aff0-8237ca5dc4e2",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1266,
+        "new_rating": 1276,
+        "delta": 10,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1134,
+        "new_rating": 1124,
+        "delta": -10,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B provide a detailed analysis of the physical design and schema redesign for the Parts relation. Answer A suggests using a heap file structure and B-tree indexes on pname and cost, which aligns with the ground truth. It also proposes a schema redesign by decomposing the relation i",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A closely follows the expected answer, providing a correct and concise solution with appropriate schema redesign and indexing strategies."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B provides a correct solution but deviates in schema redesign and includes unnecessary SQL code, making it less precise than Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "9d080a66-a9fc-0000-0000-000000000000",
+    "subtopic": "DATA WAREHOUSING AND DECISION SUPPORT",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "0ea0a3d6-9f79-456c-ae70-0f97db8e3182",
+      "gpt-4o": "386a48d7-6cc6-433f-b4d0-5cce9afda515"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "e1b350e8-f03a-4712-a27f-3cbcd51bee83",
+    "ranked_model_ids": [
+      "llama-3.1-70b",
+      "gpt-4o"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1124,
+        "new_rating": 1147,
+        "delta": 23,
+        "placement": 1
+      },
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1276,
+        "new_rating": 1253,
+        "delta": -23,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the three parts of the question. For part 1, both answers provide a correct query modification by substituting the view definition into the query. Answer A provides additional query options, which are not necessary but show a deeper understanding. For part 2, b",
+    "ranking_with_scores": [
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is more detailed and provides additional insights, especially in parts 1 and 3, making it slightly better than Answer B."
+      },
+      {
+        "model_id": "gpt-4o",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct and complete but less detailed than Answer A, particularly in the discussion of part 3."
+      }
+    ]
+  },
+  {
+    "question_id": "30541b0a-864e-0000-0000-000000000000",
+    "subtopic": "DATA WAREHOUSING AND DECISION SUPPORT",
+    "difficulty": "medium",
+    "question_type": "practical",
+    "model_run_map": {
+      "llama-3.1-70b": "47659ee2-c8fb-4aec-9e7d-db7be15ed0c4",
+      "gpt-4o": "e37881bd-6f71-4f43-9a52-aa9377647d48"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "d4cef8f7-892a-4989-b79c-c4e35aa2f28a",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1253,
+        "new_rating": 1264,
+        "delta": 11,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1147,
+        "new_rating": 1136,
+        "delta": -11,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B correctly address the differences between the WINDOW and GROUP BY clauses, providing accurate descriptions of their purposes and effects on result sets. Both answers also provide a valid example query that demonstrates the use of the WINDOW clause for calculating a running total",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is concise, precise, and closely aligned with the expected answer, providing clear explanations and examples."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but slightly more verbose and less precise compared to Answer A."
+      }
+    ]
+  },
+  {
+    "question_id": "2e8fe7d4-d629-0000-0000-000000000000",
+    "subtopic": "DATA WAREHOUSING AND DECISION SUPPORT",
+    "difficulty": "medium",
+    "question_type": "conceptual",
+    "model_run_map": {
+      "llama-3.1-70b": "707d6d8a-a7c7-4860-a09f-9b4fea085a4f",
+      "gpt-4o": "4bb5fdb5-e325-4402-91cb-eca4f0fc7bf6"
+    },
+    "ok": true,
+    "error": null,
+    "contest_id": "a56cd1dc-3d81-49ab-90e2-53cdac6ca9c6",
+    "ranked_model_ids": [
+      "gpt-4o",
+      "llama-3.1-70b"
+    ],
+    "tie_exists": false,
+    "elo_updates": [
+      {
+        "model_id": "e9fd9bf6-73b4-4468-ae7d-9f752b74f97a",
+        "old_rating": 1264,
+        "new_rating": 1274,
+        "delta": 10,
+        "placement": 1
+      },
+      {
+        "model_id": "f532156f-4abc-442f-84d6-58f3c0ff8b39",
+        "old_rating": 1136,
+        "new_rating": 1126,
+        "delta": -10,
+        "placement": 2
+      }
+    ],
+    "judge_reasoning_preview": "Both answers A and B address all the questions, but there are differences in detail and precision. Answer A provides a comprehensive explanation for each question, aligning closely with the expected answer. It clearly distinguishes between data warehousing, OLAP, and data mining, and correctly ident",
+    "ranking_with_scores": [
+      {
+        "model_id": "gpt-4o",
+        "label": "A",
+        "placement": 1,
+        "justification": "Answer A is comprehensive, precise, and aligns well with the expected answer, providing clear explanations without relying on external references."
+      },
+      {
+        "model_id": "llama-3.1-70b",
+        "label": "B",
+        "placement": 2,
+        "justification": "Answer B is correct but less detailed and relies heavily on textbook references, making it less self-contained and clear compared to Answer A."
+      }
+    ]
+  }
+]
