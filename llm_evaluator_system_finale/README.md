@@ -174,7 +174,7 @@ docker compose -f docker-compose.yml up -d
 docker compose exec app python scripts/init_test_db.py
 ```
 
-** Step 3 - Open a new terminal to login to the DB and check for tables. Use this when you want to watch the data population upon calling APIs.
+**Step 3 - Open a new terminal to login to the DB and check for tables. Use this when you want to watch the data population upon calling APIs.**
 
 ```bash
 psql -h localhost -p 5432 -U postgres -d llm_evaluator
@@ -235,6 +235,8 @@ All endpoints are fully documented in the interactive OpenAPI spec at `/docs`.
 | `GET` | `/eval/export/csv` | Full results export as CSV |
 
 ---
+
+# `marathon_runner.py` is an automation script that executes the complete non-visual ER flow against all questions, all hyperparameters, etc. BUT, YOU NEED TO ENSURE THE API BILLING IS SET AS IT IS AN EXPENSIVE OPERATION.
 
 ## Challenger Models
 
