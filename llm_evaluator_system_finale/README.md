@@ -31,7 +31,6 @@ llm_evaluator_system_finale/
 ├── .env.safe                            # Safe/redacted env reference
 ├── SETUP.md                             # Standalone setup guide
 ├── README.md                            # This file
-├── LLM_Benchmarking_DBMS_Report.docx   # Full benchmarking report
 │
 ├── models/                              # Data layer
 │   ├── __init__.py
@@ -89,8 +88,7 @@ llm_evaluator_system_finale/
 │
 ├── data/                                # Static data assets
 │   ├── question_bank.json               # Pre-parsed question bank (103 questions)
-│   ├── er_diagram_questions.json        # ER diagram specific questions
-│   └── artifacts/                       # Additional data artifacts
+│   └── er_diagram_questions.json        # ER diagram specific questions
 │
 ├── final_results/                       # Pre-computed results (Phase 1 + 2, 3 models)
 │   ├── SUMMARY.txt                      # Human-readable run summary
@@ -110,27 +108,7 @@ llm_evaluator_system_finale/
 │   ├── hyperparams_llama.json           # Llama hyperparameter sensitivity
 │   ├── prompts_compare_gpt4o.json       # GPT-4o prompting strategy scorecard
 │   └── prompts_compare_llama.json       # Llama prompting strategy scorecard
-│
-├── final_results_with_all_models/       # Pre-computed results (all 4 models incl. Gemini)
-│   ├── SUMMARY.txt
-│   ├── leaderboard.json
-│   ├── results_summary.json
-│   ├── full_export.json
-│   ├── audit.json
-│   ├── run_log.txt
-│   ├── phase1_generate.json
-│   ├── phase1_contests.json
-│   ├── phase1_scores.json
-│   ├── phase2_generate.json
-│   ├── phase2_scores.json
-│   ├── phase3_hyperparam_generate.json
-│   ├── phase3_scores.json
-│   ├── hyperparams_gpt4o.json
-│   ├── hyperparams_llama.json
-│   ├── hyperparams_gemini.json          # Gemini hyperparameter sensitivity
-│   ├── prompts_compare_gpt4o.json
-│   ├── prompts_compare_llama.json
-│   └── prompts_compare_gemini.json      # Gemini prompting strategy scorecard
+|
 │
 ├── mcs_updated_results/                 # MCS-recalculated result snapshots
 │
